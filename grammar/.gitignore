@@ -1,4 +1,15 @@
 .ipynb_checkpoints
+
+data
+
 train
 dev
 test
+
+*.trees
+*.clean
+*.tokens
+*.subs
+*.processed
+
+*.json
