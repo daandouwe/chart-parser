@@ -2,7 +2,7 @@
 A simple chart parser with a cythonized CKY for speed.
 
 
-To obtain the grammar, type:
+To obtain the data and grammar, type:
 ```
 cd grammar
 ./get-grammar.sh
