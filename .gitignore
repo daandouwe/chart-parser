@@ -1,8 +1,15 @@
+__pycache__
+
 *.tokens
 *.trees
 *.txt
 *.grammar
 *.clean
-__pycache__
+
 doc
 
+*cky/build
+*cky/.ipynb_notebooks
+*cky/*.c
+*cky/*.html
+*cky/*.so

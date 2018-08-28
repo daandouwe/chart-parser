@@ -48,9 +48,5 @@ def cky(
                         back[A][begin][end][0] = split
                         back[A][begin][end][1] = B
                         back[A][begin][end][2] = C
-                    # for k in range(num_unary_rules):
-                    #     B, C = unary_rules[k][0], unary_rules[k][1]  # B -> C
-                    #     if C == A:  # from  B -> A  and  A -> w  derive  B -> w
-                    #         score[C][i][i+1] = lex_prob[j] * unary_prob[k]
 
     return score, back
