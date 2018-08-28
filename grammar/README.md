@@ -1,11 +1,12 @@
 # Grammar
 To obtain a grammar, run `./get-grammar.sh`. The script does the following:
-1. Processes the training trees:
-  * Lowercase all words.
-  * Replace all numbers with `<num>`.
-  * Replace with `<unk>` everything beyond a certain threshold (default vocab size is 10k).
-2. Obtain a binarized grammar in CNF from the training set in `lopar` format.
-3. Rewrite the `lopar` format to a custom format.
+1. Download the ptb trees from [benepar](https://github.com/nikitakit/self-attentive-parser/tree/master/data) if you don't have them yet.
+2. Processes the training trees:
+  1. Lowercase all words.
+  2. Replace all numbers with `<num>`.
+  3. Replace with `<unk>` everything beyond a certain threshold (default vocab size is 10k).
+3. Obtain a binarized grammar in CNF from the training set in `lopar` format.
+4. Rewrite the `lopar` format to a custom format.
 
 # Grammar format
 We produce a grammar in the format:
