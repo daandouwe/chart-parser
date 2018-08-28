@@ -1,0 +1,8 @@
+*.tokens
+*.trees
+*.txt
+*.grammar
+*.clean
+__pycache__
+doc
+
