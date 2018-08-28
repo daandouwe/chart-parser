@@ -19,11 +19,10 @@ class Parser:
         score, back = self.cky(processed_sentence)
         print('Finding spanning nodes...')
         roots = self.get_spanning_roots(score)
-        # if not roots:
-            # exit('Could not parse the sentence: no spanning nonterminals were found.')
+        if not roots:
+            exit('Could not parse the sentence: no spanning nonterminals were found.')
         print('Building trees...')
         return [(self.build_tree(back, sentence, root), score) for root, score in roots[:10]]
-
 
     def get_spanning_roots(self, score):
         spanning_scores = score[:, 0, -1]
