@@ -4,21 +4,6 @@ import numpy as np
 from tqdm import tqdm
 
 
-def expand_binaries_with_unaries(binary_rules, unary_rules):
-    expanded_binary_rules = list(binary_rules)  # all binary rules are already part
-    for rule in tqdm(binary_rules):
-        a, b, c, binary_prob = rule  # a -> b c
-        for rule in unary_rules:
-            d, e, unary_prob =  rule  # d -> e
-            if  d == b:
-                expanded = (a, e, c, binary_prob * unary_prob)  # a -> b c  and  d -> e  derives  a -> e c  if b = d
-                expanded_binary_rules.append(expanded)
-            if  d == c:
-                expanded = (a, b, e, binary_prob * unary_prob)  # a -> b c  and  d -> e  derives  a -> b e  if b = c
-                expanded_binary_rules.append(expanded)
-    return expanded_binary_rules
-
-
 class PCFG:
     def __init__(self, n2i, i2n, w2i, i2w, lex, unary, binary, lex_prob, unary_prob, binary_prob):
         self.n2i = n2i
@@ -182,6 +167,21 @@ class PCFG:
     def lex_rules(self):
         """The list of unary rules in the grammar"""
         return [self.lex_rule(i) for i in range(self.lex.shape[0])]
+
+
+def expand_binaries_with_unaries(binary_rules, unary_rules):
+    expanded_binary_rules = list(binary_rules)  # all binary rules are already part
+    for rule in tqdm(binary_rules):
+        a, b, c, binary_prob = rule  # a -> b c
+        for rule in unary_rules:
+            d, e, unary_prob =  rule  # d -> e
+            if  d == b:
+                expanded = (a, e, c, binary_prob * unary_prob)  # a -> b c  and  d -> e  derives  a -> e c  if b = d
+                expanded_binary_rules.append(expanded)
+            if  d == c:
+                expanded = (a, b, e, binary_prob * unary_prob)  # a -> b c  and  d -> e  derives  a -> b e  if b = c
+                expanded_binary_rules.append(expanded)
+    return expanded_binary_rules
 
 
 if __name__ == '__main__':

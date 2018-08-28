@@ -8,8 +8,7 @@ To obtain a grammar, run `./get-grammar.sh`. The script does the following:
 * Obtain a binarized grammar in CNF from the training set in `lopar` format.
 * Rewrite the `lopar` format to a custom format.
 
-# Grammar format
-We produce a grammar in the format:
+The input grammar has the following format:
 ```
 PP RB ADJP 8.448264937588443e-05
 WHPP TO WHNP 0.04603580562659847
