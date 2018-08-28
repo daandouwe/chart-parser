@@ -33,7 +33,6 @@ class PCFG:
         self.binary_prob = binary_prob
 
     def from_file(path, expand_binaries=False):
-        """Reads grammar rules formatted as 'LHS ||| RHS ||| PROB'."""
         nlines = sum(1 for _ in open(path))
         nonterminals, vocab = set(), set()
         lex_rules, unary_rules, binary_rules = set(), set(), set()

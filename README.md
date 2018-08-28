@@ -1,9 +1,16 @@
 # Chart parser
 A simple chart parser with a cythonized CKY for speed.
 
+
 To obtain the grammar, type:
 ```
-grammar/./get-grammar.sh
+cd grammar
+./get-grammar.sh
+```
+To compile cky, type:
+```
+cd cky
+python setup.py build_ext --inplace
 ```
 To parse a sentence, type:
 ```

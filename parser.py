@@ -9,8 +9,8 @@ from cky import _cky
 
 
 class Parser:
-    def __init__(self, grammar_path):
-        self.grammar = PCFG.from_file(grammar_path)
+    def __init__(self, grammar_path, expand_binaries=False):
+        self.grammar = PCFG.from_file(grammar_path, expand_binaries)
 
     def __call__(self, sentence):
         processed_sentence = process_sentence(sentence, self.grammar.w2i)

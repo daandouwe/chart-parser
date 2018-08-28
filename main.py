@@ -11,9 +11,9 @@ from util import unbinarize
 
 
 def main(args):
-    parser = Parser(args.grammar)
+    parser = Parser(args.grammar, args.expand_binaries)
 
-    if args.file:
+    if args.in_file:
         with open(args.in_file) as fin:
             lines = in_fin.readlines()
             sentences = [tokenize.word_tokenize(line.strip()) for line in lines]
@@ -49,6 +49,7 @@ if __name__ == '__main__':
     argparser.add_argument('--sent', type=str, default='')
     argparser.add_argument('--in-file', type=str, default='')
     argparser.add_argument('--out-file', type=str, default='pred.trees')
+    argparser.add_argument('--expand-binaries', action='store_true')
     args = argparser.parse_args()
 
     main(args)
