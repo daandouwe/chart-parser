@@ -36,6 +36,7 @@ To parse 5 sentences from the dev-set, show predicted and gold parses, and compu
 
 ## Requirements
 ```
+treetools
 numpy
 cython
 nltk
