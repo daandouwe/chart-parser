@@ -10,6 +10,14 @@ from grammar.utils import NUM, UNK, is_bracket, is_number, process
 
 TOP = 'TOP'
 
+SENT = 'The bill intends to restrict the RTC to Treasury borrowings only , ' + \
+       'unless the agency receives specific congressional authorization .'
+GOLD = '(TOP (S (NP (DT The) (NN bill)) (VP (VBZ intends) (S (VP (TO to) (VP ' + \
+       '(VB restrict) (NP (DT the) (NNP RTC)) (PP (TO to) (NP (NNP Treasury) ' + \
+       '(NNS borrowings) (RB only)))))) (, ,) (SBAR (IN unless) (S (NP (DT the) ' + \
+       '(NN agency)) (VP (VBZ receives) (NP (JJ specific) (JJ congressional) ' + \
+       '(NN authorization)))))) (. .)))'
+
 
 def process_sentence(sentence, vocab):
     assert isinstance(sentence, list)
