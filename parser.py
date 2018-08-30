@@ -3,7 +3,7 @@ from tqdm import tqdm
 from nltk import Tree
 from PYEVALB import scorer, parser
 
-from grammar import PCFG
+from pcfg import PCFG
 from util import process_sentence
 from cky import _cky
 

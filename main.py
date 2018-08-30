@@ -64,12 +64,13 @@ def main(args):
                    '(NN authorization)))))) (. .)))'
         print('Parsing sentence...')
         trees = parser(sentence)
-        for tree, score in trees[:2]:
-            tree = cleanup_tree(tree)
-            print('Predicted.')
-            print('logprob: ', score)
-            tree.pretty_print()
-            print(79*'*')
+        tree, score = trees[0]
+        tree = cleanup_tree(tree)
+        print(79*'*')
+        print('Predicted.')
+        print('logprob: ', score)
+        tree.pretty_print()
+        print(79*'*')
         if not args.sent:
             gold = Tree.fromstring(gold)
             prec, recall, fscore = parser.evalb(gold.pformat(margin=np.inf), tree.pformat(margin=np.inf))
