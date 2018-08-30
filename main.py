@@ -26,9 +26,9 @@ def main(args):
             predict_from_file(parser, args.infile, args.outfile, args.num_lines)
         if args.show: show(args.outfile)
         print('Evaluation bracket score...')
-        if args.gold:
+        if args.goldfile:
             try:
-                evalb(args.outfile, args.gold, args.result)
+                evalb(args.outfile, args.goldfile, args.result)
                 if args.show: show(args.result)
             except:
                 exit('Could note evaluate trees. Maybe you did not parse the entire file?')
@@ -37,12 +37,19 @@ def main(args):
         num_trees = 10 if args.num_lines == -1 else args.num_lines
         fscores = []
         parses = predict_from_trees(parser, args.treefile)
-        for _ in range(num_trees):
-            prec, rec, fscore = next(parses)
+        for i in range(num_trees):
+            gold, pred, prec, rec, fscore = next(parses)
+            print('*'*79)
+            print(f'Tree {i}, f1={fscore:.3f}.')
+            print('Gold:')
+            gold.pretty_print()
+            print('Pred:')
+            pred.pretty_print()
+            print()
             fscores.append(fscore)
-            print(f'F1 =', ' '.join([f'{fscore:.3f}' for fscore in fscores]), end='\r')
-        print()
-        print('Average F1 = ', sum(fscores) / len(fscores))
+        print('*'*79)
+        print('All F1 =', ' '.join([f'{fscore:.3f}' for fscore in fscores]))
+        print('Avg F1 = ', sum(fscores) / len(fscores))
     else:
         if args.sent:
             sentence = tokenize.word_tokenize(args.sent)
@@ -79,7 +86,7 @@ if __name__ == '__main__':
     argparser.add_argument('--sent', type=str, default='')
     argparser.add_argument('--infile', type=str, default='')
     argparser.add_argument('--outfile', type=str, default='pred.trees')
-    argparser.add_argument('--gold', type=str, default='')
+    argparser.add_argument('--goldfile', type=str, default='')
     argparser.add_argument('--result', type=str, default='result.txt')
     argparser.add_argument('--treefile', type=str, default='')
     argparser.add_argument('--parallel', action='store_true')

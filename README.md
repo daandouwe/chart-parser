@@ -12,11 +12,19 @@ To compile cky, type:
 cd cky
 python setup.py build_ext --inplace
 ```
+To run a quick test, run:
+```bash
+./main.py
+```
 To parse a sentence, type:
 ```bash
 ./main.py --sent "The horse raced past the barn fell."
 ```
 To parse the dev-set and compute f-score, type:
 ```bash
-./main.py --in-file grammar/dev/dev.tokens --out-file grammar/dev/dev.pred.trees --gold grammar/dev/dev.trees
+./main.py --infile grammar/dev/dev.tokens --outfile grammar/dev/dev.pred.trees --goldfile grammar/dev/dev.trees
+```
+To parse 5 sentences from the dev-set, show predicted and gold parses, and compute their individual f-scores, type:
+```bash
+./main.py --treefile grammar/data/dev.trees -n 5
 ```

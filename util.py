@@ -53,7 +53,7 @@ def cleanup_tree(tree):
     label = tree.label().split('|')[0]  # If top node is like VP|<S-PP-,-SBAR>
     tree.set_label(label)
     tree.un_chomsky_normal_form()
-    return Tree(TOP, [tree])
+    return Tree(TOP, [tree])  # Add TOP label.
 
 
 def evalb(pred_path, gold_path, result_path):

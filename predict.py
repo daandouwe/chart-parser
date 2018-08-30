@@ -17,10 +17,10 @@ def predict_from_trees(parser, infile):
             yield 0, 0, 0
         else:
             pred, score = trees[0]
-            tree = cleanup_tree(pred)
-            gold, pred = gold.pformat(margin=np.inf), pred.pformat(margin=np.inf)
-            prec, recall, fscore = parser.evalb(gold, pred)
-            yield prec, recall, fscore
+            pred = cleanup_tree(pred)
+            gold_tree, pred_tree = gold.pformat(margin=np.inf), pred.pformat(margin=np.inf)
+            prec, recall, fscore = parser.evalb(gold_tree, pred_tree)
+            yield gold, pred, prec, recall, fscore
 
 
 def predict_from_file(parser, infile, outfile, num_lines=-1):
