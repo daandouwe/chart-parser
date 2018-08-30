@@ -13,7 +13,7 @@ from util import cleanup_tree, evalb, show
 def main(args):
     parser = Parser(args.grammar, args.expand_binaries)
     print(
-        'Grarmmar:',
+        'Grammar:',
         'lex', parser.grammar.num_lex_rules,
         'unary', parser.grammar.num_unary_rules,
         'binary', parser.grammar.num_binary_rules
