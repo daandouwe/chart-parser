@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 TREETOOLS=~/treetools
 VOCAB_SIZE=10000
+MARKOV=false
 
 set -x  # echo on
 
@@ -34,15 +35,28 @@ $TREETOOLS/./treetools transform data/train.clean train.processed \
 # Treetools messes with the spacing...
 ./add-space.py train.processed
 
-# Get a CNF grammar from the training set.
-$TREETOOLS/./treetools grammar train.processed train/train \
+# Use nltk to convert trees to CNF with optional Markovivization.
+if [ "$MARKOV" = true ]; then
+    echo Markovize the grammar: v1:h1
+    ./nltk-cnf.py train/train.processed train/train.markov.processed --markov 1:1 --collapse-unaries
+
+    NAME=train.markov
+else
+    ./nltk-cnf.py train/train.processed train/train.processed --collapse-unaries
+
+    NAME=train
+fi
+
+# Get rules from grammar
+$TREETOOLS/./treetools grammar train/$NAME.processed train/$NAME \
     leftright --src-format brackets --dest-format lopar
 
 # Process the grammar output to our own format.
-./custom-format.py train/train.gram train/train.lex > train/train.grammar
+./custom-format.py train/$NAME.gram train/$NAME.lex > train/$NAME.grammar
+
 
 # Cleanup.
 rm train.subs
-mv train.processed train.tokens vocab.json train
+mv $NAME.processed train.tokens vocab.json train
 mv dev.tokens dev
 mv test.tokens test
