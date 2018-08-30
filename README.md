@@ -28,6 +28,7 @@ To parse the dev-set and compute f-score, type:
 ./main.py --infile grammar/dev/dev.tokens --outfile grammar/dev/dev.pred.trees --goldfile grammar/dev/dev.trees
 ```
 Optionally, this can be done in parallel by adding `--parallel`.
+
 To parse 5 sentences from the dev-set, show predicted and gold parses, and compute their individual f-scores, type:
 ```bash
 ./main.py --treefile grammar/data/dev.trees -n 5
