@@ -4,7 +4,7 @@ from nltk import Tree
 from PYEVALB import scorer, parser
 
 from pcfg import PCFG
-from util import process_sentence
+from utils import process_sentence
 from cky import _cky
 
 
