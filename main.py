@@ -7,7 +7,7 @@ from nltk import tokenize, Tree
 
 from parser import Parser
 from predict import predict_from_trees, predict_from_file, predict_from_file_parallel
-from util import cleanup_tree, evalb, show
+from utils import cleanup_tree, evalb, show
 
 
 def main(args):

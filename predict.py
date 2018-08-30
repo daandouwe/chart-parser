@@ -5,7 +5,7 @@ from nltk import tokenize, Tree
 from tqdm import tqdm
 
 from parser import Parser
-from util import cleanup_tree
+from utils import cleanup_tree
 
 
 def predict_from_trees(parser, infile):
