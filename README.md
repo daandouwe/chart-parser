@@ -28,3 +28,12 @@ To parse 5 sentences from the dev-set, show predicted and gold parses, and compu
 ```bash
 ./main.py --treefile grammar/data/dev.trees -n 5
 ```
+
+## Requirements
+```
+numpy
+cython
+nltk
+tqdm
+PYEVALB
+```
