@@ -1,7 +1,8 @@
 #cython: language_level=3, boundscheck=False, wraparound=False
 import cython
+import numpy as np
 cimport numpy as np
-
+from libc.math cimport log
 
 def cky(
     int[:] sentence,
@@ -28,7 +29,7 @@ def cky(
         for j in range(num_lex_rules):
             A, w = lex_rules[j][0], lex_rules[j][1]  # A -> w
             if w == sentence[i]:
-                score[A][i][i+1] = lex_prob[j]
+                score[A][i][i+1] = log(lex_prob[j])
                 # Handle unaries.
                 # for k in range(num_unary_rules):
                 #     B, C = unary_rules[k][0], unary_rules[k][1]  # B -> C
@@ -42,7 +43,7 @@ def cky(
                 for i in range(num_binary_rules):
                     A, B, C = binary_rules[i][0], binary_rules[i][1], binary_rules[i][2]
                     rule_prob = binary_prob[i]
-                    prob = score[B][begin][split] * score[C][split][end] * rule_prob
+                    prob = score[B][begin][split] + score[C][split][end] + log(rule_prob)
                     if prob > score[A][begin][end]:
                         score[A][begin][end] = prob
                         back[A][begin][end][0] = split

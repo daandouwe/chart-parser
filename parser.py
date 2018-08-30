@@ -1,10 +1,10 @@
 import numpy as np
 from tqdm import tqdm
+from nltk import Tree
+from PYEVALB import scorer, parser
 
-from symbol import Symbol, Terminal, Nonterminal, Span
-from rule import Rule
 from grammar import PCFG
-from util import process_sentence, make_nltk_tree, unbinarize
+from util import process_sentence
 from cky import _cky
 
 
@@ -19,14 +19,12 @@ class Parser:
         score, back = self.cky(processed_sentence)
         if verbose: print('Finding spanning nodes...')
         roots = self.get_spanning_roots(score)
-        if not roots:
-            exit('Could not parse the sentence: no spanning nonterminals were found.')
         if verbose: print('Building trees...')
         return [(self.build_tree(back, sentence, root), score) for root, score in roots[:10]]
 
     def get_spanning_roots(self, score):
         spanning_scores = score[:, 0, -1]
-        spanning_nodes = [(i, score) for i, score in enumerate(spanning_scores) if score > 0]
+        spanning_nodes = [(i, score) for i, score in enumerate(spanning_scores) if score > -np.inf]
         return sorted(spanning_nodes, key=lambda x: x[1], reverse=True)
 
     def cky(self, sentence):
@@ -35,7 +33,7 @@ class Parser:
             [self.grammar.w2i[word] for word in sentence],
             dtype=np.int32
         )
-        score = np.zeros(
+        score = -np.inf * np.ones(
             (self.grammar.num_nonterminals, sent_len+1, sent_len+1),
             dtype=np.float32
         )
@@ -61,37 +59,23 @@ class Parser:
         return np.asarray(score), np.asarray(back)
 
     def build_tree(self, back, sentence, root):
-        derivation = []
-        num_words = len(sentence)
 
         def recursion(begin, end, A):
             backpointer = back[A][begin][end]
-            # Recursive case (when backpointer is not -1)
+            A = self.grammar.i2n[A]
             if backpointer[0] > -1:
-                # Catch the elements stored in backpointer
                 split, B, C = backpointer
-                # Annotate the recognized Nonterminals with spans
-                A_span = Span(Nonterminal(self.grammar.i2n[A]), begin, end)
-                B_span = Span(Nonterminal(self.grammar.i2n[B]), begin, split)
-                C_span = Span(Nonterminal(self.grammar.i2n[C]), split, end)
-                # Reconstruct the binary rule
-                # (The rule probability is irrelevent at this stage)
-                rule = Rule(A_span, [B_span, C_span], prob=None)
-                derivation.append(rule)
-                # Recursive call
-                derivation.extend(recursion(begin, split, B))
-                derivation.extend(recursion(split, end, C))
-            # Base case
+                return Tree(A, [recursion(begin, split, B), recursion(split, end, C)])
             else:
-                # Recover the word from the sentence
-                word = Terminal(sentence[begin])
-                # Annotate the recognized Nonterminals with spans
-                A_span = Span(Nonterminal(self.grammar.i2n[A]), begin, end)
-                word_span = Span(word, begin, end)
-                # Reconstruct the unary rule
-                # (The rule probability is irrelevent at this stage)
-                rule = Rule(A_span, [word_span], prob=None)
-            return [rule]
+                word = sentence[begin]
+                return Tree(A, [word])
 
-        recursion(0, num_words, root)
-        return make_nltk_tree(derivation)
+        return recursion(0, len(sentence), root)
+
+    def evalb(self, gold, pred):
+        gold = parser.create_from_bracket_string(gold)
+        pred = parser.create_from_bracket_string(pred)
+        result = scorer.Scorer().score_trees(gold, pred)
+        prec, recall = result.prec, result.recall
+        fscore = 2 * (prec * recall) / (prec + recall)
+        return prec, recall, fscore

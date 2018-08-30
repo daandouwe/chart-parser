@@ -3,9 +3,7 @@ from collections import defaultdict
 
 from nltk.tree import Tree
 
-from symbol import Span
-from rule import Rule
-
+TOP = 'TOP'
 UNK = '<unk>'
 NUM = '<num>'
 
@@ -48,18 +46,16 @@ def process_sentence(sentence, vocab):
     return sentence
 
 
-def make_nltk_tree(derivation):
-    """
-    Return a NLTK Tree object based on the derivation
-    (list or tuple of Rules)
-    """
-    d = defaultdict(None, ((r.lhs, r.rhs) for r in derivation))
+def cleanup_tree(tree):
+    label = tree.label().split('|')[0]  # If top node is like VP|<S-PP-,-SBAR>
+    tree.set_label(label)
+    tree.un_chomsky_normal_form()
+    return Tree(TOP, [tree])
 
-    def make_tree(lhs):
-        return Tree(str(lhs._symbol)[1:-1], (str(child._symbol)[1:-1]
-                                             if child not in d else make_tree(child) for child in d[lhs]))
 
-    return make_tree(derivation[0].lhs)
+def evalb(pred_path, gold_path, result_path='result.txt'):
+    tree_scorer = scorer.Scorer()
+    tree_scorer.evalb(gold_path, pred_path, result_path)
 
 
 def unbinarize(tree):
