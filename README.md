@@ -2,7 +2,7 @@
 A simple chart parser with a cythonized CKY for speed.
 
 Inspired by the recent success of [benepar](https://github.com/nikitakit/self-attentive-parser) I wanted to revisit simple CKY for binarized trees.
-No neural networks here however - just MLE estimated rule probabilities.
+No neural networks here however &mdash just MLE estimated rule probabilities.
 
 ## Usage
 To obtain the data and grammar, type:
