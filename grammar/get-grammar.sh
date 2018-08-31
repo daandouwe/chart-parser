@@ -7,6 +7,7 @@ set -x  # echo on
 
 mkdir -p data train dev test
 
+# Optionally, get trees from the benepar.
 if [[ ! -e data/train.trees ]]; then
     wget https://raw.githubusercontent.com/nikitakit/self-attentive-parser/master/data/02-21.10way.clean \
         -P data/train.trees

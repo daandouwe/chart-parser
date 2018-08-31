@@ -1,7 +1,8 @@
 import numpy as np
 from tqdm import tqdm
 from nltk import Tree
-from PYEVALB import scorer, parser
+from PYEVALB import scorer
+from PYEVALB import parser as evalb_parser
 
 from pcfg import PCFG
 from utils import process_sentence
@@ -20,10 +21,11 @@ class Parser:
         if verbose: print('Finding spanning nodes...')
         roots = self.get_spanning_roots(score)
         if verbose: print('Building trees...')
-        return [(self.build_tree(back, sentence, root), score) for root, score in roots[:10]]
+        best_trees = [(self.build_tree(back, sentence, root), score) for root, score in roots[:10]]
+        return best_trees
 
     def get_spanning_roots(self, score):
-        spanning_scores = score[:, 0, -1]
+        spanning_scores = score[:, 0, -1]  # All nodes that span 0 to sent_len.
         spanning_nodes = [(i, score) for i, score in enumerate(spanning_scores) if score > -np.inf]
         return sorted(spanning_nodes, key=lambda x: x[1], reverse=True)
 
@@ -31,16 +33,13 @@ class Parser:
         sent_len = len(sentence)
         sentence_array = np.array(
             [self.grammar.w2i[word] for word in sentence],
-            dtype=np.int32
-        )
+            dtype=np.int32)
         score = -np.inf * np.ones(
             (self.grammar.num_nonterminals, sent_len+1, sent_len+1),
-            dtype=np.float32
-        )
+            dtype=np.float32)
         back = -1 * np.ones(
             (self.grammar.num_nonterminals, sent_len+1, sent_len+1, 3),
-            dtype=np.int32
-        )
+            dtype=np.int32)
         score, back = _cky.cky(
             sentence_array,
             sent_len,
@@ -73,8 +72,8 @@ class Parser:
         return recursion(0, len(sentence), root)
 
     def evalb(self, gold, pred):
-        gold = parser.create_from_bracket_string(gold)
-        pred = parser.create_from_bracket_string(pred)
+        gold = evalb_parser.create_from_bracket_string(gold)
+        pred = evalb_parser.create_from_bracket_string(pred)
         result = scorer.Scorer().score_trees(gold, pred)
         prec, recall = result.prec, result.recall
         fscore = 2 * (prec * recall) / (prec + recall)
