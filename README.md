@@ -25,7 +25,7 @@ To parse a sentence, type:
 ```
 To parse the dev-set and compute f-score, type:
 ```bash
-./main.py --infile grammar/dev/dev.tokens --outfile grammar/dev/dev.pred.trees --goldfile grammar/dev/dev.trees
+./main.py --infile grammar/dev/dev.tokens --outfile grammar/dev/dev.pred.trees --goldfile grammar/data/dev/dev.trees
 ```
 Optionally, this can be done in parallel by adding `--parallel`.
 
