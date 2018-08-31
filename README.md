@@ -15,7 +15,7 @@ To compile cky, type:
 cd cky
 python setup.py build_ext --inplace
 ```
-To run a quick test, run:
+To run a quick test, type:
 ```bash
 ./main.py
 ```
@@ -36,7 +36,6 @@ To parse 5 sentences from the dev-set, show predicted and gold parses, and compu
 
 ## Requirements
 ```
-treetools
 numpy
 cython
 nltk
