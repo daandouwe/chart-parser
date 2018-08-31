@@ -35,7 +35,7 @@ def main(args):
         print('Evaluating bracket score...')
         if args.goldfile:
             try:
-                evalb(args.evalb_dir, args.outfile, args.goldfile, args.result)
+                evalb(args.evalb_dir, args.outfile, args.goldfile, args.result, args.ignore_empty)
                 if args.show:
                     show(args.result)
             except:
@@ -94,12 +94,13 @@ if __name__ == '__main__':
     argparser.add_argument('--goldfile', type=str, default='')
     argparser.add_argument('--result', type=str, default='result.txt')
     argparser.add_argument('--treefile', type=str, default='')
-    argparser.add_argument('--evalb_dir', type=str, default='~/EVALB')
+    argparser.add_argument('--evalb_dir', type=str, default='EVALB')
     argparser.add_argument('-n', '--num-lines', type=int, default=-1)
+    argparser.add_argument('-q', '--ignore-empty', type=int, default=1000, help='let evalb ignore empty lines')
     argparser.add_argument('-t', '--tokenize', action='store_true')
     argparser.add_argument('-p', '--parallel', action='store_true')
     argparser.add_argument('-s', '--show', action='store_true')
-    argparser.add_argument('-b', '--expand-binaries', action='store_true')
+    argparser.add_argument('-b', '--expand-binaries', action='store_true', help='expand binary rules with each possible unary')
     args = argparser.parse_args()
 
     main(args)
