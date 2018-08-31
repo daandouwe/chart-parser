@@ -4,7 +4,6 @@ import unicodedata
 from collections import defaultdict
 
 from nltk.tree import Tree
-from PYEVALB import scorer, parser
 
 from grammar.utils import NUM, UNK, is_bracket, is_number, process
 
@@ -31,10 +30,6 @@ def cleanup_tree(tree):
     tree.set_label(label)
     tree.un_chomsky_normal_form()
     return Tree(TOP, [tree])  # Add TOP label.
-
-
-def evalb(pred_path, gold_path, result_path):
-    scorer.Scorer().evalb(gold_path, pred_path, result_path)
 
 
 def show(path):

@@ -23,13 +23,13 @@ def predict_from_trees(parser, infile):
             yield gold, pred, prec, recall, fscore
 
 
-def predict_from_file(parser, infile, outfile, num_lines=-1, tokenize=False):
+def predict_from_file(parser, infile, max_lines=None, tokenize=False):
     with open(infile) as fin:
         if tokenize:
             sentences = [tokenize.word_tokenize(line.strip()) for line in fin.readlines()]
         else:
             sentences = [line.strip().split() for line in fin.readlines()]
-        sentences = sentences[-num_lines:]
+        sentences = sentences if max_lines == None else sentences[:max_lines]
     predicted = []
     failed = 0
     try:
@@ -47,11 +47,10 @@ def predict_from_file(parser, infile, outfile, num_lines=-1, tokenize=False):
         print(f'Prediction interrupted at sentence {i}.')
     if failed > 0:
         print(f'Failed to parse {failed} sentences.')
-    with open(outfile, 'w') as fout:
-        print('\n'.join(predicted), file=fout)
+    return predicted
 
 
-def predict_from_file_parallel(parser, infile, outfile, num_lines=-1, tokenize=False):
+def predict_from_file_parallel(parser, infile, max_lines=None, tokenize=False):
     size = mp.cpu_count()
     print(f'Predicting in parallel with {size} processes...')
 
@@ -73,19 +72,23 @@ def predict_from_file_parallel(parser, infile, outfile, num_lines=-1, tokenize=F
         return_dict[rank] = predicted
         failed_dict[rank] = failed
 
-    # Read sentences and partition them to be distributed among processes.
+    # Read sentences and partition them, to be distributed among processes.
     with open(infile) as fin:
         if tokenize:
             sentences = [tokenize.word_tokenize(line.strip()) for line in fin.readlines()]
         else:
             sentences = [line.strip().split() for line in fin.readlines()]
-        sentences = sentences[-num_lines:]
-    chunk_size = len(sentences) // size
-    partitioned = [sentences[i:i+chunk_size] for i in range(0, len(sentences), chunk_size)]
+        sentences = sentences if max_lines == None else sentences[:max_lines]
+    # chunk_size = len(sentences) // size
+    # partitioned = [sentences[i:i+chunk_size] for i in range(0, len(sentences), chunk_size)]  # TODO: we lose some sentences here...
+    def ceil_div(a, b):
+        return ((a - 1) // b) + 1
+    chunk_size = ceil_div(len(sentences), size)
+    partitioned = [sentences[i:i+chunk_size] for i in range(0, len(sentences), chunk_size)]  # TODO: we lose some sentences here...
     # Spawn processes.
     manager = mp.Manager()
-    return_dict = manager.dict()
-    failed_dict = manager.dict()
+    return_dict = manager.dict()  # To return trees.
+    failed_dict = manager.dict()  # To return number of failed parses.
     processes = []
     for rank in range(size):
         p = mp.Process(target=worker, args=(parser, partitioned[rank], rank, return_dict, failed_dict))
@@ -97,5 +100,4 @@ def predict_from_file_parallel(parser, infile, outfile, num_lines=-1, tokenize=F
     failed = sum([failed_dict[rank] for rank in range(size)])
     if failed > 0:
         print(f'Failed to parse {failed} sentences.')
-    with open(outfile, 'w') as fout:
-        print('\n'.join(trees), file=fout)
+    return trees
