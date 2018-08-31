@@ -23,9 +23,12 @@ def predict_from_trees(parser, infile):
             yield gold, pred, prec, recall, fscore
 
 
-def predict_from_file(parser, infile, outfile, num_lines=-1):
+def predict_from_file(parser, infile, outfile, num_lines=-1, tokenize=False):
     with open(infile) as fin:
-        sentences = [tokenize.word_tokenize(line.strip()) for line in fin.readlines()]
+        if tokenize:
+            sentences = [tokenize.word_tokenize(line.strip()) for line in fin.readlines()]
+        else:
+            sentences = [line.strip().split() for line in fin.readlines()]
         sentences = sentences[-num_lines:]
     predicted = []
     failed = 0
@@ -48,7 +51,7 @@ def predict_from_file(parser, infile, outfile, num_lines=-1):
         print('\n'.join(predicted), file=fout)
 
 
-def predict_from_file_parallel(parser, infile, outfile, num_lines=-1):
+def predict_from_file_parallel(parser, infile, outfile, num_lines=-1, tokenize=False):
     size = mp.cpu_count()
     print(f'Predicting in parallel with {size} processes...')
 
@@ -72,7 +75,10 @@ def predict_from_file_parallel(parser, infile, outfile, num_lines=-1):
 
     # Read sentences and partition them to be distributed among processes.
     with open(infile) as fin:
-        sentences = [tokenize.word_tokenize(line.strip()) for line in fin.readlines()]
+        if tokenize:
+            sentences = [tokenize.word_tokenize(line.strip()) for line in fin.readlines()]
+        else:
+            sentences = [line.strip().split() for line in fin.readlines()]
         sentences = sentences[-num_lines:]
     chunk_size = len(sentences) // size
     partitioned = [sentences[i:i+chunk_size] for i in range(0, len(sentences), chunk_size)]
