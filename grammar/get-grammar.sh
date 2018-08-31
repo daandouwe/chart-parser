@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-TREETOOLS=~/treetools
+TREETOOLS=~/treetools  # Path where treetools is installed
 VOCAB_SIZE=10000
 MARKOV=false
 
@@ -17,18 +17,18 @@ if [[ ! -e data/train.trees ]]; then
 fi
 
 # Get terminals from train, dev and test sets.
-$TREETOOLS/./treetools transform data/train.clean train.tokens \
+$TREETOOLS/treetools transform data/train.clean train.tokens \
     --src-format brackets --dest-format terminals
-$TREETOOLS/./treetools transform data/dev.clean dev.tokens \
+$TREETOOLS/treetools transform data/dev.clean dev.tokens \
     --src-format brackets --dest-format terminals
-$TREETOOLS/./treetools transform data/test.clean test.tokens \
+$TREETOOLS/treetools transform data/test.clean test.tokens \
     --src-format brackets --dest-format terminals
 
 # For preprocessing of train-set: gather substitutions (lowercase, <unk>, and <num>).
 python get-lex-sub.py train.tokens $VOCAB_SIZE > train.subs
 
 # Let treetools apply the substitutions to the train set.
-$TREETOOLS/./treetools transform data/train.clean train.processed \
+$TREETOOLS/treetools transform data/train.clean train.processed \
     --trans substitute_terminals --params terminalfile:train.subs \
     --src-format brackets --dest-format brackets
 
@@ -36,7 +36,7 @@ $TREETOOLS/./treetools transform data/train.clean train.processed \
 ./add-space.py train.processed
 
 # Use nltk to convert trees to CNF with optional Markovivization.
-if [ "$MARKOV" = true ]; then
+if [ $MARKOV = true ]; then
     echo Markovize the grammar: v1:h1
     ./nltk-cnf.py train/train.processed train/train.markov.processed --markov 1:1 --collapse-unaries
 
@@ -48,7 +48,7 @@ else
 fi
 
 # Get rules from grammar
-$TREETOOLS/./treetools grammar train/$NAME.processed train/$NAME \
+$TREETOOLS/treetools grammar train/$NAME.processed train/$NAME \
     leftright --src-format brackets --dest-format lopar
 
 # Process the grammar output to our own format.
