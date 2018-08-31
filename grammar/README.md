@@ -1,14 +1,16 @@
 # Grammar
 To obtain a grammar, run `./get-grammar.sh`. The script does the following:
 * Download the ptb trees from [benepar](https://github.com/nikitakit/self-attentive-parser/tree/master/data) if you don't have them yet.
+* Download [EVALB](https://nlp.cs.nyu.edu/evalb/), which is used to score predicted trees.
+* Download [treetools](https://nlp.cs.nyu.edu/evalb/), which is used to extract the grammar.
 * Processes the training trees:
   * Lowercase all words.
   * Replace all numbers with `<num>`.
   * Replace with `<unk>` everything beyond a certain threshold (default vocab size is 10k).
-* Obtain a binarized grammar in CNF from the training set in `lopar` format.
+* Obtain a binarized grammar in CNF from the training set in `lopar` format using `treetools`.
 * Rewrite the `lopar` format to a custom format.
 
-The input grammar has the following format:
+The final grammar is stored in `grammar/train/train.grammar` and has the following format:
 ```
 PP RB ADJP 8.448264937588443e-05
 WHPP TO WHNP 0.04603580562659847
