@@ -26,10 +26,12 @@ def process_sentence(sentence, vocab):
 
 
 def cleanup_tree(tree):
-    label = tree.label().split('|')[0]  # If top node is like VP|<S-PP-,-SBAR>
-    tree.set_label(label)
-    tree.un_chomsky_normal_form()
-    return Tree(TOP, [tree])  # Add TOP label.
+    clean_label = tree.label().split('|')[0]  # If top node is like VP|<S-PP-,-SBAR>
+    tree.set_label(clean_label)
+    tree.un_chomsky_normal_form()  # un-binarize.
+    # Add TOP label (we don't handle unaries in our CKY so TOP -> X is never recognized.)
+    tree = Tree(TOP, [tree])
+    return tree
 
 
 def show(path):
@@ -40,3 +42,7 @@ def show(path):
         os.system(f"open {path}")
     if platform.system() == 'Windows':
         os.system(f"start {path}")
+
+
+def ceil_div(a, b):
+    return ((a - 1) // b) + 1

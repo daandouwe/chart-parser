@@ -5,7 +5,7 @@ from nltk import tokenize, Tree
 from tqdm import tqdm
 
 from parser import Parser
-from utils import cleanup_tree
+from utils import cleanup_tree, ceil_div
 
 
 def predict_from_trees(parser, infile):
@@ -79,10 +79,6 @@ def predict_from_file_parallel(parser, infile, max_lines=None, tokenize=False):
         else:
             sentences = [line.strip().split() for line in fin.readlines()]
         sentences = sentences if max_lines == None else sentences[:max_lines]
-    # chunk_size = len(sentences) // size
-    # partitioned = [sentences[i:i+chunk_size] for i in range(0, len(sentences), chunk_size)]  # TODO: we lose some sentences here...
-    def ceil_div(a, b):
-        return ((a - 1) // b) + 1
     chunk_size = ceil_div(len(sentences), size)
     partitioned = [sentences[i:i+chunk_size] for i in range(0, len(sentences), chunk_size)]  # TODO: we lose some sentences here...
     # Spawn processes.
