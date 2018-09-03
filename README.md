@@ -36,13 +36,15 @@ To parse 5 sentences from the dev-set, show predicted and gold parses, and compu
 
 The default grammar used is the vanilla CNF. To use the Markovized grammar, type:
 ```bash
-./main.py --grammar grammar/train/train.markov.grammar 
+./main.py --grammar grammar/train/train.markov.grammar
 ```
 
 ## Speed
 To speed up the CKY parsing, we use a (simple) [cythonized version](https://github.com/daandouwe/chart-parser/blob/master/cky/_cky.pyx) that is _almost_ a numpy implementation.
 We also provide a [numpy cky](https://github.com/daandouwe/chart-parser/blob/master/cky/cky_numpy.py). To use this, add the flag `--use-numpy`.
 The speed difference is very significant: the cython CKY parses a 20-word sentence in ~1 second, the numpy CKY takes ~90 seconds.
+
+Parsing the entire development set in parallel with 8 processes (for my quad-core machine) takes around 15 minutes.
 
 ## Accuracy
 The Markovized CNF on the development set:
