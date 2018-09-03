@@ -1,8 +1,9 @@
-#cython: language_level=3, boundscheck=False, wraparound=False
+#cython: language_level=3, boundscheck=False, wraparound=False, profile=True
 import cython
 import numpy as np
 cimport numpy as np
 from libc.math cimport log
+
 
 def cky(
     int[:] sentence,
