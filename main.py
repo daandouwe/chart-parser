@@ -87,7 +87,7 @@ def main(args):
 
 if __name__ == '__main__':
     argparser = argparse.ArgumentParser()
-    argparser.add_argument('--grammar', type=str, default='grammar/train/train.grammar')
+    argparser.add_argument('--grammar', type=str, default='grammar/train/train.vanilla.grammar')
     argparser.add_argument('--sent', type=str, default='')
     argparser.add_argument('--infile', type=str, default='')
     argparser.add_argument('--outfile', type=str, default='pred.trees')
