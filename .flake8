@@ -1,0 +1,4 @@
+[flake8]
+show_source = True
+max_line_length = 100
+exclude = grammar/treetools

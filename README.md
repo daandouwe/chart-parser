@@ -4,7 +4,7 @@ A simple chart parser with a cythonized CKY for speed.
 Inspired by the recent success of [benepar](https://github.com/nikitakit/self-attentive-parser) I wanted to revisit simple CKY for binarized trees.
 No neural networks here however, just MLE estimated rule probabilities.
 
-## Usage
+## Setup
 To obtain the data and grammar, type:
 ```bash
 cd grammar
@@ -15,6 +15,8 @@ To compile cky, type:
 cd cky
 python setup.py build_ext --inplace
 ```
+
+## Usage
 To run a quick test, type:
 ```bash
 ./main.py
@@ -66,12 +68,25 @@ The accuracy is much lower than what we should expect from this method based on 
 
 ## Requirements
 ```
+python>=3.6.0
 numpy
 cython
 nltk
 tqdm
+flake8
 PYEVALB
 ```
 
+## Contributing
+Working to make collaboration easier.
+### Run tests
+```
+Under construction
+```
+### Run linters
+Run `flake8` from the project directory for style guide enforcement. See the [documentaion](http://flake8.pycqa.org/en/latest/) for more info on flake8.
+
 ## TODO
 - [ ] Quite a number of test-sentences are not recognized, causing empty parses. Why?
+- [ ] Write a `setup.py` to make collaboration easier. See [this example](https://github.com/kmkurn/pytorch-rnng/blob/master/setup.py).
+- [ ] Add tests. See [this example](https://github.com/kmkurn/pytorch-rnng/tree/master/tests).
