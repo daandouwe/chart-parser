@@ -35,7 +35,8 @@ To parse 5 sentences from the dev-set, show predicted and gold parses, and compu
 ```
 
 ## Speed
-To speed up the CKY parsing, we use a (simple) cythonized version that is _almost_ a numpy implementation. We also provide a numpy cky. To use this, add the flag `--use-numpy`.
+To speed up the CKY parsing, we use a (simple) [cythonized version](../cky/_cky.px) that is _almost_ a numpy implementation.
+We also provide a [numpy cky](../cky/cky_numpy.py). To use this, add the flag `--use-numpy`.
 The speed difference is very significant: the cython CKY parses a 20-word sentence in ~1 second, the numpy CKY takes ~90 seconds.
 
 ## Accuracy
