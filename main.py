@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import os
 import argparse
+import time
 
 import numpy as np
 from nltk import tokenize, Tree
@@ -67,7 +68,9 @@ def main(args):
             # Demo: use a default test-sentence with gold tree.
             sentence, gold = SENT.split(), GOLD
         print('Parsing sentence...')
-        trees = parser(sentence)
+        start = time.time()
+        trees = parser(sentence, use_numpy=args.use_numpy)
+        elapsed = time.time() - start
         tree, score = trees[0]
         tree = cleanup_tree(tree)
         print(79*'*')
@@ -83,6 +86,8 @@ def main(args):
             print(f'Precision = {prec:.3f}')
             print(f'Recall = {recall:.3f}')
             print(f'F1 = {fscore:.3f}')
+            print()
+        print(f'Parse-time: {elapsed:.3f}s.')
 
 
 if __name__ == '__main__':
@@ -95,6 +100,7 @@ if __name__ == '__main__':
     argparser.add_argument('--result', type=str, default='result.txt')
     argparser.add_argument('--treefile', type=str, default='')
     argparser.add_argument('--evalb_dir', type=str, default='EVALB')
+    argparser.add_argument('--use-numpy', action='store_true')
     argparser.add_argument('-n', '--num-lines', type=int, default=-1)
     argparser.add_argument('-q', '--ignore-empty', type=int, default=1000, help='let evalb ignore empty lines')
     argparser.add_argument('-t', '--tokenize', action='store_true')
