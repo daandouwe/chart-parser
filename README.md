@@ -64,7 +64,7 @@ No crossing               =  20.35
 2 or less crossing        =  42.36
 Tagging accuracy          =  90.98
 ```
-The accuracy is much lower than what we should expect from this method based on [Klein and Manning 2003](http://delivery.acm.org/10.1145/1080000/1075150/p423-klein.pdf?ip=89.99.242.224&id=1075150&acc=OPEN&key=4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E6D218144511F3437&__acm__=1535987878_fdb08a617541f60b68baf3aff0d6ad99). Is there something awry?
+The accuracy is much lower than what we should expect from this method based on [Klein and Manning 2003](https://nlp.stanford.edu/manning/papers/unlexicalized-parsing.pdf). Is there something awry?
 
 ## Requirements
 ```
