@@ -15,10 +15,10 @@ from utils import cleanup_tree, show, SENT, GOLD
 def main(args):
     parser = Parser(args.grammar, args.expand_binaries)
     print(
-        'Grammar:',
-        'lex', parser.grammar.num_lex_rules,
-        'unary', parser.grammar.num_unary_rules,
-        'binary', parser.grammar.num_binary_rules
+        'Grammar rules:',
+        f'{parser.grammar.num_lex_rules:,} lexical,',
+        f'{parser.grammar.num_unary_rules:,} unary,',
+        f'{parser.grammar.num_binary_rules:,} binary.'
     )
 
     if args.infile:
