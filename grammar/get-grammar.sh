@@ -4,6 +4,7 @@ VOCAB_SIZE=10000
 
 mkdir -p data train dev test
 
+
 # Get trees from the benepar if needed.
 if [[ ! -e data/train.trees ]]; then
     echo 'Downloading tree data.'
@@ -32,12 +33,13 @@ if [[ ! -d ../EVALB ]]; then
 
 # Get treetools if needed.
 if [[ ! -d treetools ]]; then
-  echo 'Downloading treetools.'
+    echo 'Downloading treetools.'
     git clone https://github.com/wmaier/treetools.git
     cd treetools
+    # Edit code to not print all the substitutions to terminal!
     sed -i -e \
         's/print(substitute_terminals.terminals)/# print(substitute_terminals.terminals)/g' \
-        trees/transform.py  # Do not print all the substitutions to terminal!
+        trees/transform.py
     python setup.py install --user
     cd ..
 fi
@@ -47,8 +49,10 @@ fi
 echo 'Exracting tokens from trees.'
 treetools/treetools transform data/train.trees train.tokens \
     --src-format brackets --dest-format terminals
+
 treetools/treetools transform data/dev.trees dev.tokens \
     --src-format brackets --dest-format terminals
+
 treetools/treetools transform data/test.trees test.tokens \
     --src-format brackets --dest-format terminals
 
@@ -65,15 +69,15 @@ treetools/treetools transform data/train.trees train.processed \
 
 
 # Treetools messes with the spacing...
-./add-space.py train.processed
+python add-space.py train.processed
 
 
 # Use nltk to convert trees to two types of CNF: vanilla and markovized.
 echo 'Making vanilla CNF trees.'
-./make-cnf.py train.processed train/train.vanilla.processed --collapse-unaries
+python make-cnf.py train.processed train/train.vanilla.processed --collapse-unaries
 
 echo 'Making Markov CNF trees (v1:h1).'
-./make-cnf.py train.processed train/train.markov.processed --collapse-unaries --markov 1:1
+python make-cnf.py train.processed train/train.markov.processed --collapse-unaries --markov 1:1
 
 for name in train.vanilla train.markov; do
     echo 'Extracting grammar from' $name
@@ -83,7 +87,7 @@ for name in train.vanilla train.markov; do
         leftright --src-format brackets --dest-format lopar
 
     # Process the grammar output to our own format.
-    ./custom-format.py train/$name.gram train/$name.lex > train/$name.grammar
+    python custom-format.py train/$name.gram train/$name.lex > train/$name.grammar
 done
 
 

@@ -7,6 +7,7 @@ from utils import NUM, UNK, is_bracket, is_number, process
 
 
 def main(path, vocab_size):
+
     # Construct vocabulary.
     vocab = []
     with open(path) as fin:
@@ -20,6 +21,7 @@ def main(path, vocab_size):
     with open('vocab.json', 'w') as fp:
         json.dump(vocab, fp, indent=4)
     del counter
+
     # Get all neccessary substitutions using vocabulary.
     subs = []
     with open(path) as fin:
@@ -31,6 +33,7 @@ def main(path, vocab_size):
                     subs.append(f'{sent_id} {word_id} {UNK}')
                 elif not processed == word:
                     subs.append(f'{sent_id} {word_id} {processed}')
+
     print('\n'.join(subs))
 
 

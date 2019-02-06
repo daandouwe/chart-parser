@@ -5,6 +5,7 @@ import numpy as np
 from nltk import PCFG, Tree
 from tqdm import tqdm
 
+
 def main(args):
     trees = []
     if args.markov:
