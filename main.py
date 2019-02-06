@@ -94,7 +94,8 @@ def main(args):
 
         if not args.sent:
             gold = Tree.fromstring(gold)
-            prec, recall, fscore = parser.evalb(gold.pformat(margin=np.inf), tree.pformat(margin=np.inf))
+            prec, recall, fscore = parser.evalb(
+                gold.pformat(margin=np.inf), tree.pformat(margin=np.inf))
             print('Gold.')
             gold.pretty_print()
             print(f'Precision = {prec:.3f}')
