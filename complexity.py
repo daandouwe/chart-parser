@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 
 from parser import Parser
 
+
 SENT = "the cat ".split()
 
 

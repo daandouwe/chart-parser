@@ -7,10 +7,12 @@ from nltk.tree import Tree
 
 from grammar.utils import NUM, UNK, is_bracket, is_number, process
 
+
 TOP = 'TOP'
 
 SENT = 'The bill intends to restrict the RTC to Treasury borrowings only , ' + \
        'unless the agency receives specific congressional authorization .'
+
 GOLD = '(TOP (S (NP (DT The) (NN bill)) (VP (VBZ intends) (S (VP (TO to) (VP ' + \
        '(VB restrict) (NP (DT the) (NNP RTC)) (PP (TO to) (NP (NNP Treasury) ' + \
        '(NNS borrowings) (RB only)))))) (, ,) (SBAR (IN unless) (S (NP (DT the) ' + \
@@ -28,8 +30,9 @@ def process_sentence(sentence, vocab):
 def cleanup_tree(tree):
     clean_label = tree.label().split('|')[0]  # If top node is like VP|<S-PP-,-SBAR>
     tree.set_label(clean_label)
-    tree.un_chomsky_normal_form()  # un-binarize.
-    # Add TOP label (we don't handle unaries in our CKY so TOP -> X is never recognized.)
+    tree.un_chomsky_normal_form()  # un-binarize the tree.
+    # Add TOP label (we don't handle unaries in our CKY so TOP -> X is never recognized, instead
+    # we implicitly consider all rules TOP -> X in the grammar and then accept any label. )
     tree = Tree(TOP, [tree])
     return tree
 

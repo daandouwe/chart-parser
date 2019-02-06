@@ -5,7 +5,19 @@ from tqdm import tqdm
 
 
 class PCFG:
-    def __init__(self, n2i, i2n, w2i, i2w, lex, unary, binary, lex_prob, unary_prob, binary_prob):
+    def __init__(
+            self,
+            n2i,
+            i2n,
+            w2i,
+            i2w,
+            lex,
+            unary,
+            binary,
+            lex_prob,
+            unary_prob,
+            binary_prob
+    ):
         self.n2i = n2i
         self.i2n = i2n
         self.w2i = w2i
@@ -21,12 +33,15 @@ class PCFG:
         nlines = sum(1 for _ in open(path))
         nonterminals, vocab = set(), set()
         lex_rules, unary_rules, binary_rules = set(), set(), set()
+
         print(f'Reading grammar from {path}...')
+
         with open(path) as fin:
             for line in tqdm(fin, total=nlines):
                 line = line.strip()
                 if not line:
                     continue
+
                 fields = line.split()
                 if len(fields) == 3:
                     lhs, rhs, prob = fields[0], fields[1], float(fields[2])
@@ -55,7 +70,9 @@ class PCFG:
         if expand_binaries:
             print('Expanding binary rules...')
             print('Before: lex', len(lex_rules), 'unary', len(unary_rules), 'binary', len(binary_rules))
+
             binary_rules = expand_binaries_with_unaries(binary_rules, unary_rules)
+
             print('Before: lex', len(lex_rules), 'unary', len(unary_rules), 'binary', len(binary_rules))
 
         lex_rules, unary_rules, binary_rules = sorted(lex_rules), sorted(unary_rules), sorted(binary_rules)
@@ -72,10 +89,12 @@ class PCFG:
             lhs, rhs, prob = rule
             lex[i] = n2i[lhs], w2i[rhs]
             lex_prob[i] = prob
+
         for i, rule in enumerate(unary_rules):
             lhs, rhs, prob = rule
             unary[i] = n2i[lhs], n2i[rhs]
             unary_prob[i] = prob
+
         for i, rule in enumerate(binary_rules):
             lhs, rhs_a, rhs_b, prob = rule
             binary[i] = n2i[lhs], n2i[rhs_a], n2i[rhs_b]
