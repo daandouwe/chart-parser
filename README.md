@@ -67,8 +67,8 @@ No crossing               =  42.59
 Tagging accuracy          =  93.62
 ```
 The accuracy is around 8-10 points lower than what we should expect from this method based on [Klein and Manning 2003](https://nlp.stanford.edu/manning/papers/unlexicalized-parsing.pdf). Possible reasons:
-- [ ] We use a vocabulary of 10,000 words and very basic unking. Maybe more elaborate unking, or a larger vocabulary?
-- [ ] We do not Markovize the lexical labels. The paper seems to suggest that they do.
+* We use a vocabulary of 10,000 words and very basic unking. Maybe more elaborate unking, or a larger vocabulary?
+* We do not Markovize the lexical labels. The paper seems to suggest that they do.
 
 ## Requirements
 ```
