@@ -91,5 +91,6 @@ Under construction
 Run `flake8` from the project directory for style guide enforcement. See the [documentaion](http://flake8.pycqa.org/en/latest/) for more info on flake8.
 
 ## TODO
+- [ ] More elaborate unking scheme (e.g. `UNK-DASH-ity`)
 - [ ] Write a `setup.py` to make collaboration easier. See [this example](https://github.com/kmkurn/pytorch-rnng/blob/master/setup.py).
 - [ ] Add tests. See [this example](https://github.com/kmkurn/pytorch-rnng/tree/master/tests).
