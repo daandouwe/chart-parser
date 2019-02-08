@@ -3,6 +3,8 @@ from collections import defaultdict
 import numpy as np
 from tqdm import tqdm
 
+from utils import TOP
+
 
 class PCFG:
     def __init__(
@@ -14,9 +16,11 @@ class PCFG:
             lex,
             unary,
             binary,
+            top,
             lex_prob,
             unary_prob,
-            binary_prob
+            binary_prob,
+            top_prob
     ):
         self.n2i = n2i
         self.i2n = i2n
@@ -25,14 +29,16 @@ class PCFG:
         self.lex = lex
         self.unary = unary
         self.binary = binary
+        self.top = top
         self.lex_prob = lex_prob
         self.unary_prob = unary_prob
         self.binary_prob = binary_prob
+        self.top_prob = top_prob
 
     def from_file(path, expand_binaries=False):
         nlines = sum(1 for _ in open(path))
         nonterminals, vocab = set(), set()
-        lex_rules, unary_rules, binary_rules = set(), set(), set()
+        lex_rules, unary_rules, binary_rules, top_rules = set(), set(), set(), set()
 
         print(f'Reading grammar from {path}...')
 
@@ -53,6 +59,8 @@ class PCFG:
                     else:
                         nonterminals.add(rhs)
                         unary_rules.add((lhs, rhs, prob))
+                        if lhs == TOP:
+                            top_rules.add((lhs, rhs, prob))
                 elif len(fields) == 4:
                     lhs, rhs_a, rhs_b, prob = fields[0], fields[1], fields[2], float(fields[3])
                     nonterminals.add(lhs)
@@ -64,6 +72,7 @@ class PCFG:
 
         n2i = dict((nt, i) for i, nt in enumerate(sorted(nonterminals)))
         w2i = dict((word, i) for i, word in enumerate(sorted(vocab)))
+
         i2n = dict((i, nt) for nt, i in n2i.items())
         i2w = dict((i, word) for word, i in w2i.items())
 
@@ -75,15 +84,18 @@ class PCFG:
 
             print('Before: lex', len(lex_rules), 'unary', len(unary_rules), 'binary', len(binary_rules))
 
-        lex_rules, unary_rules, binary_rules = sorted(lex_rules), sorted(unary_rules), sorted(binary_rules)
+        lex_rules, unary_rules, binary_rules, top_rules = (
+            sorted(lex_rules), sorted(unary_rules), sorted(binary_rules), sorted(top_rules))
 
         lex = np.zeros((len(lex_rules), 2), dtype=np.int32)
         unary = np.zeros((len(unary_rules), 2), dtype=np.int32)
         binary = np.zeros((len(binary_rules), 3), dtype=np.int32)
+        top = np.zeros((len(top_rules), 2), dtype=np.int32)
 
         lex_prob = np.zeros(len(lex_rules), dtype=np.float32)
         unary_prob = np.zeros(len(unary_rules), dtype=np.float32)
         binary_prob = np.zeros(len(binary_rules), dtype=np.float32)
+        top_prob = np.zeros(len(top_rules), dtype=np.float32)
 
         for i, rule in enumerate(lex_rules):
             lhs, rhs, prob = rule
@@ -100,7 +112,12 @@ class PCFG:
             binary[i] = n2i[lhs], n2i[rhs_a], n2i[rhs_b]
             binary_prob[i] = prob
 
-        return PCFG(n2i, i2n, w2i, i2w, lex, unary, binary, lex_prob, unary_prob, binary_prob)
+        for i, rule in enumerate(top_rules):
+            lhs, rhs, prob = rule
+            top[i] = n2i[lhs], n2i[rhs]
+            top_prob[i] = prob
+
+        return PCFG(n2i, i2n, w2i, i2w, lex, unary, binary, top, lex_prob, unary_prob, binary_prob, top_prob)
 
     def __len__(self):
         return self.unary.shape[0] + self.binary.shape[0]
@@ -127,6 +144,11 @@ class PCFG:
         lhs, rhs_a, rhs_b = self.binary[index]
         prob = self.binary_prob[index]
         return self.i2n[lhs], self.i2n[rhs_a], self.i2n[rhs_b], prob
+
+    def top_rule(self, index):
+        lhs, rhs = self.top[index]
+        prob = self.top_prob[index]
+        return self.i2n[lhs], self.i2n[rhs], prob
 
     def format_lex_rule(self, index):
         return '{} -> {} | {}'.format(*self.lex_rule(index))
@@ -186,6 +208,11 @@ class PCFG:
     def lex_rules(self):
         """The list of unary rules in the grammar"""
         return [self.lex_rule(i) for i in range(self.lex.shape[0])]
+
+    @property
+    def top_rules(self):
+        """The list of unary rules in the grammar"""
+        return [self.top_rule(i) for i in range(self.top.shape[0])]
 
 
 def expand_binaries_with_unaries(binary_rules, unary_rules):

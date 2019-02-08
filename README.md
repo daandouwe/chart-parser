@@ -1,44 +1,43 @@
 # Chart parser
-A simple chart parser with a cythonized CKY for speed.
+A simple chart parser in python with a CKY in cython for speed.
 
-Inspired by the recent success of [benepar](https://github.com/nikitakit/self-attentive-parser) I wanted to revisit simple CKY for binarized trees.
-No neural networks here however, just MLE estimated rule probabilities.
+Inspired by the recent success of [benepar](https://github.com/nikitakit/self-attentive-parser) and the [minimal-span parser](https://github.com/mitchellstern/minimal-span-parser) I wanted to revisit chart parsing with CKY on binarized trees. No neural networks here however, just rule probabilities estimated by maximum likelihood.
 
 ## Setup
-To obtain the data and grammar, type:
+To obtain the data and grammar, use:
 ```bash
 cd grammar
 ./get-grammar.sh
 ```
-To compile cky, type:
+To compile cky, use:
 ```bash
 cd cky
 python setup.py build_ext --inplace
 ```
 
 ## Usage
-To run a quick test, type:
+To run a quick test, use:
 ```bash
-./main.py
+python main.py
 ```
-To parse a sentence, type:
+To parse a sentence, use:
 ```bash
-./main.py --sent "The horse raced past the barn fell."
+python main.py --sent "The horse raced past the barn fell."
 ```
-To parse the dev-set and compute f-score, type:
+To parse the dev-set and compute f-score, use:
 ```bash
-./main.py --infile grammar/dev/dev.tokens --outfile grammar/dev/dev.pred.trees --goldfile grammar/data/dev/dev.trees
+python main.py --infile grammar/dev/dev.tokens --outfile grammar/dev/dev.pred.trees --goldfile grammar/data/dev.trees
 ```
-Optionally, this can be done in parallel by adding `--parallel`.
+This can be done in parallel by adding `--parallel`.
 
-To parse 5 sentences from the dev-set, show predicted and gold parses, and compute their individual f-scores, type:
+To parse 5 sentences from the dev-set, show predicted and gold parses, and compute their individual f-scores, use:
 ```bash
-./main.py --treefile grammar/data/dev.trees -n 5
+python main.py --treefile grammar/data/dev.trees -n 5
 ```
 
-The default grammar used is the vanilla CNF. To use the Markovized grammar, type:
+The default grammar used is the vanilla CNF. To use the Markovized grammar, use:
 ```bash
-./main.py --grammar grammar/train/train.markov.grammar
+python main.py --grammar grammar/train/train.markov.grammar
 ```
 
 ## Speed
@@ -51,20 +50,25 @@ Parsing the entire development set in parallel with 8 processes (for my quad-cor
 ## Accuracy
 The Markovized CNF on the development set:
 ```
-Number of sentence        =   1697
-Number of Error sentence  =     80
+=== Summary ===
+
+-- All --
+Number of sentence        =   1700
+Number of Error sentence  =      0
 Number of Skip  sentence  =      0
-Number of Valid sentence  =   1617
-Bracketing Recall         =  55.25
-Bracketing Precision      =  49.66
-Bracketing FMeasure       =  52.31
-Complete match            =   2.78
-Average crossing          =   4.28
-No crossing               =  20.35
-2 or less crossing        =  42.36
-Tagging accuracy          =  90.98
+Number of Valid sentence  =   1700
+Bracketing Recall         =  77.90
+Bracketing Precision      =  76.39
+Bracketing FMeasure       =  77.13
+Complete match            =  14.35
+Average crossing          =   2.32
+No crossing               =  42.59
+2 or less crossing        =  67.76
+Tagging accuracy          =  93.62
 ```
-The accuracy is much lower than what we should expect from this method based on [Klein and Manning 2003](https://nlp.stanford.edu/manning/papers/unlexicalized-parsing.pdf). Is there something awry?
+The accuracy is around 8-10 points lower than what we should expect from this method based on [Klein and Manning 2003](https://nlp.stanford.edu/manning/papers/unlexicalized-parsing.pdf). Possible reasons:
+- [ ] We use a vocabulary of 10,000 words and very basic unking. Maybe more elaborate unking, or a larger vocabulary?
+- [ ] We do not Markovize the lexical labels. The paper seems to suggest that they do.
 
 ## Requirements
 ```
@@ -87,6 +91,5 @@ Under construction
 Run `flake8` from the project directory for style guide enforcement. See the [documentaion](http://flake8.pycqa.org/en/latest/) for more info on flake8.
 
 ## TODO
-- [ ] Quite a number of test-sentences are not recognized, causing empty parses. Why?
 - [ ] Write a `setup.py` to make collaboration easier. See [this example](https://github.com/kmkurn/pytorch-rnng/blob/master/setup.py).
 - [ ] Add tests. See [this example](https://github.com/kmkurn/pytorch-rnng/tree/master/tests).

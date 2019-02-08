@@ -9,10 +9,11 @@ from nltk import tokenize, Tree
 from parser import Parser
 from predict import predict_from_trees, predict_from_file, predict_from_file_parallel
 from evaluate import evalb
-from utils import cleanup_tree, show, SENT, GOLD
+from utils import show, SENT, GOLD
 
 
 def main(args):
+
     parser = Parser(args.grammar, args.expand_binaries)
     print(
         'Grammar rules:',
@@ -81,10 +82,9 @@ def main(args):
 
         print('Parsing sentence...')
         start = time.time()
-        trees = parser(sentence, use_numpy=args.use_numpy)
+        tree, score = parser(sentence, use_numpy=args.use_numpy)
         elapsed = time.time() - start
-        tree, score = trees[0]
-        tree = cleanup_tree(tree)
+        tree.un_chomsky_normal_form()
 
         print('Predicted.')
         print()
@@ -123,7 +123,7 @@ if __name__ == '__main__':
     argparser.add_argument('--evalb_dir', type=str, default='EVALB')
     argparser.add_argument('--use-numpy', action='store_true')
     argparser.add_argument('--perplexity', action='store_true')
-    argparser.add_argument('-n', '--num-lines', type=int, default=-1)
+    argparser.add_argument('-n', '--num-lines', type=int, default=None)
     argparser.add_argument('-q', '--ignore-empty', type=int, default=1000, help='let evalb ignore empty lines')
     argparser.add_argument('-t', '--tokenize', action='store_true')
     argparser.add_argument('-p', '--parallel', action='store_true')

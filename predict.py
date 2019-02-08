@@ -5,22 +5,21 @@ from nltk import tokenize, Tree
 from tqdm import tqdm
 
 from parser import Parser
-from utils import cleanup_tree, ceil_div
+from utils import ceil_div
 
 
 def predict_from_trees(parser, infile):
     with open(infile) as fin:
         trees = [Tree.fromstring(line) for line in fin.readlines()]
     for gold in trees:
-        trees = parser(gold.leaves(), verbose=False)
-        if not trees:  # TODO: why empty trees?
-            yield 0, 0, 0
-        else:
-            pred, score = trees[0]
-            pred = cleanup_tree(pred)
-            gold_tree, pred_tree = gold.pformat(margin=np.inf), pred.pformat(margin=np.inf)
-            prec, recall, fscore = parser.evalb(gold_tree, pred_tree)
-            yield gold, pred, prec, recall, fscore
+        pred, score = parser(gold.leaves(), verbose=False)
+        # if not trees:  # TODO: why empty trees?
+            # yield 0, 0, 0
+        # else:
+        pred.un_chomsky_normal_form()
+        gold_tree, pred_tree = gold.pformat(margin=np.inf), pred.pformat(margin=np.inf)
+        prec, recall, fscore = parser.evalb(gold_tree, pred_tree)
+        yield gold, pred, prec, recall, fscore
 
 
 def predict_from_file(parser, infile, max_lines=None, tokenize=False):
@@ -34,15 +33,14 @@ def predict_from_file(parser, infile, max_lines=None, tokenize=False):
     failed = 0
     try:
         for i, sentence in enumerate(tqdm(sentences)):
-            trees = parser(sentence, verbose=False)
-            if not trees:
-                predicted.append('')  # TODO: why empty trees?
-                failed += 1
-            else:
-                tree, score = trees[0]
-                tree = cleanup_tree(tree)
-                tree = tree.pformat(margin=np.inf)
-                predicted.append(tree)
+            tree, score = parser(sentence, verbose=False)
+            # if not trees:
+                # predicted.append('')  # TODO: why empty trees?
+                # failed += 1
+            # else:
+            tree.un_chomsky_normal_form()
+            tree = tree.pformat(margin=np.inf)
+            predicted.append(tree)
     except KeyboardInterrupt:
         print(f'Prediction interrupted at sentence {i}.')
     if failed > 0:
@@ -60,15 +58,14 @@ def predict_from_file_parallel(parser, infile, max_lines=None, tokenize=False):
         if rank == 0:
             sentences = tqdm(sentences)
         for sentence in sentences:
-            trees = parser(sentence, verbose=False)
-            if not trees:
-                predicted.append('')  # TODO: why empty trees?
-                failed += 1
-            else:
-                tree, score = trees[0]
-                tree = cleanup_tree(tree)
-                tree = tree.pformat(margin=np.inf)
-                predicted.append(tree)
+            tree, score = parser(sentence, verbose=False)
+            # if not trees:
+                # predicted.append('')  # TODO: why empty trees?
+                # failed += 1
+            # else:
+            tree.un_chomsky_normal_form()
+            tree = tree.pformat(margin=np.inf)
+            predicted.append(tree)
         return_dict[rank] = predicted
         failed_dict[rank] = failed
 
@@ -81,6 +78,7 @@ def predict_from_file_parallel(parser, infile, max_lines=None, tokenize=False):
         sentences = sentences if max_lines == None else sentences[:max_lines]
     chunk_size = ceil_div(len(sentences), size)
     partitioned = [sentences[i:i+chunk_size] for i in range(0, len(sentences), chunk_size)]  # TODO: we lose some sentences here...
+
     # Spawn processes.
     manager = mp.Manager()
     return_dict = manager.dict()  # To return trees.

@@ -27,16 +27,6 @@ def process_sentence(sentence, vocab):
     return sentence
 
 
-def cleanup_tree(tree):
-    clean_label = tree.label().split('|')[0]  # If top node is like VP|<S-PP-,-SBAR>
-    tree.set_label(clean_label)
-    tree.un_chomsky_normal_form()  # un-binarize the tree.
-    # Add TOP label (we don't handle unaries in our CKY so TOP -> X is never recognized, instead
-    # we implicitly consider all rules TOP -> X in the grammar and then accept any label. )
-    tree = Tree(TOP, [tree])
-    return tree
-
-
 def show(path):
     """Opens a textfile with a text editor."""
     if platform.system() == 'Darwin':
