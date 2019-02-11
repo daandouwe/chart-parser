@@ -48,7 +48,7 @@ The speed difference is very significant: the cython CKY parses a 20-word senten
 Parsing the entire development set in parallel with 8 processes (for my quad-core machine) takes around 15 minutes.
 
 ## Accuracy
-The Markovized CNF gives these results on the development set:
+The Markovized CNF gives these results on the test set:
 ```
 === Summary ===
 
