@@ -1,0 +1,1501 @@
+name	index	pos-perplexity	neg-perplexity	correct	pos-sentence-processed	neg-sentence-processed
+simple_agrmt	0	576.55	827.02	1	the author laughs .	the author laugh .
+simple_agrmt	1	195.17	230.11	1	the author UNK-LC-s .	the author UNK-LC .
+simple_agrmt	2	195.17	983.17	1	the author UNK-LC-s .	the author smile .
+simple_agrmt	3	333.3	370.42	1	the author is tall .	the author are tall .
+simple_agrmt	4	173.34	192.79	1	the author is old .	the author are old .
+simple_agrmt	5	209.46	235.14	1	the author is young .	the author are young .
+simple_agrmt	6	192.98	213.5	1	the author is short .	the author are short .
+simple_agrmt	7	521.38	747.86	1	the pilot laughs .	the pilot laugh .
+simple_agrmt	8	176.49	208.07	1	the pilot UNK-LC-s .	the pilot UNK-LC .
+simple_agrmt	9	176.49	889.02	1	the pilot UNK-LC-s .	the pilot smile .
+simple_agrmt	10	307.53	341.78	1	the pilot is tall .	the pilot are tall .
+simple_agrmt	11	159.94	177.89	1	the pilot is old .	the pilot are old .
+simple_agrmt	12	193.27	216.96	1	the pilot is young .	the pilot are young .
+simple_agrmt	13	178.06	197.0	1	the pilot is short .	the pilot are short .
+simple_agrmt	14	973.97	1396.9	1	the surgeon laughs .	the surgeon laugh .
+simple_agrmt	15	329.66	388.18	1	the surgeon UNK-LC-s .	the surgeon UNK-LC .
+simple_agrmt	16	329.66	1660.61	1	the surgeon UNK-LC-s .	the surgeon smile .
+simple_agrmt	17	507.0	563.46	1	the surgeon is tall .	the surgeon are tall .
+simple_agrmt	0	263.67	293.26	1	the surgeon is old .	the surgeon are old .
+simple_agrmt	1	318.62	357.68	1	the surgeon is young .	the surgeon are young .
+simple_agrmt	2	293.55	324.77	1	the surgeon is short .	the surgeon are short .
+simple_agrmt	3	576.55	827.02	1	the farmer laughs .	the farmer laugh .
+simple_agrmt	4	195.17	230.11	1	the farmer UNK-LC-s .	the farmer UNK-LC .
+simple_agrmt	5	195.17	983.17	1	the farmer UNK-LC-s .	the farmer smile .
+simple_agrmt	6	333.3	370.42	1	the farmer is tall .	the farmer are tall .
+simple_agrmt	7	173.34	192.79	1	the farmer is old .	the farmer are old .
+simple_agrmt	8	209.46	235.14	1	the farmer is young .	the farmer are young .
+simple_agrmt	9	192.98	213.5	1	the farmer is short .	the farmer are short .
+simple_agrmt	10	366.87	526.26	1	the manager laughs .	the manager laugh .
+simple_agrmt	11	124.19	146.43	1	the manager UNK-LC-s .	the manager UNK-LC .
+simple_agrmt	12	124.19	625.62	1	the manager UNK-LC-s .	the manager smile .
+simple_agrmt	13	232.16	258.02	1	the manager is tall .	the manager are tall .
+simple_agrmt	14	120.74	134.29	1	the manager is old .	the manager are old .
+simple_agrmt	15	145.9	163.79	1	the manager is young .	the manager are young .
+simple_agrmt	16	134.42	148.71	1	the manager is short .	the manager are short .
+simple_agrmt	17	437.12	627.02	1	the customer laughs .	the customer laugh .
+simple_agrmt	0	147.97	174.48	1	the customer UNK-LC-s .	the customer UNK-LC .
+simple_agrmt	1	147.97	745.41	1	the customer UNK-LC-s .	the customer smile .
+simple_agrmt	2	267.08	296.83	1	the customer is tall .	the customer are tall .
+simple_agrmt	3	138.9	154.49	1	the customer is old .	the customer are old .
+simple_agrmt	4	167.85	188.43	1	the customer is young .	the customer are young .
+simple_agrmt	5	154.64	171.09	1	the customer is short .	the customer are short .
+simple_agrmt	6	307.26	440.74	1	the officer laughs .	the officer laugh .
+simple_agrmt	7	104.01	122.63	1	the officer UNK-LC-s .	the officer UNK-LC .
+simple_agrmt	8	104.01	523.96	1	the officer UNK-LC-s .	the officer smile .
+simple_agrmt	9	201.45	223.89	1	the officer is tall .	the officer are tall .
+simple_agrmt	10	104.77	116.53	1	the officer is old .	the officer are old .
+simple_agrmt	11	126.6	142.12	1	the officer is young .	the officer are young .
+simple_agrmt	12	116.64	129.04	1	the officer is short .	the officer are short .
+simple_agrmt	13	832.66	1194.41	1	the teacher laughs .	the teacher laugh .
+simple_agrmt	14	281.87	332.36	1	the teacher UNK-LC-s .	the teacher UNK-LC .
+simple_agrmt	15	281.87	1419.93	1	the teacher UNK-LC-s .	the teacher smile .
+simple_agrmt	16	447.24	497.06	1	the teacher is tall .	the teacher are tall .
+simple_agrmt	17	232.6	258.7	1	the teacher is old .	the teacher are old .
+simple_agrmt	0	281.07	315.53	1	the teacher is young .	the teacher are young .
+simple_agrmt	1	258.96	286.49	1	the teacher is short .	the teacher are short .
+simple_agrmt	2	699.41	1002.89	1	the senator laughs .	the senator laugh .
+simple_agrmt	3	236.68	278.07	1	the senator UNK-LC-s .	the senator UNK-LC .
+simple_agrmt	4	236.68	1192.16	1	the senator UNK-LC-s .	the senator smile .
+simple_agrmt	5	389.01	432.33	1	the senator is tall .	the senator are tall .
+simple_agrmt	6	202.31	225.01	1	the senator is old .	the senator are old .
+simple_agrmt	7	244.47	274.44	1	the senator is young .	the senator are young .
+simple_agrmt	8	225.24	249.18	1	the senator is short .	the senator are short .
+simple_agrmt	9	445.68	639.3	1	the consultant laughs .	the consultant laugh .
+simple_agrmt	10	150.87	177.89	1	the consultant UNK-LC-s .	the consultant UNK-LC .
+simple_agrmt	11	150.87	760.01	1	the consultant UNK-LC-s .	the consultant smile .
+simple_agrmt	12	271.26	301.47	1	the consultant is tall .	the consultant are tall .
+simple_agrmt	13	141.07	156.91	1	the consultant is old .	the consultant are old .
+simple_agrmt	14	170.47	191.37	1	the consultant is young .	the consultant are young .
+simple_agrmt	15	157.06	173.76	1	the consultant is short .	the consultant are short .
+simple_agrmt	16	1301.75	907.39	0	the authors laugh .	the authors laughs .
+simple_agrmt	17	362.28	307.16	0	the authors UNK-LC .	the authors UNK-LC-s .
+simple_agrmt	0	1547.72	307.16	0	the authors smile .	the authors UNK-LC-s .
+simple_agrmt	1	532.41	479.09	0	the authors are tall .	the authors is tall .
+simple_agrmt	2	277.1	249.16	0	the authors are old .	the authors is old .
+simple_agrmt	3	337.97	301.09	0	the authors are young .	the authors is young .
+simple_agrmt	4	306.87	277.4	0	the authors are short .	the authors is short .
+simple_agrmt	5	727.9	507.39	0	the pilots laugh .	the pilots laughs .
+simple_agrmt	6	202.57	171.76	0	the pilots UNK-LC .	the pilots UNK-LC-s .
+simple_agrmt	7	865.45	171.76	0	the pilots smile .	the pilots UNK-LC-s .
+simple_agrmt	8	334.42	300.92	0	the pilots are tall .	the pilots is tall .
+simple_agrmt	9	174.05	156.5	0	the pilots are old .	the pilots is old .
+simple_agrmt	10	212.28	189.12	0	the pilots are young .	the pilots is young .
+simple_agrmt	11	192.75	174.24	0	the pilots are short .	the pilots is short .
+simple_agrmt	12	371.06	259.09	0	the UNK-LC-s laugh .	the UNK-LC-s laughs .
+simple_agrmt	13	100.46	87.06	0	the UNK-LC-s UNK-LC .	the UNK-LC-s UNK-LC-s .
+simple_agrmt	14	440.47	87.06	0	the UNK-LC-s smile .	the UNK-LC-s UNK-LC-s .
+simple_agrmt	15	195.31	175.74	0	the UNK-LC-s are tall .	the UNK-LC-s is tall .
+simple_agrmt	16	101.65	91.39	0	the UNK-LC-s are old .	the UNK-LC-s is old .
+simple_agrmt	17	123.98	110.44	0	the UNK-LC-s are young .	the UNK-LC-s is young .
+simple_agrmt	0	112.57	101.75	0	the UNK-LC-s are short .	the UNK-LC-s is short .
+simple_agrmt	1	874.98	610.06	0	the farmers laugh .	the farmers laughs .
+simple_agrmt	2	242.95	206.47	0	the farmers UNK-LC .	the farmers UNK-LC-s .
+simple_agrmt	3	1040.25	206.47	0	the farmers smile .	the farmers UNK-LC-s .
+simple_agrmt	4	387.54	348.73	0	the farmers are tall .	the farmers is tall .
+simple_agrmt	5	201.7	181.36	0	the farmers are old .	the farmers is old .
+simple_agrmt	6	246.01	219.16	0	the farmers are young .	the farmers is young .
+simple_agrmt	7	223.37	201.91	0	the farmers are short .	the farmers is short .
+simple_agrmt	8	669.47	466.65	0	the managers laugh .	the managers laughs .
+simple_agrmt	9	186.31	157.97	0	the managers UNK-LC .	the managers UNK-LC-s .
+simple_agrmt	10	795.97	157.97	0	the managers smile .	the managers UNK-LC-s .
+simple_agrmt	11	312.76	281.44	0	the managers are tall .	the managers is tall .
+simple_agrmt	12	162.78	146.37	0	the managers are old .	the managers is old .
+simple_agrmt	13	198.54	176.87	0	the managers are young .	the managers is young .
+simple_agrmt	14	180.27	162.95	0	the managers are short .	the managers is short .
+simple_agrmt	15	634.4	442.21	0	the customers laugh .	the customers laughs .
+simple_agrmt	16	176.56	149.7	0	the customers UNK-LC .	the customers UNK-LC-s .
+simple_agrmt	17	754.28	149.7	0	the customers smile .	the customers UNK-LC-s .
+simple_agrmt	0	299.58	269.58	0	the customers are tall .	the customers is tall .
+simple_agrmt	1	155.92	140.2	0	the customers are old .	the customers is old .
+simple_agrmt	2	190.17	169.42	0	the customers are young .	the customers is young .
+simple_agrmt	3	172.67	156.09	0	the customers are short .	the customers is short .
+simple_agrmt	4	981.76	684.34	0	the officers laugh .	the officers laughs .
+simple_agrmt	5	273.22	231.66	0	the officers UNK-LC .	the officers UNK-LC-s .
+simple_agrmt	6	1167.27	231.66	0	the officers smile .	the officers UNK-LC-s .
+simple_agrmt	7	424.85	382.3	0	the officers are tall .	the officers is tall .
+simple_agrmt	8	221.12	198.82	0	the officers are old .	the officers is old .
+simple_agrmt	9	269.69	240.26	0	the officers are young .	the officers is young .
+simple_agrmt	10	244.87	221.35	0	the officers are short .	the officers is short .
+simple_agrmt	11	1126.37	785.13	0	the teachers laugh .	the teachers laughs .
+simple_agrmt	12	313.48	265.78	0	the teachers UNK-LC .	the teachers UNK-LC-s .
+simple_agrmt	13	1339.22	265.78	0	the teachers smile .	the teachers UNK-LC-s .
+simple_agrmt	14	474.21	426.72	0	the teachers are tall .	the teachers is tall .
+simple_agrmt	15	246.81	221.92	0	the teachers are old .	the teachers is old .
+simple_agrmt	16	301.02	268.17	0	the teachers are young .	the teachers is young .
+simple_agrmt	17	273.32	247.07	0	the teachers are short .	the teachers is short .
+simple_agrmt	0	903.38	629.73	0	the senators laugh .	the senators laughs .
+simple_agrmt	1	251.32	213.17	0	the senators UNK-LC .	the senators UNK-LC-s .
+simple_agrmt	2	1074.07	213.17	0	the senators smile .	the senators UNK-LC-s .
+simple_agrmt	3	397.5	357.69	0	the senators are tall .	the senators is tall .
+simple_agrmt	4	206.88	186.02	0	the senators are old .	the senators is old .
+simple_agrmt	5	252.33	224.79	0	the senators are young .	the senators is young .
+simple_agrmt	6	229.11	207.1	0	the senators are short .	the senators is short .
+simple_agrmt	7	908.64	633.41	0	the consultants laugh .	the consultants laughs .
+simple_agrmt	8	252.72	214.41	0	the consultants UNK-LC .	the consultants UNK-LC-s .
+simple_agrmt	9	1080.31	214.41	0	the consultants smile .	the consultants UNK-LC-s .
+simple_agrmt	10	399.36	359.36	0	the consultants are tall .	the consultants is tall .
+simple_agrmt	11	207.85	186.89	0	the consultants are old .	the consultants is old .
+simple_agrmt	12	253.51	225.84	0	the consultants are young .	the consultants is young .
+simple_agrmt	13	230.18	208.07	0	the consultants are short .	the consultants is short .
+simple_npi_anim	0	927.69	955.41	1	no authors have ever been popular .	most authors have ever been popular .
+simple_npi_anim	1	1055.46	1087.0	1	no authors have ever been famous .	most authors have ever been famous .
+simple_npi_anim	2	791.31	814.94	1	no authors have ever had children .	most authors have ever had children .
+simple_npi_anim	3	665.53	688.13	1	no pilots have ever been popular .	most pilots have ever been popular .
+simple_npi_anim	4	757.19	782.91	1	no pilots have ever been famous .	most pilots have ever been famous .
+simple_npi_anim	5	567.69	586.96	1	no pilots have ever had children .	most pilots have ever had children .
+simple_npi_anim	6	453.28	473.21	1	no UNK-LC-s have ever been popular .	most UNK-LC-s have ever been popular .
+simple_npi_anim	7	515.71	538.39	1	no UNK-LC-s have ever been famous .	most UNK-LC-s have ever been famous .
+simple_npi_anim	8	386.63	403.62	1	no UNK-LC-s have ever had children .	most UNK-LC-s have ever had children .
+simple_npi_anim	9	739.5	773.92	1	no farmers have ever been popular .	most farmers have ever been popular .
+simple_npi_anim	10	841.35	880.51	1	no farmers have ever been famous .	most farmers have ever been famous .
+simple_npi_anim	11	630.78	660.13	1	no farmers have ever had children .	most farmers have ever had children .
+simple_npi_anim	12	634.44	655.08	1	no managers have ever been popular .	most managers have ever been popular .
+simple_npi_anim	13	721.82	745.31	1	no managers have ever been famous .	most managers have ever been famous .
+simple_npi_anim	14	541.17	558.77	1	no managers have ever had children .	most managers have ever had children .
+simple_npi_anim	0	615.22	633.6	1	no customers have ever been popular .	most customers have ever been popular .
+simple_npi_anim	1	699.95	720.86	1	no customers have ever been famous .	most customers have ever been famous .
+simple_npi_anim	2	524.77	540.44	1	no customers have ever had children .	most customers have ever had children .
+simple_npi_anim	3	789.57	813.17	1	no officers have ever been popular .	most officers have ever been popular .
+simple_npi_anim	4	898.32	925.16	1	no officers have ever been famous .	most officers have ever been famous .
+simple_npi_anim	5	673.49	693.61	1	no officers have ever had children .	most officers have ever had children .
+simple_npi_anim	6	854.18	889.1	1	no teachers have ever been popular .	most teachers have ever been popular .
+simple_npi_anim	7	971.83	1011.55	1	no teachers have ever been famous .	most teachers have ever been famous .
+simple_npi_anim	8	728.6	758.38	1	no teachers have ever had children .	most teachers have ever had children .
+simple_npi_anim	9	752.99	780.73	1	no senators have ever been popular .	most senators have ever been popular .
+simple_npi_anim	10	856.69	888.26	1	no senators have ever been famous .	most senators have ever been famous .
+simple_npi_anim	11	642.28	665.94	1	no senators have ever had children .	most senators have ever had children .
+simple_npi_anim	12	755.47	781.21	1	no consultants have ever been popular .	most consultants have ever been popular .
+simple_npi_anim	13	859.52	888.8	1	no consultants have ever been famous .	most consultants have ever been famous .
+simple_npi_anim	14	644.4	666.35	1	no consultants have ever had children .	most consultants have ever had children .
+simple_npi_anim	0	927.1	816.44	0	few authors have ever been popular .	many authors have ever been popular .
+simple_npi_anim	1	1054.79	928.89	0	few authors have ever been famous .	many authors have ever been famous .
+simple_npi_anim	2	790.8	696.41	0	few authors have ever had children .	many authors have ever had children .
+simple_npi_anim	3	667.74	588.03	0	few pilots have ever been popular .	many pilots have ever been popular .
+simple_npi_anim	4	759.71	669.02	0	few pilots have ever been famous .	many pilots have ever been famous .
+simple_npi_anim	5	569.57	501.58	0	few pilots have ever had children .	many pilots have ever had children .
+simple_npi_anim	6	460.98	405.93	0	few UNK-LC-s have ever been popular .	many UNK-LC-s have ever been popular .
+simple_npi_anim	7	524.47	461.84	0	few UNK-LC-s have ever been famous .	many UNK-LC-s have ever been famous .
+simple_npi_anim	8	393.2	346.24	0	few UNK-LC-s have ever had children .	many UNK-LC-s have ever had children .
+simple_npi_anim	9	749.5	660.0	0	few farmers have ever been popular .	many farmers have ever been popular .
+simple_npi_anim	10	852.73	750.9	0	few farmers have ever been famous .	many farmers have ever been famous .
+simple_npi_anim	11	639.31	562.96	0	few farmers have ever had children .	many farmers have ever had children .
+simple_npi_anim	12	635.69	559.81	0	few managers have ever been popular .	many managers have ever been popular .
+simple_npi_anim	13	723.24	636.91	0	few managers have ever been famous .	many managers have ever been famous .
+simple_npi_anim	14	542.23	477.5	0	few managers have ever had children .	many managers have ever had children .
+simple_npi_anim	0	614.82	541.44	0	few customers have ever been popular .	many customers have ever been popular .
+simple_npi_anim	1	699.5	616.01	0	few customers have ever been famous .	many customers have ever been famous .
+simple_npi_anim	2	524.43	461.83	0	few customers have ever had children .	many customers have ever had children .
+simple_npi_anim	3	789.07	694.88	0	few officers have ever been popular .	many officers have ever been popular .
+simple_npi_anim	4	897.75	790.59	0	few officers have ever been famous .	many officers have ever been famous .
+simple_npi_anim	5	673.06	592.72	0	few officers have ever had children .	many officers have ever had children .
+simple_npi_anim	6	862.86	759.83	0	few teachers have ever been popular .	many teachers have ever been popular .
+simple_npi_anim	7	981.69	864.48	0	few teachers have ever been famous .	many teachers have ever been famous .
+simple_npi_anim	8	736.0	648.12	0	few teachers have ever had children .	many teachers have ever had children .
+simple_npi_anim	9	757.41	666.99	0	few senators have ever been popular .	many senators have ever been popular .
+simple_npi_anim	10	861.73	758.85	0	few senators have ever been famous .	many senators have ever been famous .
+simple_npi_anim	11	646.05	568.93	0	few senators have ever had children .	many senators have ever had children .
+simple_npi_anim	12	757.69	667.24	0	few consultants have ever been popular .	many consultants have ever been popular .
+simple_npi_anim	13	862.05	759.14	0	few consultants have ever been famous .	many consultants have ever been famous .
+simple_npi_anim	14	646.3	569.14	0	few consultants have ever had children .	many consultants have ever had children .
+simple_npi_anim	0	649.94	669.05	1	no authors will ever be popular .	most authors will ever be popular .
+simple_npi_anim	1	741.77	763.57	1	no authors will ever be famous .	most authors will ever be famous .
+simple_npi_anim	2	607.99	625.86	1	no authors will ever have children .	most authors will ever have children .
+simple_npi_anim	3	466.27	481.88	1	no pilots will ever be popular .	most pilots will ever be popular .
+simple_npi_anim	4	532.14	549.96	1	no pilots will ever be famous .	most pilots will ever be famous .
+simple_npi_anim	5	436.17	450.77	1	no pilots will ever have children .	most pilots will ever have children .
+simple_npi_anim	6	317.58	331.45	1	no UNK-LC-s will ever be popular .	most UNK-LC-s will ever be popular .
+simple_npi_anim	7	362.44	378.27	1	no UNK-LC-s will ever be famous .	most UNK-LC-s will ever be famous .
+simple_npi_anim	8	297.07	310.05	1	no UNK-LC-s will ever have children .	most UNK-LC-s will ever have children .
+simple_npi_anim	9	518.08	541.95	1	no farmers will ever be popular .	most farmers will ever be popular .
+simple_npi_anim	10	591.28	618.52	1	no farmers will ever be famous .	most farmers will ever be famous .
+simple_npi_anim	11	484.64	506.97	1	no farmers will ever have children .	most farmers will ever have children .
+simple_npi_anim	12	444.49	458.74	1	no managers will ever be popular .	most managers will ever be popular .
+simple_npi_anim	13	507.28	523.55	1	no managers will ever be famous .	most managers will ever be famous .
+simple_npi_anim	14	415.8	429.13	1	no managers will ever have children .	most managers will ever have children .
+simple_npi_anim	0	431.02	443.69	1	no customers will ever be popular .	most customers will ever be popular .
+simple_npi_anim	1	491.92	506.37	1	no customers will ever be famous .	most customers will ever be famous .
+simple_npi_anim	2	403.2	415.05	1	no customers will ever have children .	most customers will ever have children .
+simple_npi_anim	3	553.18	569.44	1	no officers will ever be popular .	most officers will ever be popular .
+simple_npi_anim	4	631.33	649.89	1	no officers will ever be famous .	most officers will ever be famous .
+simple_npi_anim	5	517.47	532.68	1	no officers will ever have children .	most officers will ever have children .
+simple_npi_anim	6	598.42	622.61	1	no teachers will ever be popular .	most teachers will ever be popular .
+simple_npi_anim	7	682.96	710.57	1	no teachers will ever be famous .	most teachers will ever be famous .
+simple_npi_anim	8	559.79	582.42	1	no teachers will ever have children .	most teachers will ever have children .
+simple_npi_anim	9	527.53	546.72	1	no senators will ever be popular .	most senators will ever be popular .
+simple_npi_anim	10	602.06	623.96	1	no senators will ever be famous .	most senators will ever be famous .
+simple_npi_anim	11	493.48	511.43	1	no senators will ever have children .	most senators will ever have children .
+simple_npi_anim	12	529.28	547.06	1	no consultants will ever be popular .	most consultants will ever be popular .
+simple_npi_anim	13	604.06	624.35	1	no consultants will ever be famous .	most consultants will ever be famous .
+simple_npi_anim	14	495.11	511.75	1	no consultants will ever have children .	most consultants will ever have children .
+simple_npi_anim	0	649.34	571.83	0	few authors will ever be popular .	many authors will ever be popular .
+simple_npi_anim	1	741.07	652.62	0	few authors will ever be famous .	many authors will ever be famous .
+simple_npi_anim	2	607.42	534.92	0	few authors will ever have children .	many authors will ever have children .
+simple_npi_anim	3	467.68	411.85	0	few pilots will ever be popular .	many pilots will ever be popular .
+simple_npi_anim	4	533.75	470.04	0	few pilots will ever be famous .	many pilots will ever be famous .
+simple_npi_anim	5	437.49	385.27	0	few pilots will ever have children .	many pilots will ever have children .
+simple_npi_anim	6	322.87	284.31	0	few UNK-LC-s will ever be popular .	many UNK-LC-s will ever be popular .
+simple_npi_anim	7	368.49	324.48	0	few UNK-LC-s will ever be famous .	many UNK-LC-s will ever be famous .
+simple_npi_anim	8	302.03	265.96	0	few UNK-LC-s will ever have children .	many UNK-LC-s will ever have children .
+simple_npi_anim	9	524.94	462.26	0	few farmers will ever be popular .	many farmers will ever be popular .
+simple_npi_anim	10	599.11	527.56	0	few farmers will ever be famous .	many farmers will ever be famous .
+simple_npi_anim	11	491.06	432.42	0	few farmers will ever have children .	many farmers will ever have children .
+simple_npi_anim	12	445.23	392.09	0	few managers will ever be popular .	many managers will ever be popular .
+simple_npi_anim	13	508.14	447.48	0	few managers will ever be famous .	many managers will ever be famous .
+simple_npi_anim	14	416.49	366.78	0	few managers will ever have children .	many managers will ever have children .
+simple_npi_anim	0	430.62	379.22	0	few customers will ever be popular .	many customers will ever be popular .
+simple_npi_anim	1	491.46	432.79	0	few customers will ever be famous .	many customers will ever be famous .
+simple_npi_anim	2	402.82	354.74	0	few customers will ever have children .	many customers will ever have children .
+simple_npi_anim	3	552.66	486.69	0	few officers will ever be popular .	many officers will ever be popular .
+simple_npi_anim	4	630.74	555.45	0	few officers will ever be famous .	many officers will ever be famous .
+simple_npi_anim	5	516.99	455.28	0	few officers will ever have children .	many officers will ever have children .
+simple_npi_anim	6	604.34	532.18	0	few teachers will ever be popular .	many teachers will ever be popular .
+simple_npi_anim	7	689.72	607.37	0	few teachers will ever be famous .	many teachers will ever be famous .
+simple_npi_anim	8	565.33	497.83	0	few teachers will ever have children .	many teachers will ever have children .
+simple_npi_anim	9	530.48	467.15	0	few senators will ever be popular .	many senators will ever be popular .
+simple_npi_anim	10	605.43	533.15	0	few senators will ever be famous .	many senators will ever be famous .
+simple_npi_anim	11	496.24	437.0	0	few senators will ever have children .	many senators will ever have children .
+simple_npi_anim	12	530.68	467.33	0	few consultants will ever be popular .	many consultants will ever be popular .
+simple_npi_anim	13	605.66	533.36	0	few consultants will ever be famous .	many consultants will ever be famous .
+simple_npi_anim	14	496.43	437.17	0	few consultants will ever have children .	many consultants will ever have children .
+simple_npi_anim_the	0	927.69	509.9	0	no authors have ever been popular .	the authors have ever been popular .
+simple_npi_anim_the	1	1055.46	580.13	0	no authors have ever been famous .	the authors have ever been famous .
+simple_npi_anim_the	2	791.31	434.94	0	no authors have ever had children .	the authors have ever had children .
+simple_npi_anim_the	3	665.53	365.79	0	no pilots have ever been popular .	the pilots have ever been popular .
+simple_npi_anim_the	4	757.19	416.17	0	no pilots have ever been famous .	the pilots have ever been famous .
+simple_npi_anim_the	5	567.69	312.02	0	no pilots have ever had children .	the pilots have ever had children .
+simple_npi_anim_the	6	453.28	249.11	0	no UNK-LC-s have ever been popular .	the UNK-LC-s have ever been popular .
+simple_npi_anim_the	7	515.71	283.42	0	no UNK-LC-s have ever been famous .	the UNK-LC-s have ever been famous .
+simple_npi_anim_the	8	386.63	212.49	0	no UNK-LC-s have ever had children .	the UNK-LC-s have ever had children .
+simple_npi_anim_the	9	739.5	406.39	0	no farmers have ever been popular .	the farmers have ever been popular .
+simple_npi_anim_the	10	841.35	462.37	0	no farmers have ever been famous .	the farmers have ever been famous .
+simple_npi_anim_the	11	630.78	346.65	0	no farmers have ever had children .	the farmers have ever had children .
+simple_npi_anim_the	12	634.44	348.71	0	no managers have ever been popular .	the managers have ever been popular .
+simple_npi_anim_the	13	721.82	396.74	0	no managers have ever been famous .	the managers have ever been famous .
+simple_npi_anim_the	14	541.17	297.45	0	no managers have ever had children .	the managers have ever had children .
+simple_npi_anim_the	0	615.22	338.15	0	no customers have ever been popular .	the customers have ever been popular .
+simple_npi_anim_the	1	699.95	384.72	0	no customers have ever been famous .	the customers have ever been famous .
+simple_npi_anim_the	2	524.77	288.44	0	no customers have ever had children .	the customers have ever had children .
+simple_npi_anim_the	3	789.57	433.99	0	no officers have ever been popular .	the officers have ever been popular .
+simple_npi_anim_the	4	898.32	493.76	0	no officers have ever been famous .	the officers have ever been famous .
+simple_npi_anim_the	5	673.49	370.18	0	no officers have ever had children .	the officers have ever had children .
+simple_npi_anim_the	6	854.18	469.45	0	no teachers have ever been popular .	the teachers have ever been popular .
+simple_npi_anim_the	7	971.83	534.11	0	no teachers have ever been famous .	the teachers have ever been famous .
+simple_npi_anim_the	8	728.6	400.44	0	no teachers have ever had children .	the teachers have ever had children .
+simple_npi_anim_the	9	752.99	413.85	0	no senators have ever been popular .	the senators have ever been popular .
+simple_npi_anim_the	10	856.69	470.85	0	no senators have ever been famous .	the senators have ever been famous .
+simple_npi_anim_the	11	642.28	353.01	0	no senators have ever had children .	the senators have ever had children .
+simple_npi_anim_the	12	755.47	415.22	0	no consultants have ever been popular .	the consultants have ever been popular .
+simple_npi_anim_the	13	859.52	472.41	0	no consultants have ever been famous .	the consultants have ever been famous .
+simple_npi_anim_the	14	644.4	354.18	0	no consultants have ever had children .	the consultants have ever had children .
+simple_npi_anim_the	0	927.1	828.7	0	few authors have ever been popular .	some authors have ever been popular .
+simple_npi_anim_the	1	1054.79	942.84	0	few authors have ever been famous .	some authors have ever been famous .
+simple_npi_anim_the	2	790.8	706.87	0	few authors have ever had children .	some authors have ever had children .
+simple_npi_anim_the	3	667.74	594.49	0	few pilots have ever been popular .	some pilots have ever been popular .
+simple_npi_anim_the	4	759.71	676.37	0	few pilots have ever been famous .	some pilots have ever been famous .
+simple_npi_anim_the	5	569.57	507.1	0	few pilots have ever had children .	some pilots have ever had children .
+simple_npi_anim_the	6	460.98	404.88	0	few UNK-LC-s have ever been popular .	some UNK-LC-s have ever been popular .
+simple_npi_anim_the	7	524.47	460.64	0	few UNK-LC-s have ever been famous .	some UNK-LC-s have ever been famous .
+simple_npi_anim_the	8	393.2	345.35	0	few UNK-LC-s have ever had children .	some UNK-LC-s have ever had children .
+simple_npi_anim_the	9	749.5	660.51	0	few farmers have ever been popular .	some farmers have ever been popular .
+simple_npi_anim_the	10	852.73	751.48	0	few farmers have ever been famous .	some farmers have ever been famous .
+simple_npi_anim_the	11	639.31	563.41	0	few farmers have ever had children .	some farmers have ever had children .
+simple_npi_anim_the	12	635.69	566.73	0	few managers have ever been popular .	some managers have ever been popular .
+simple_npi_anim_the	13	723.24	644.78	0	few managers have ever been famous .	some managers have ever been famous .
+simple_npi_anim_the	14	542.23	483.41	0	few managers have ever had children .	some managers have ever had children .
+simple_npi_anim_the	0	614.82	549.57	0	few customers have ever been popular .	some customers have ever been popular .
+simple_npi_anim_the	1	699.5	625.26	0	few customers have ever been famous .	some customers have ever been famous .
+simple_npi_anim_the	2	524.43	468.77	0	few customers have ever had children .	some customers have ever had children .
+simple_npi_anim_the	3	789.07	705.32	0	few officers have ever been popular .	some officers have ever been popular .
+simple_npi_anim_the	4	897.75	802.46	0	few officers have ever been famous .	some officers have ever been famous .
+simple_npi_anim_the	5	673.06	601.63	0	few officers have ever had children .	some officers have ever had children .
+simple_npi_anim_the	6	862.86	762.97	0	few teachers have ever been popular .	some teachers have ever been popular .
+simple_npi_anim_the	7	981.69	868.05	0	few teachers have ever been famous .	some teachers have ever been famous .
+simple_npi_anim_the	8	736.0	650.8	0	few teachers have ever had children .	some teachers have ever had children .
+simple_npi_anim_the	9	757.41	672.6	0	few senators have ever been popular .	some senators have ever been popular .
+simple_npi_anim_the	10	861.73	765.24	0	few senators have ever been famous .	some senators have ever been famous .
+simple_npi_anim_the	11	646.05	573.72	0	few senators have ever had children .	some senators have ever had children .
+simple_npi_anim_the	12	757.69	674.83	0	few consultants have ever been popular .	some consultants have ever been popular .
+simple_npi_anim_the	13	862.05	767.78	0	few consultants have ever been famous .	some consultants have ever been famous .
+simple_npi_anim_the	14	646.3	575.62	0	few consultants have ever had children .	some consultants have ever had children .
+simple_npi_anim_the	0	649.94	357.24	0	no authors will ever be popular .	the authors will ever be popular .
+simple_npi_anim_the	1	741.77	407.71	0	no authors will ever be famous .	the authors will ever be famous .
+simple_npi_anim_the	2	607.99	334.18	0	no authors will ever have children .	the authors will ever have children .
+simple_npi_anim_the	3	466.27	256.27	0	no pilots will ever be popular .	the pilots will ever be popular .
+simple_npi_anim_the	4	532.14	292.48	0	no pilots will ever be famous .	the pilots will ever be famous .
+simple_npi_anim_the	5	436.17	239.73	0	no pilots will ever have children .	the pilots will ever have children .
+simple_npi_anim_the	6	317.58	174.53	0	no UNK-LC-s will ever be popular .	the UNK-LC-s will ever be popular .
+simple_npi_anim_the	7	362.44	199.19	0	no UNK-LC-s will ever be famous .	the UNK-LC-s will ever be famous .
+simple_npi_anim_the	8	297.07	163.26	0	no UNK-LC-s will ever have children .	the UNK-LC-s will ever have children .
+simple_npi_anim_the	9	518.08	284.71	0	no farmers will ever be popular .	the farmers will ever be popular .
+simple_npi_anim_the	10	591.28	324.94	0	no farmers will ever be famous .	the farmers will ever be famous .
+simple_npi_anim_the	11	484.64	266.33	0	no farmers will ever have children .	the farmers will ever have children .
+simple_npi_anim_the	12	444.49	244.31	0	no managers will ever be popular .	the managers will ever be popular .
+simple_npi_anim_the	13	507.28	278.82	0	no managers will ever be famous .	the managers will ever be famous .
+simple_npi_anim_the	14	415.8	228.54	0	no managers will ever have children .	the managers will ever have children .
+simple_npi_anim_the	0	431.02	236.91	0	no customers will ever be popular .	the customers will ever be popular .
+simple_npi_anim_the	1	491.92	270.38	0	no customers will ever be famous .	the customers will ever be famous .
+simple_npi_anim_the	2	403.2	221.62	0	no customers will ever have children .	the customers will ever have children .
+simple_npi_anim_the	3	553.18	304.05	0	no officers will ever be popular .	the officers will ever be popular .
+simple_npi_anim_the	4	631.33	347.01	0	no officers will ever be famous .	the officers will ever be famous .
+simple_npi_anim_the	5	517.47	284.43	0	no officers will ever have children .	the officers will ever have children .
+simple_npi_anim_the	6	598.42	328.89	0	no teachers will ever be popular .	the teachers will ever be popular .
+simple_npi_anim_the	7	682.96	375.35	0	no teachers will ever be famous .	the teachers will ever be famous .
+simple_npi_anim_the	8	559.79	307.66	0	no teachers will ever have children .	the teachers will ever have children .
+simple_npi_anim_the	9	527.53	289.94	0	no senators will ever be popular .	the senators will ever be popular .
+simple_npi_anim_the	10	602.06	330.9	0	no senators will ever be famous .	the senators will ever be famous .
+simple_npi_anim_the	11	493.48	271.22	0	no senators will ever have children .	the senators will ever have children .
+simple_npi_anim_the	12	529.28	290.9	0	no consultants will ever be popular .	the consultants will ever be popular .
+simple_npi_anim_the	13	604.06	332.0	0	no consultants will ever be famous .	the consultants will ever be famous .
+simple_npi_anim_the	14	495.11	272.13	0	no consultants will ever have children .	the consultants will ever have children .
+simple_npi_anim_the	0	649.34	580.59	0	few authors will ever be popular .	some authors will ever be popular .
+simple_npi_anim_the	1	741.07	662.62	0	few authors will ever be famous .	some authors will ever be famous .
+simple_npi_anim_the	2	607.42	543.12	0	few authors will ever have children .	some authors will ever have children .
+simple_npi_anim_the	3	467.68	416.5	0	few pilots will ever be popular .	some pilots will ever be popular .
+simple_npi_anim_the	4	533.75	475.34	0	few pilots will ever be famous .	some pilots will ever be famous .
+simple_npi_anim_the	5	437.49	389.61	0	few pilots will ever have children .	some pilots will ever have children .
+simple_npi_anim_the	6	322.87	283.66	0	few UNK-LC-s will ever be popular .	some UNK-LC-s will ever be popular .
+simple_npi_anim_the	7	368.49	323.73	0	few UNK-LC-s will ever be famous .	some UNK-LC-s will ever be famous .
+simple_npi_anim_the	8	302.03	265.35	0	few UNK-LC-s will ever have children .	some UNK-LC-s will ever have children .
+simple_npi_anim_the	9	524.94	462.74	0	few farmers will ever be popular .	some farmers will ever be popular .
+simple_npi_anim_the	10	599.11	528.12	0	few farmers will ever be famous .	some farmers will ever be famous .
+simple_npi_anim_the	11	491.06	432.87	0	few farmers will ever have children .	some farmers will ever have children .
+simple_npi_anim_the	12	445.23	397.05	0	few managers will ever be popular .	some managers will ever be popular .
+simple_npi_anim_the	13	508.14	453.14	0	few managers will ever be famous .	some managers will ever be famous .
+simple_npi_anim_the	14	416.49	371.42	0	few managers will ever have children .	some managers will ever have children .
+simple_npi_anim_the	0	430.62	385.03	0	few customers will ever be popular .	some customers will ever be popular .
+simple_npi_anim_the	1	491.46	439.43	0	few customers will ever be famous .	some customers will ever be famous .
+simple_npi_anim_the	2	402.82	360.18	0	few customers will ever have children .	some customers will ever have children .
+simple_npi_anim_the	3	552.66	494.15	0	few officers will ever be popular .	some officers will ever be popular .
+simple_npi_anim_the	4	630.74	563.96	0	few officers will ever be famous .	some officers will ever be famous .
+simple_npi_anim_the	5	516.99	462.25	0	few officers will ever have children .	some officers will ever have children .
+simple_npi_anim_the	6	604.34	534.52	0	few teachers will ever be popular .	some teachers will ever be popular .
+simple_npi_anim_the	7	689.72	610.03	0	few teachers will ever be famous .	some teachers will ever be famous .
+simple_npi_anim_the	8	565.33	500.01	0	few teachers will ever have children .	some teachers will ever have children .
+simple_npi_anim_the	9	530.48	471.21	0	few senators will ever be popular .	some senators will ever be popular .
+simple_npi_anim_the	10	605.43	537.79	0	few senators will ever be famous .	some senators will ever be famous .
+simple_npi_anim_the	11	496.24	440.8	0	few senators will ever have children .	some senators will ever have children .
+simple_npi_anim_the	12	530.68	472.79	0	few consultants will ever be popular .	some consultants will ever be popular .
+simple_npi_anim_the	13	605.66	539.58	0	few consultants will ever be famous .	some consultants will ever be famous .
+simple_npi_anim_the	14	496.43	442.27	0	few consultants will ever have children .	some consultants will ever have children .
+simple_reflexives	0	397.07	381.52	0	the author hurt himself .	the author hurt themselves .
+simple_reflexives	1	600.58	381.52	0	the author hurt herself .	the author hurt themselves .
+simple_reflexives	2	628.52	603.92	0	the author injured himself .	the author injured themselves .
+simple_reflexives	3	950.67	603.92	0	the author injured herself .	the author injured themselves .
+simple_reflexives	4	920.33	884.3	0	the author congratulated himself .	the author congratulated themselves .
+simple_reflexives	5	1392.05	884.3	0	the author congratulated herself .	the author congratulated themselves .
+simple_reflexives	6	966.98	929.13	0	the author embarrassed himself .	the author embarrassed themselves .
+simple_reflexives	7	1462.62	929.13	0	the author embarrassed herself .	the author embarrassed themselves .
+simple_reflexives	8	821.39	789.24	0	the author disguised himself .	the author disguised themselves .
+simple_reflexives	9	1242.4	789.24	0	the author disguised herself .	the author disguised themselves .
+simple_reflexives	10	1113.65	1070.05	0	the author hated himself .	the author hated themselves .
+simple_reflexives	11	1684.46	1070.05	0	the author hated herself .	the author hated themselves .
+simple_reflexives	12	881.67	847.16	0	the author doubted himself .	the author doubted themselves .
+simple_reflexives	13	1333.58	847.16	0	the author doubted herself .	the author doubted themselves .
+simple_reflexives	14	366.37	352.02	0	the pilot hurt himself .	the pilot hurt themselves .
+simple_reflexives	15	554.15	352.02	0	the pilot hurt herself .	the pilot hurt themselves .
+simple_reflexives	16	579.93	557.22	0	the pilot injured himself .	the pilot injured themselves .
+simple_reflexives	17	877.17	557.22	0	the pilot injured herself .	the pilot injured themselves .
+simple_reflexives	18	849.17	815.93	0	the pilot congratulated himself .	the pilot congratulated themselves .
+simple_reflexives	19	1284.42	815.93	0	the pilot congratulated herself .	the pilot congratulated themselves .
+simple_reflexives	20	892.22	857.29	0	the pilot embarrassed himself .	the pilot embarrassed themselves .
+simple_reflexives	21	1349.53	857.29	0	the pilot embarrassed herself .	the pilot embarrassed themselves .
+simple_reflexives	22	757.88	728.21	0	the pilot disguised himself .	the pilot disguised themselves .
+simple_reflexives	23	1146.34	728.21	0	the pilot disguised herself .	the pilot disguised themselves .
+simple_reflexives	24	1027.55	987.32	0	the pilot hated himself .	the pilot hated themselves .
+simple_reflexives	25	1554.23	987.32	0	the pilot hated herself .	the pilot hated themselves .
+simple_reflexives	26	813.51	781.66	0	the pilot doubted himself .	the pilot doubted themselves .
+simple_reflexives	27	1230.47	781.66	0	the pilot doubted herself .	the pilot doubted themselves .
+simple_reflexives	28	603.99	580.34	0	the surgeon hurt himself .	the surgeon hurt themselves .
+simple_reflexives	29	913.57	580.34	0	the surgeon hurt herself .	the surgeon hurt themselves .
+simple_reflexives	30	956.06	918.64	0	the surgeon injured himself .	the surgeon injured themselves .
+simple_reflexives	31	1446.1	918.64	0	the surgeon injured herself .	the surgeon injured themselves .
+simple_reflexives	32	1399.94	1345.13	0	the surgeon congratulated himself .	the surgeon congratulated themselves .
+simple_reflexives	33	2117.49	1345.13	0	the surgeon congratulated herself .	the surgeon congratulated themselves .
+simple_reflexives	34	1470.91	1413.33	0	the surgeon embarrassed himself .	the surgeon embarrassed themselves .
+simple_reflexives	0	2224.84	1413.33	0	the surgeon embarrassed herself .	the surgeon embarrassed themselves .
+simple_reflexives	1	1249.45	1200.53	0	the surgeon disguised himself .	the surgeon disguised themselves .
+simple_reflexives	2	1889.86	1200.53	0	the surgeon disguised herself .	the surgeon disguised themselves .
+simple_reflexives	3	1694.01	1627.7	0	the surgeon hated himself .	the surgeon hated themselves .
+simple_reflexives	4	2562.29	1627.7	0	the surgeon hated herself .	the surgeon hated themselves .
+simple_reflexives	5	1341.14	1288.64	0	the surgeon doubted himself .	the surgeon doubted themselves .
+simple_reflexives	6	2028.55	1288.64	0	the surgeon doubted herself .	the surgeon doubted themselves .
+simple_reflexives	7	397.07	381.52	0	the farmer hurt himself .	the farmer hurt themselves .
+simple_reflexives	8	600.58	381.52	0	the farmer hurt herself .	the farmer hurt themselves .
+simple_reflexives	9	628.52	603.92	0	the farmer injured himself .	the farmer injured themselves .
+simple_reflexives	10	950.67	603.92	0	the farmer injured herself .	the farmer injured themselves .
+simple_reflexives	11	920.33	884.3	0	the farmer congratulated himself .	the farmer congratulated themselves .
+simple_reflexives	12	1392.05	884.3	0	the farmer congratulated herself .	the farmer congratulated themselves .
+simple_reflexives	13	966.98	929.13	0	the farmer embarrassed himself .	the farmer embarrassed themselves .
+simple_reflexives	14	1462.62	929.13	0	the farmer embarrassed herself .	the farmer embarrassed themselves .
+simple_reflexives	15	821.39	789.24	0	the farmer disguised himself .	the farmer disguised themselves .
+simple_reflexives	16	1242.4	789.24	0	the farmer disguised herself .	the farmer disguised themselves .
+simple_reflexives	17	1113.65	1070.05	0	the farmer hated himself .	the farmer hated themselves .
+simple_reflexives	18	1684.46	1070.05	0	the farmer hated herself .	the farmer hated themselves .
+simple_reflexives	19	881.67	847.16	0	the farmer doubted himself .	the farmer doubted themselves .
+simple_reflexives	20	1333.58	847.16	0	the farmer doubted herself .	the farmer doubted themselves .
+simple_reflexives	21	276.57	265.74	0	the manager hurt himself .	the manager hurt themselves .
+simple_reflexives	22	418.33	265.74	0	the manager hurt herself .	the manager hurt themselves .
+simple_reflexives	23	437.79	420.65	0	the manager injured himself .	the manager injured themselves .
+simple_reflexives	24	662.18	420.65	0	the manager injured herself .	the manager injured themselves .
+simple_reflexives	25	641.04	615.95	0	the manager congratulated himself .	the manager congratulated themselves .
+simple_reflexives	26	969.61	615.95	0	the manager congratulated herself .	the manager congratulated themselves .
+simple_reflexives	27	673.54	647.17	0	the manager embarrassed himself .	the manager embarrassed themselves .
+simple_reflexives	28	1018.77	647.17	0	the manager embarrassed herself .	the manager embarrassed themselves .
+simple_reflexives	29	572.13	549.73	0	the manager disguised himself .	the manager disguised themselves .
+simple_reflexives	30	865.38	549.73	0	the manager disguised herself .	the manager disguised themselves .
+simple_reflexives	31	775.7	745.33	0	the manager hated himself .	the manager hated themselves .
+simple_reflexives	32	1173.29	745.33	0	the manager hated herself .	the manager hated themselves .
+simple_reflexives	33	614.12	590.08	0	the manager doubted himself .	the manager doubted themselves .
+simple_reflexives	34	928.89	590.08	0	the manager doubted herself .	the manager doubted themselves .
+simple_reflexives	0	318.18	305.72	0	the customer hurt himself .	the customer hurt themselves .
+simple_reflexives	1	481.27	305.72	0	the customer hurt herself .	the customer hurt themselves .
+simple_reflexives	2	503.65	483.94	0	the customer injured himself .	the customer injured themselves .
+simple_reflexives	3	761.8	483.94	0	the customer injured herself .	the customer injured themselves .
+simple_reflexives	4	737.48	708.61	0	the customer congratulated himself .	the customer congratulated themselves .
+simple_reflexives	5	1115.49	708.61	0	the customer congratulated herself .	the customer congratulated themselves .
+simple_reflexives	6	774.87	744.54	0	the customer embarrassed himself .	the customer embarrassed themselves .
+simple_reflexives	7	1172.04	744.54	0	the customer embarrassed herself .	the customer embarrassed themselves .
+simple_reflexives	8	658.21	632.44	0	the customer disguised himself .	the customer disguised themselves .
+simple_reflexives	9	995.57	632.44	0	the customer disguised herself .	the customer disguised themselves .
+simple_reflexives	10	892.4	857.47	0	the customer hated himself .	the customer hated themselves .
+simple_reflexives	11	1349.81	857.47	0	the customer hated herself .	the customer hated themselves .
+simple_reflexives	12	706.51	678.85	0	the customer doubted himself .	the customer doubted themselves .
+simple_reflexives	13	1068.64	678.85	0	the customer doubted herself .	the customer doubted themselves .
+simple_reflexives	14	239.99	230.59	0	the officer hurt himself .	the officer hurt themselves .
+simple_reflexives	15	363.0	230.59	0	the officer hurt herself .	the officer hurt themselves .
+simple_reflexives	16	379.88	365.01	0	the officer injured himself .	the officer injured themselves .
+simple_reflexives	17	574.6	365.01	0	the officer injured herself .	the officer injured themselves .
+simple_reflexives	18	556.25	534.48	0	the officer congratulated himself .	the officer congratulated themselves .
+simple_reflexives	19	841.37	534.48	0	the officer congratulated herself .	the officer congratulated themselves .
+simple_reflexives	20	584.45	561.57	0	the officer embarrassed himself .	the officer embarrassed themselves .
+simple_reflexives	21	884.02	561.57	0	the officer embarrassed herself .	the officer embarrassed themselves .
+simple_reflexives	22	496.46	477.02	0	the officer disguised himself .	the officer disguised themselves .
+simple_reflexives	23	750.92	477.02	0	the officer disguised herself .	the officer disguised themselves .
+simple_reflexives	24	673.1	646.75	0	the officer hated himself .	the officer hated themselves .
+simple_reflexives	25	1018.1	646.75	0	the officer hated herself .	the officer hated themselves .
+simple_reflexives	26	532.89	512.03	0	the officer doubted himself .	the officer doubted themselves .
+simple_reflexives	27	806.03	512.03	0	the officer doubted herself .	the officer doubted themselves .
+simple_reflexives	28	532.81	511.95	0	the teacher hurt himself .	the teacher hurt themselves .
+simple_reflexives	29	805.9	511.95	0	the teacher hurt herself .	the teacher hurt themselves .
+simple_reflexives	30	843.38	810.37	0	the teacher injured himself .	the teacher injured themselves .
+simple_reflexives	31	1275.67	810.37	0	the teacher injured herself .	the teacher injured themselves .
+simple_reflexives	32	1234.95	1186.6	0	the teacher congratulated himself .	the teacher congratulated themselves .
+simple_reflexives	33	1867.93	1186.6	0	the teacher congratulated herself .	the teacher congratulated themselves .
+simple_reflexives	34	1297.55	1246.76	0	the teacher embarrassed himself .	the teacher embarrassed themselves .
+simple_reflexives	0	1962.62	1246.76	0	the teacher embarrassed herself .	the teacher embarrassed themselves .
+simple_reflexives	1	1102.19	1059.04	0	the teacher disguised himself .	the teacher disguised themselves .
+simple_reflexives	2	1667.13	1059.04	0	the teacher disguised herself .	the teacher disguised themselves .
+simple_reflexives	3	1494.36	1435.86	0	the teacher hated himself .	the teacher hated themselves .
+simple_reflexives	4	2260.31	1435.86	0	the teacher hated herself .	the teacher hated themselves .
+simple_reflexives	5	1183.08	1136.76	0	the teacher doubted himself .	the teacher doubted themselves .
+simple_reflexives	6	1789.47	1136.76	0	the teacher doubted herself .	the teacher doubted themselves .
+simple_reflexives	7	463.43	445.28	0	the senator hurt himself .	the senator hurt themselves .
+simple_reflexives	8	700.96	445.28	0	the senator hurt herself .	the senator hurt themselves .
+simple_reflexives	9	733.56	704.85	0	the senator injured himself .	the senator injured themselves .
+simple_reflexives	10	1109.56	704.85	0	the senator injured herself .	the senator injured themselves .
+simple_reflexives	11	1074.14	1032.09	0	the senator congratulated himself .	the senator congratulated themselves .
+simple_reflexives	12	1624.7	1032.09	0	the senator congratulated herself .	the senator congratulated themselves .
+simple_reflexives	13	1128.59	1084.41	0	the senator embarrassed himself .	the senator embarrassed themselves .
+simple_reflexives	14	1707.06	1084.41	0	the senator embarrassed herself .	the senator embarrassed themselves .
+simple_reflexives	15	958.67	921.14	0	the senator disguised himself .	the senator disguised themselves .
+simple_reflexives	16	1450.04	921.14	0	the senator disguised herself .	the senator disguised themselves .
+simple_reflexives	17	1299.77	1248.89	0	the senator hated himself .	the senator hated themselves .
+simple_reflexives	18	1965.98	1248.89	0	the senator hated herself .	the senator hated themselves .
+simple_reflexives	19	1029.03	988.74	0	the senator doubted himself .	the senator doubted themselves .
+simple_reflexives	20	1556.46	988.74	0	the senator doubted herself .	the senator doubted themselves .
+simple_reflexives	21	323.16	310.5	0	the consultant hurt himself .	the consultant hurt themselves .
+simple_reflexives	22	488.79	310.5	0	the consultant hurt herself .	the consultant hurt themselves .
+simple_reflexives	23	511.53	491.5	0	the consultant injured himself .	the consultant injured themselves .
+simple_reflexives	24	773.72	491.5	0	the consultant injured herself .	the consultant injured themselves .
+simple_reflexives	25	749.02	719.69	0	the consultant congratulated himself .	the consultant congratulated themselves .
+simple_reflexives	26	1132.93	719.69	0	the consultant congratulated herself .	the consultant congratulated themselves .
+simple_reflexives	27	786.99	756.18	0	the consultant embarrassed himself .	the consultant embarrassed themselves .
+simple_reflexives	28	1190.37	756.18	0	the consultant embarrassed herself .	the consultant embarrassed themselves .
+simple_reflexives	29	668.5	642.33	0	the consultant disguised himself .	the consultant disguised themselves .
+simple_reflexives	30	1011.14	642.33	0	the consultant disguised herself .	the consultant disguised themselves .
+simple_reflexives	31	906.36	870.87	0	the consultant hated himself .	the consultant hated themselves .
+simple_reflexives	32	1370.92	870.87	0	the consultant hated herself .	the consultant hated themselves .
+simple_reflexives	33	717.56	689.47	0	the consultant doubted himself .	the consultant doubted themselves .
+simple_reflexives	34	1085.35	689.47	0	the consultant doubted herself .	the consultant doubted themselves .
+simple_reflexives	0	548.38	570.72	1	the authors hurt themselves .	the authors hurt himself .
+simple_reflexives	1	548.38	863.25	1	the authors hurt themselves .	the authors hurt herself .
+simple_reflexives	2	868.04	903.41	1	the authors injured themselves .	the authors injured himself .
+simple_reflexives	3	868.04	1366.46	1	the authors injured themselves .	the authors injured herself .
+simple_reflexives	4	1271.04	1322.83	1	the authors congratulated themselves .	the authors congratulated himself .
+simple_reflexives	5	1271.04	2000.86	1	the authors congratulated themselves .	the authors congratulated herself .
+simple_reflexives	6	1335.49	1389.9	1	the authors embarrassed themselves .	the authors embarrassed himself .
+simple_reflexives	7	1335.49	2102.3	1	the authors embarrassed themselves .	the authors embarrassed herself .
+simple_reflexives	8	1134.41	1180.63	1	the authors disguised themselves .	the authors disguised himself .
+simple_reflexives	9	1134.41	1785.77	1	the authors disguised themselves .	the authors disguised herself .
+simple_reflexives	10	1538.05	1600.71	1	the authors hated themselves .	the authors hated himself .
+simple_reflexives	11	1538.05	2421.17	1	the authors hated themselves .	the authors hated herself .
+simple_reflexives	12	1217.66	1267.28	1	the authors doubted themselves .	the authors doubted himself .
+simple_reflexives	13	1217.66	1916.82	1	the authors doubted themselves .	the authors doubted herself .
+simple_reflexives	14	344.45	358.48	1	the pilots hurt themselves .	the pilots hurt himself .
+simple_reflexives	15	344.45	542.22	1	the pilots hurt themselves .	the pilots hurt herself .
+simple_reflexives	16	545.23	567.44	1	the pilots injured themselves .	the pilots injured himself .
+simple_reflexives	17	545.23	858.29	1	the pilots injured themselves .	the pilots injured herself .
+simple_reflexives	18	798.36	830.89	1	the pilots congratulated themselves .	the pilots congratulated himself .
+simple_reflexives	19	798.36	1256.77	1	the pilots congratulated themselves .	the pilots congratulated herself .
+simple_reflexives	20	838.84	873.01	1	the pilots embarrassed themselves .	the pilots embarrassed himself .
+simple_reflexives	21	838.84	1320.48	1	the pilots embarrassed themselves .	the pilots embarrassed herself .
+simple_reflexives	22	712.54	741.57	1	the pilots disguised themselves .	the pilots disguised himself .
+simple_reflexives	23	712.54	1121.67	1	the pilots disguised themselves .	the pilots disguised herself .
+simple_reflexives	24	966.07	1005.43	1	the pilots hated themselves .	the pilots hated himself .
+simple_reflexives	25	966.07	1520.77	1	the pilots hated themselves .	the pilots hated herself .
+simple_reflexives	26	764.83	795.99	1	the pilots doubted themselves .	the pilots doubted himself .
+simple_reflexives	27	764.83	1203.98	1	the pilots doubted themselves .	the pilots doubted herself .
+simple_reflexives	28	201.19	209.38	1	the UNK-LC-s hurt themselves .	the UNK-LC-s hurt himself .
+simple_reflexives	29	201.19	316.7	1	the UNK-LC-s hurt themselves .	the UNK-LC-s hurt herself .
+simple_reflexives	30	318.44	331.42	1	the UNK-LC-s injured themselves .	the UNK-LC-s injured himself .
+simple_reflexives	31	318.44	501.29	1	the UNK-LC-s injured themselves .	the UNK-LC-s injured herself .
+simple_reflexives	32	466.28	485.28	1	the UNK-LC-s congratulated themselves .	the UNK-LC-s congratulated himself .
+simple_reflexives	33	466.28	734.01	1	the UNK-LC-s congratulated themselves .	the UNK-LC-s congratulated herself .
+simple_reflexives	34	489.76	509.71	1	the UNK-LC-s embarrassed themselves .	the UNK-LC-s embarrassed himself .
+simple_reflexives	0	489.76	770.97	1	the UNK-LC-s embarrassed themselves .	the UNK-LC-s embarrassed herself .
+simple_reflexives	1	416.15	433.11	1	the UNK-LC-s disguised themselves .	the UNK-LC-s disguised himself .
+simple_reflexives	2	416.15	655.1	1	the UNK-LC-s disguised themselves .	the UNK-LC-s disguised herself .
+simple_reflexives	3	564.16	587.14	1	the UNK-LC-s hated themselves .	the UNK-LC-s hated himself .
+simple_reflexives	4	564.16	888.09	1	the UNK-LC-s hated themselves .	the UNK-LC-s hated herself .
+simple_reflexives	5	446.68	464.88	1	the UNK-LC-s doubted themselves .	the UNK-LC-s doubted himself .
+simple_reflexives	6	446.68	703.15	1	the UNK-LC-s doubted themselves .	the UNK-LC-s doubted herself .
+simple_reflexives	7	399.16	415.42	1	the farmers hurt themselves .	the farmers hurt himself .
+simple_reflexives	8	399.16	628.35	1	the farmers hurt themselves .	the farmers hurt herself .
+simple_reflexives	9	631.84	657.58	1	the farmers injured themselves .	the farmers injured himself .
+simple_reflexives	10	631.84	994.63	1	the farmers injured themselves .	the farmers injured herself .
+simple_reflexives	11	925.18	962.87	1	the farmers congratulated themselves .	the farmers congratulated himself .
+simple_reflexives	12	925.18	1456.4	1	the farmers congratulated themselves .	the farmers congratulated herself .
+simple_reflexives	13	972.09	1011.69	1	the farmers embarrassed themselves .	the farmers embarrassed himself .
+simple_reflexives	14	972.09	1530.24	1	the farmers embarrassed themselves .	the farmers embarrassed herself .
+simple_reflexives	15	825.72	859.37	1	the farmers disguised themselves .	the farmers disguised himself .
+simple_reflexives	16	825.72	1299.84	1	the farmers disguised themselves .	the farmers disguised herself .
+simple_reflexives	17	1119.53	1165.14	1	the farmers hated themselves .	the farmers hated himself .
+simple_reflexives	18	1119.53	1762.34	1	the farmers hated themselves .	the farmers hated herself .
+simple_reflexives	19	886.32	922.44	1	the farmers doubted themselves .	the farmers doubted himself .
+simple_reflexives	20	886.32	1395.24	1	the farmers doubted themselves .	the farmers doubted herself .
+simple_reflexives	21	322.14	335.26	1	the managers hurt themselves .	the managers hurt himself .
+simple_reflexives	22	322.14	507.11	1	the managers hurt themselves .	the managers hurt herself .
+simple_reflexives	23	509.92	530.69	1	the managers injured themselves .	the managers injured himself .
+simple_reflexives	24	509.92	802.71	1	the managers injured themselves .	the managers injured herself .
+simple_reflexives	25	746.66	777.08	1	the managers congratulated themselves .	the managers congratulated himself .
+simple_reflexives	26	746.66	1175.38	1	the managers congratulated themselves .	the managers congratulated herself .
+simple_reflexives	27	784.52	816.48	1	the managers embarrassed themselves .	the managers embarrassed himself .
+simple_reflexives	28	784.52	1234.97	1	the managers embarrassed themselves .	the managers embarrassed herself .
+simple_reflexives	29	666.39	693.54	1	the managers disguised themselves .	the managers disguised himself .
+simple_reflexives	30	666.39	1049.03	1	the managers disguised themselves .	the managers disguised herself .
+simple_reflexives	31	903.51	940.32	1	the managers hated themselves .	the managers hated himself .
+simple_reflexives	32	903.51	1422.29	1	the managers hated themselves .	the managers hated herself .
+simple_reflexives	33	715.3	744.44	1	the managers doubted themselves .	the managers doubted himself .
+simple_reflexives	34	715.3	1126.01	1	the managers doubted themselves .	the managers doubted herself .
+simple_reflexives	0	308.57	321.14	1	the customers hurt themselves .	the customers hurt himself .
+simple_reflexives	1	308.57	485.75	1	the customers hurt themselves .	the customers hurt herself .
+simple_reflexives	2	488.44	508.34	1	the customers injured themselves .	the customers injured himself .
+simple_reflexives	3	488.44	768.9	1	the customers injured themselves .	the customers injured herself .
+simple_reflexives	4	715.21	744.35	1	the customers congratulated themselves .	the customers congratulated himself .
+simple_reflexives	5	715.21	1125.87	1	the customers congratulated themselves .	the customers congratulated herself .
+simple_reflexives	6	751.47	782.09	1	the customers embarrassed themselves .	the customers embarrassed himself .
+simple_reflexives	7	751.47	1182.95	1	the customers embarrassed themselves .	the customers embarrassed herself .
+simple_reflexives	8	638.32	664.33	1	the customers disguised themselves .	the customers disguised himself .
+simple_reflexives	9	638.32	1004.84	1	the customers disguised themselves .	the customers disguised herself .
+simple_reflexives	10	865.45	900.71	1	the customers hated themselves .	the customers hated himself .
+simple_reflexives	11	865.45	1362.38	1	the customers hated themselves .	the customers hated herself .
+simple_reflexives	12	685.17	713.09	1	the customers doubted themselves .	the customers doubted himself .
+simple_reflexives	13	685.17	1078.58	1	the customers doubted themselves .	the customers doubted herself .
+simple_reflexives	14	437.59	455.42	1	the officers hurt themselves .	the officers hurt himself .
+simple_reflexives	15	437.59	688.84	1	the officers hurt themselves .	the officers hurt herself .
+simple_reflexives	16	692.66	720.88	1	the officers injured themselves .	the officers injured himself .
+simple_reflexives	17	692.66	1090.38	1	the officers injured themselves .	the officers injured herself .
+simple_reflexives	18	1014.25	1055.57	1	the officers congratulated themselves .	the officers congratulated himself .
+simple_reflexives	19	1014.25	1596.61	1	the officers congratulated themselves .	the officers congratulated herself .
+simple_reflexives	20	1065.67	1109.09	1	the officers embarrassed themselves .	the officers embarrassed himself .
+simple_reflexives	21	1065.67	1677.56	1	the officers embarrassed themselves .	the officers embarrassed herself .
+simple_reflexives	22	905.22	942.1	1	the officers disguised themselves .	the officers disguised himself .
+simple_reflexives	23	905.22	1424.98	1	the officers disguised themselves .	the officers disguised herself .
+simple_reflexives	24	1227.31	1277.31	1	the officers hated themselves .	the officers hated himself .
+simple_reflexives	25	1227.31	1932.01	1	the officers hated themselves .	the officers hated herself .
+simple_reflexives	26	971.65	1011.24	1	the officers doubted themselves .	the officers doubted himself .
+simple_reflexives	27	971.65	1529.55	1	the officers doubted themselves .	the officers doubted herself .
+simple_reflexives	28	488.43	508.33	1	the teachers hurt themselves .	the teachers hurt himself .
+simple_reflexives	29	488.43	768.88	1	the teachers hurt themselves .	the teachers hurt herself .
+simple_reflexives	30	773.15	804.64	1	the teachers injured themselves .	the teachers injured himself .
+simple_reflexives	31	773.15	1217.07	1	the teachers injured themselves .	the teachers injured herself .
+simple_reflexives	32	1132.09	1178.22	1	the teachers congratulated themselves .	the teachers congratulated himself .
+simple_reflexives	33	1132.09	1782.12	1	the teachers congratulated themselves .	the teachers congratulated herself .
+simple_reflexives	34	1189.49	1237.95	1	the teachers embarrassed themselves .	the teachers embarrassed himself .
+simple_reflexives	0	1189.49	1872.47	1	the teachers embarrassed themselves .	the teachers embarrassed herself .
+simple_reflexives	1	1010.39	1051.56	1	the teachers disguised themselves .	the teachers disguised himself .
+simple_reflexives	2	1010.39	1590.55	1	the teachers disguised themselves .	the teachers disguised herself .
+simple_reflexives	3	1369.91	1425.72	1	the teachers hated themselves .	the teachers hated himself .
+simple_reflexives	4	1369.91	2156.48	1	the teachers hated themselves .	the teachers hated herself .
+simple_reflexives	5	1084.55	1128.73	1	the teachers doubted themselves .	the teachers doubted himself .
+simple_reflexives	6	1084.55	1707.27	1	the teachers doubted themselves .	the teachers doubted herself .
+simple_reflexives	7	409.42	426.1	1	the senators hurt themselves .	the senators hurt himself .
+simple_reflexives	8	409.42	644.5	1	the senators hurt themselves .	the senators hurt herself .
+simple_reflexives	9	648.08	674.48	1	the senators injured themselves .	the senators injured himself .
+simple_reflexives	10	648.08	1020.2	1	the senators injured themselves .	the senators injured herself .
+simple_reflexives	11	948.96	987.62	1	the senators congratulated themselves .	the senators congratulated himself .
+simple_reflexives	12	948.96	1493.84	1	the senators congratulated themselves .	the senators congratulated herself .
+simple_reflexives	13	997.07	1037.7	1	the senators embarrassed themselves .	the senators embarrassed himself .
+simple_reflexives	14	997.07	1569.58	1	the senators embarrassed themselves .	the senators embarrassed herself .
+simple_reflexives	15	846.95	881.46	1	the senators disguised themselves .	the senators disguised himself .
+simple_reflexives	16	846.95	1333.25	1	the senators disguised themselves .	the senators disguised herself .
+simple_reflexives	17	1148.31	1195.09	1	the senators hated themselves .	the senators hated himself .
+simple_reflexives	18	1148.31	1807.64	1	the senators hated themselves .	the senators hated herself .
+simple_reflexives	19	909.11	946.15	1	the senators doubted themselves .	the senators doubted himself .
+simple_reflexives	20	909.11	1431.1	1	the senators doubted themselves .	the senators doubted herself .
+simple_reflexives	21	411.34	428.09	1	the consultants hurt themselves .	the consultants hurt himself .
+simple_reflexives	22	411.34	647.52	1	the consultants hurt themselves .	the consultants hurt herself .
+simple_reflexives	23	651.11	677.64	1	the consultants injured themselves .	the consultants injured himself .
+simple_reflexives	24	651.11	1024.97	1	the consultants injured themselves .	the consultants injured herself .
+simple_reflexives	25	953.4	992.24	1	the consultants congratulated themselves .	the consultants congratulated himself .
+simple_reflexives	26	953.4	1500.83	1	the consultants congratulated themselves .	the consultants congratulated herself .
+simple_reflexives	27	1001.74	1042.55	1	the consultants embarrassed themselves .	the consultants embarrassed himself .
+simple_reflexives	28	1001.74	1576.92	1	the consultants embarrassed themselves .	the consultants embarrassed herself .
+simple_reflexives	29	850.91	885.58	1	the consultants disguised themselves .	the consultants disguised himself .
+simple_reflexives	30	850.91	1339.49	1	the consultants disguised themselves .	the consultants disguised herself .
+simple_reflexives	31	1153.68	1200.68	1	the consultants hated themselves .	the consultants hated himself .
+simple_reflexives	32	1153.68	1816.1	1	the consultants hated themselves .	the consultants hated herself .
+simple_reflexives	33	913.36	950.57	1	the consultants doubted themselves .	the consultants doubted himself .
+simple_reflexives	34	913.36	1437.79	1	the consultants doubted themselves .	the consultants doubted herself .
+vp_coord	0	407.11	617.16	1	the author laughs and UNK-LC-s .	the author laughs and UNK-LC .
+vp_coord	1	407.11	1706.16	1	the author laughs and UNK-LC-s .	the author laughs and smile .
+vp_coord	2	543.78	788.88	1	the author laughs and is tall .	the author laughs and are tall .
+vp_coord	3	340.85	494.8	1	the author laughs and is old .	the author laughs and are old .
+vp_coord	4	389.7	570.15	1	the author laughs and is young .	the author laughs and are young .
+vp_coord	5	371.24	532.17	1	the author laughs and is short .	the author laughs and are short .
+vp_coord	6	434.38	737.79	1	the author UNK-LC-s and laughs .	the author UNK-LC-s and laugh .
+vp_coord	7	196.98	824.98	1	the author UNK-LC-s and UNK-LC-s .	the author UNK-LC-s and smile .
+vp_coord	8	292.37	424.46	1	the author UNK-LC-s and is tall .	the author UNK-LC-s and are tall .
+vp_coord	9	183.16	266.21	1	the author UNK-LC-s and is old .	the author UNK-LC-s and are old .
+vp_coord	10	208.0	306.51	1	the author UNK-LC-s and is young .	the author UNK-LC-s and are young .
+vp_coord	11	199.6	286.33	1	the author UNK-LC-s and is short .	the author UNK-LC-s and are short .
+vp_coord	12	434.38	737.79	1	the author UNK-LC-s and laughs .	the author UNK-LC-s and laugh .
+vp_coord	13	196.98	291.08	1	the author UNK-LC-s and UNK-LC-s .	the author UNK-LC-s and UNK-LC .
+vp_coord	14	292.37	424.46	1	the author UNK-LC-s and is tall .	the author UNK-LC-s and are tall .
+vp_coord	15	183.16	266.21	1	the author UNK-LC-s and is old .	the author UNK-LC-s and are old .
+vp_coord	16	208.0	306.51	1	the author UNK-LC-s and is young .	the author UNK-LC-s and are young .
+vp_coord	17	199.6	286.33	1	the author UNK-LC-s and is short .	the author UNK-LC-s and are short .
+vp_coord	18	727.05	633.13	0	the author is tall and laughs .	the author is tall and laugh .
+vp_coord	19	330.91	167.27	0	the author is tall and UNK-LC-s .	the author is tall and UNK-LC .
+vp_coord	20	330.91	644.32	1	the author is tall and UNK-LC-s .	the author is tall and smile .
+vp_coord	21	332.05	355.93	1	the author is tall and is old .	the author is tall and are old .
+vp_coord	22	373.83	402.9	1	the author is tall and is young .	the author is tall and are young .
+vp_coord	23	355.12	379.34	1	the author is tall and is short .	the author is tall and are short .
+vp_coord	24	455.83	390.44	0	the author is old and laughs .	the author is old and laugh .
+vp_coord	25	196.48	104.44	0	the author is old and UNK-LC-s .	the author is old and UNK-LC .
+vp_coord	26	196.48	404.26	1	the author is old and UNK-LC-s .	the author is old and smile .
+vp_coord	27	332.09	355.8	1	the author is old and is tall .	the author is old and are tall .
+vp_coord	28	248.45	267.76	1	the author is old and is young .	the author is old and are young .
+vp_coord	29	236.03	252.12	1	the author is old and is short .	the author is old and are short .
+vp_coord	30	522.23	432.03	0	the author is young and laughs .	the author is young and laugh .
+vp_coord	31	203.55	119.69	0	the author is young and UNK-LC-s .	the author is young and UNK-LC .
+vp_coord	32	203.55	469.07	1	the author is young and UNK-LC-s .	the author is young and smile .
+vp_coord	33	374.24	400.85	1	the author is young and is tall .	the author is young and are tall .
+vp_coord	34	248.69	266.49	1	the author is young and is old .	the author is young and are old .
+vp_coord	35	265.97	284.03	1	the author is young and is short .	the author is young and are short .
+vp_coord	36	491.99	428.32	0	the author is short and laughs .	the author is short and laugh .
+vp_coord	37	218.58	114.01	0	the author is short and UNK-LC-s .	the author is short and UNK-LC .
+vp_coord	38	218.58	440.07	1	the author is short and UNK-LC-s .	the author is short and smile .
+vp_coord	39	355.09	380.39	1	the author is short and is tall .	the author is short and are tall .
+vp_coord	40	235.98	252.9	1	the author is short and is old .	the author is short and are old .
+vp_coord	41	265.65	286.27	1	the author is short and is young .	the author is short and are young .
+vp_coord	42	380.71	577.13	1	the pilot laughs and UNK-LC-s .	the pilot laughs and UNK-LC .
+vp_coord	43	380.71	1595.5	1	the pilot laughs and UNK-LC-s .	the pilot laughs and smile .
+vp_coord	44	513.4	744.82	1	the pilot laughs and is tall .	the pilot laughs and are tall .
+vp_coord	45	321.82	467.16	1	the pilot laughs and is old .	the pilot laughs and are old .
+vp_coord	46	367.93	538.3	1	the pilot laughs and is young .	the pilot laughs and are young .
+vp_coord	47	350.5	502.44	1	the pilot laughs and is short .	the pilot laughs and are short .
+vp_coord	48	406.2	689.85	1	the pilot UNK-LC-s and laughs .	the pilot UNK-LC-s and laugh .
+vp_coord	49	184.18	771.35	1	the pilot UNK-LC-s and UNK-LC-s .	the pilot UNK-LC-s and smile .
+vp_coord	50	276.04	400.72	1	the pilot UNK-LC-s and is tall .	the pilot UNK-LC-s and are tall .
+vp_coord	51	172.93	251.32	1	the pilot UNK-LC-s and is old .	the pilot UNK-LC-s and are old .
+vp_coord	52	196.38	289.37	1	the pilot UNK-LC-s and is young .	the pilot UNK-LC-s and are young .
+vp_coord	53	188.45	270.32	1	the pilot UNK-LC-s and is short .	the pilot UNK-LC-s and are short .
+vp_coord	54	406.2	689.85	1	the pilot UNK-LC-s and laughs .	the pilot UNK-LC-s and laugh .
+vp_coord	55	184.18	272.09	1	the pilot UNK-LC-s and UNK-LC-s .	the pilot UNK-LC-s and UNK-LC .
+vp_coord	56	276.04	400.72	1	the pilot UNK-LC-s and is tall .	the pilot UNK-LC-s and are tall .
+vp_coord	57	172.93	251.32	1	the pilot UNK-LC-s and is old .	the pilot UNK-LC-s and are old .
+vp_coord	58	196.38	289.37	1	the pilot UNK-LC-s and is young .	the pilot UNK-LC-s and are young .
+vp_coord	59	188.45	270.32	1	the pilot UNK-LC-s and is short .	the pilot UNK-LC-s and are short .
+vp_coord	60	686.44	597.76	0	the pilot is tall and laughs .	the pilot is tall and laugh .
+vp_coord	61	312.43	157.92	0	the pilot is tall and UNK-LC-s .	the pilot is tall and UNK-LC .
+vp_coord	62	312.43	608.33	1	the pilot is tall and UNK-LC-s .	the pilot is tall and smile .
+vp_coord	63	315.76	338.47	1	the pilot is tall and is old .	the pilot is tall and are old .
+vp_coord	64	355.49	383.14	1	the pilot is tall and is young .	the pilot is tall and are young .
+vp_coord	65	337.7	360.73	1	the pilot is tall and is short .	the pilot is tall and are short .
+vp_coord	66	430.36	368.63	0	the pilot is old and laughs .	the pilot is old and laugh .
+vp_coord	67	185.5	98.61	0	the pilot is old and UNK-LC-s .	the pilot is old and UNK-LC .
+vp_coord	68	185.5	381.68	1	the pilot is old and UNK-LC-s .	the pilot is old and smile .
+vp_coord	69	315.8	338.35	1	the pilot is old and is tall .	the pilot is old and are tall .
+vp_coord	70	236.26	254.63	1	the pilot is old and is young .	the pilot is old and are young .
+vp_coord	71	224.45	239.75	1	the pilot is old and is short .	the pilot is old and are short .
+vp_coord	72	493.06	407.89	0	the pilot is young and laughs .	the pilot is young and laugh .
+vp_coord	73	192.18	113.0	0	the pilot is young and UNK-LC-s .	the pilot is young and UNK-LC .
+vp_coord	74	192.18	442.87	1	the pilot is young and UNK-LC-s .	the pilot is young and smile .
+vp_coord	75	355.88	381.18	1	the pilot is young and is tall .	the pilot is young and are tall .
+vp_coord	76	236.49	253.42	1	the pilot is young and is old .	the pilot is young and are old .
+vp_coord	77	252.92	270.09	1	the pilot is young and is short .	the pilot is young and are short .
+vp_coord	78	464.51	404.4	0	the pilot is short and laughs .	the pilot is short and laugh .
+vp_coord	79	206.38	107.64	0	the pilot is short and UNK-LC-s .	the pilot is short and UNK-LC .
+vp_coord	80	206.38	415.49	1	the pilot is short and UNK-LC-s .	the pilot is short and smile .
+vp_coord	81	337.67	361.73	1	the pilot is short and is tall .	the pilot is short and are tall .
+vp_coord	82	224.4	240.5	1	the pilot is short and is old .	the pilot is short and are old .
+vp_coord	83	252.62	272.23	1	the pilot is short and is young .	the pilot is short and are young .
+vp_coord	84	577.46	875.4	1	the surgeon laughs and UNK-LC-s .	the surgeon laughs and UNK-LC .
+vp_coord	85	577.46	2420.06	1	the surgeon laughs and UNK-LC-s .	the surgeon laughs and smile .
+vp_coord	86	733.74	1064.47	1	the surgeon laughs and is tall .	the surgeon laughs and are tall .
+vp_coord	87	459.93	667.66	1	the surgeon laughs and is old .	the surgeon laughs and are old .
+vp_coord	88	525.83	769.32	1	the surgeon laughs and is young .	the surgeon laughs and are young .
+vp_coord	89	500.92	718.07	1	the surgeon laughs and is short .	the surgeon laughs and are short .
+vp_coord	90	616.1	1045.58	1	the surgeon UNK-LC-s and laughs .	the surgeon UNK-LC-s and laugh .
+vp_coord	91	279.33	1169.02	1	the surgeon UNK-LC-s and UNK-LC-s .	the surgeon UNK-LC-s and smile .
+vp_coord	92	394.49	572.57	1	the surgeon UNK-LC-s and is tall .	the surgeon UNK-LC-s and are tall .
+vp_coord	93	247.13	359.1	1	the surgeon UNK-LC-s and is old .	the surgeon UNK-LC-s and are old .
+vp_coord	94	280.65	413.46	1	the surgeon UNK-LC-s and is young .	the surgeon UNK-LC-s and are young .
+vp_coord	95	269.32	386.25	1	the surgeon UNK-LC-s and is short .	the surgeon UNK-LC-s and are short .
+vp_coord	96	616.1	1045.58	1	the surgeon UNK-LC-s and laughs .	the surgeon UNK-LC-s and laugh .
+vp_coord	97	279.33	411.07	1	the surgeon UNK-LC-s and UNK-LC-s .	the surgeon UNK-LC-s and UNK-LC .
+vp_coord	98	394.49	572.57	1	the surgeon UNK-LC-s and is tall .	the surgeon UNK-LC-s and are tall .
+vp_coord	99	247.13	359.1	1	the surgeon UNK-LC-s and is old .	the surgeon UNK-LC-s and are old .
+vp_coord	100	280.65	413.46	1	the surgeon UNK-LC-s and is young .	the surgeon UNK-LC-s and are young .
+vp_coord	101	269.32	386.25	1	the surgeon UNK-LC-s and is short .	the surgeon UNK-LC-s and are short .
+vp_coord	102	981.04	854.3	0	the surgeon is tall and laughs .	the surgeon is tall and laugh .
+vp_coord	103	446.51	225.7	0	the surgeon is tall and UNK-LC-s .	the surgeon is tall and UNK-LC .
+vp_coord	104	446.51	869.4	1	the surgeon is tall and UNK-LC-s .	the surgeon is tall and smile .
+vp_coord	0	431.58	462.61	1	the surgeon is tall and is old .	the surgeon is tall and are old .
+vp_coord	1	485.87	523.66	1	the surgeon is tall and is young .	the surgeon is tall and are young .
+vp_coord	2	461.56	493.04	1	the surgeon is tall and is short .	the surgeon is tall and are short .
+vp_coord	3	615.06	526.84	0	the surgeon is old and laughs .	the surgeon is old and laugh .
+vp_coord	4	265.11	140.93	0	the surgeon is old and UNK-LC-s .	the surgeon is old and UNK-LC .
+vp_coord	5	265.11	545.49	1	the surgeon is old and UNK-LC-s .	the surgeon is old and smile .
+vp_coord	6	431.63	462.45	1	the surgeon is old and is tall .	the surgeon is old and are tall .
+vp_coord	7	322.92	348.02	1	the surgeon is old and is young .	the surgeon is old and are young .
+vp_coord	8	306.77	327.69	1	the surgeon is old and is short .	the surgeon is old and are short .
+vp_coord	9	704.67	582.95	0	the surgeon is young and laughs .	the surgeon is young and laugh .
+vp_coord	10	274.66	161.5	0	the surgeon is young and UNK-LC-s .	the surgeon is young and UNK-LC .
+vp_coord	11	274.66	632.93	1	the surgeon is young and UNK-LC-s .	the surgeon is young and smile .
+vp_coord	12	486.41	520.99	1	the surgeon is young and is tall .	the surgeon is young and are tall .
+vp_coord	13	323.23	346.37	1	the surgeon is young and is old .	the surgeon is young and are old .
+vp_coord	14	345.69	369.16	1	the surgeon is young and is short .	the surgeon is young and are short .
+vp_coord	15	663.86	577.95	0	the surgeon is short and laughs .	the surgeon is short and laugh .
+vp_coord	16	294.94	153.84	0	the surgeon is short and UNK-LC-s .	the surgeon is short and UNK-LC .
+vp_coord	17	294.94	593.8	1	the surgeon is short and UNK-LC-s .	the surgeon is short and smile .
+vp_coord	18	461.52	494.41	1	the surgeon is short and is tall .	the surgeon is short and are tall .
+vp_coord	19	306.71	328.71	1	the surgeon is short and is old .	the surgeon is short and are old .
+vp_coord	20	345.28	372.08	1	the surgeon is short and is young .	the surgeon is short and are young .
+vp_coord	21	407.11	617.16	1	the farmer laughs and UNK-LC-s .	the farmer laughs and UNK-LC .
+vp_coord	22	407.11	1706.16	1	the farmer laughs and UNK-LC-s .	the farmer laughs and smile .
+vp_coord	23	543.78	788.88	1	the farmer laughs and is tall .	the farmer laughs and are tall .
+vp_coord	24	340.85	494.8	1	the farmer laughs and is old .	the farmer laughs and are old .
+vp_coord	25	389.7	570.15	1	the farmer laughs and is young .	the farmer laughs and are young .
+vp_coord	26	371.24	532.17	1	the farmer laughs and is short .	the farmer laughs and are short .
+vp_coord	27	434.38	737.79	1	the farmer UNK-LC-s and laughs .	the farmer UNK-LC-s and laugh .
+vp_coord	28	196.98	824.98	1	the farmer UNK-LC-s and UNK-LC-s .	the farmer UNK-LC-s and smile .
+vp_coord	29	292.37	424.46	1	the farmer UNK-LC-s and is tall .	the farmer UNK-LC-s and are tall .
+vp_coord	30	183.16	266.21	1	the farmer UNK-LC-s and is old .	the farmer UNK-LC-s and are old .
+vp_coord	31	208.0	306.51	1	the farmer UNK-LC-s and is young .	the farmer UNK-LC-s and are young .
+vp_coord	32	199.6	286.33	1	the farmer UNK-LC-s and is short .	the farmer UNK-LC-s and are short .
+vp_coord	33	434.38	737.79	1	the farmer UNK-LC-s and laughs .	the farmer UNK-LC-s and laugh .
+vp_coord	34	196.98	291.08	1	the farmer UNK-LC-s and UNK-LC-s .	the farmer UNK-LC-s and UNK-LC .
+vp_coord	35	292.37	424.46	1	the farmer UNK-LC-s and is tall .	the farmer UNK-LC-s and are tall .
+vp_coord	36	183.16	266.21	1	the farmer UNK-LC-s and is old .	the farmer UNK-LC-s and are old .
+vp_coord	37	208.0	306.51	1	the farmer UNK-LC-s and is young .	the farmer UNK-LC-s and are young .
+vp_coord	38	199.6	286.33	1	the farmer UNK-LC-s and is short .	the farmer UNK-LC-s and are short .
+vp_coord	39	727.05	633.13	0	the farmer is tall and laughs .	the farmer is tall and laugh .
+vp_coord	40	330.91	167.27	0	the farmer is tall and UNK-LC-s .	the farmer is tall and UNK-LC .
+vp_coord	41	330.91	644.32	1	the farmer is tall and UNK-LC-s .	the farmer is tall and smile .
+vp_coord	42	332.05	355.93	1	the farmer is tall and is old .	the farmer is tall and are old .
+vp_coord	43	373.83	402.9	1	the farmer is tall and is young .	the farmer is tall and are young .
+vp_coord	44	355.12	379.34	1	the farmer is tall and is short .	the farmer is tall and are short .
+vp_coord	45	455.83	390.44	0	the farmer is old and laughs .	the farmer is old and laugh .
+vp_coord	46	196.48	104.44	0	the farmer is old and UNK-LC-s .	the farmer is old and UNK-LC .
+vp_coord	47	196.48	404.26	1	the farmer is old and UNK-LC-s .	the farmer is old and smile .
+vp_coord	48	332.09	355.8	1	the farmer is old and is tall .	the farmer is old and are tall .
+vp_coord	49	248.45	267.76	1	the farmer is old and is young .	the farmer is old and are young .
+vp_coord	50	236.03	252.12	1	the farmer is old and is short .	the farmer is old and are short .
+vp_coord	51	522.23	432.03	0	the farmer is young and laughs .	the farmer is young and laugh .
+vp_coord	52	203.55	119.69	0	the farmer is young and UNK-LC-s .	the farmer is young and UNK-LC .
+vp_coord	53	203.55	469.07	1	the farmer is young and UNK-LC-s .	the farmer is young and smile .
+vp_coord	54	374.24	400.85	1	the farmer is young and is tall .	the farmer is young and are tall .
+vp_coord	55	248.69	266.49	1	the farmer is young and is old .	the farmer is young and are old .
+vp_coord	56	265.97	284.03	1	the farmer is young and is short .	the farmer is young and are short .
+vp_coord	57	491.99	428.32	0	the farmer is short and laughs .	the farmer is short and laugh .
+vp_coord	58	218.58	114.01	0	the farmer is short and UNK-LC-s .	the farmer is short and UNK-LC .
+vp_coord	59	218.58	440.07	1	the farmer is short and UNK-LC-s .	the farmer is short and smile .
+vp_coord	60	355.09	380.39	1	the farmer is short and is tall .	the farmer is short and are tall .
+vp_coord	61	235.98	252.9	1	the farmer is short and is old .	the farmer is short and are old .
+vp_coord	62	265.65	286.27	1	the farmer is short and is young .	the farmer is short and are young .
+vp_coord	63	301.19	456.58	1	the manager laughs and UNK-LC-s .	the manager laughs and UNK-LC .
+vp_coord	64	301.19	1262.24	1	the manager laughs and UNK-LC-s .	the manager laughs and smile .
+vp_coord	65	419.99	609.3	1	the manager laughs and is tall .	the manager laughs and are tall .
+vp_coord	66	263.26	382.16	1	the manager laughs and is old .	the manager laughs and are old .
+vp_coord	67	300.99	440.36	1	the manager laughs and is young .	the manager laughs and are young .
+vp_coord	68	286.73	411.02	1	the manager laughs and is short .	the manager laughs and are short .
+vp_coord	69	321.36	545.85	1	the manager UNK-LC-s and laughs .	the manager UNK-LC-s and laugh .
+vp_coord	70	145.73	610.36	1	the manager UNK-LC-s and UNK-LC-s .	the manager UNK-LC-s and smile .
+vp_coord	71	225.81	327.83	1	the manager UNK-LC-s and is tall .	the manager UNK-LC-s and are tall .
+vp_coord	72	141.46	205.61	1	the manager UNK-LC-s and is old .	the manager UNK-LC-s and are old .
+vp_coord	73	160.65	236.74	1	the manager UNK-LC-s and is young .	the manager UNK-LC-s and are young .
+vp_coord	74	154.16	221.15	1	the manager UNK-LC-s and is short .	the manager UNK-LC-s and are short .
+vp_coord	75	321.36	545.85	1	the manager UNK-LC-s and laughs .	the manager UNK-LC-s and laugh .
+vp_coord	76	145.73	215.39	1	the manager UNK-LC-s and UNK-LC-s .	the manager UNK-LC-s and UNK-LC .
+vp_coord	77	225.81	327.83	1	the manager UNK-LC-s and is tall .	the manager UNK-LC-s and are tall .
+vp_coord	78	141.46	205.61	1	the manager UNK-LC-s and is old .	the manager UNK-LC-s and are old .
+vp_coord	79	160.65	236.74	1	the manager UNK-LC-s and is young .	the manager UNK-LC-s and are young .
+vp_coord	80	154.16	221.15	1	the manager UNK-LC-s and is short .	the manager UNK-LC-s and are short .
+vp_coord	81	561.54	489.0	0	the manager is tall and laughs .	the manager is tall and laugh .
+vp_coord	82	255.58	129.19	0	the manager is tall and UNK-LC-s .	the manager is tall and UNK-LC .
+vp_coord	83	255.58	497.64	1	the manager is tall and UNK-LC-s .	the manager is tall and smile .
+vp_coord	84	264.88	283.92	1	the manager is tall and is old .	the manager is tall and are old .
+vp_coord	85	298.2	321.39	1	the manager is tall and is young .	the manager is tall and are young .
+vp_coord	86	283.28	302.6	1	the manager is tall and is short .	the manager is tall and are short .
+vp_coord	87	352.06	301.56	0	the manager is old and laughs .	the manager is old and laugh .
+vp_coord	88	151.75	80.67	0	the manager is old and UNK-LC-s .	the manager is old and UNK-LC .
+vp_coord	89	151.75	312.24	1	the manager is old and UNK-LC-s .	the manager is old and smile .
+vp_coord	90	264.91	283.83	1	the manager is old and is tall .	the manager is old and are tall .
+vp_coord	91	198.19	213.59	1	the manager is old and is young .	the manager is old and are young .
+vp_coord	92	188.28	201.12	1	the manager is old and is short .	the manager is old and are short .
+vp_coord	93	403.35	333.68	0	the manager is young and laughs .	the manager is young and laugh .
+vp_coord	94	157.22	92.44	0	the manager is young and UNK-LC-s .	the manager is young and UNK-LC .
+vp_coord	95	157.22	362.29	1	the manager is young and UNK-LC-s .	the manager is young and smile .
+vp_coord	96	298.53	319.76	1	the manager is young and is tall .	the manager is young and are tall .
+vp_coord	97	198.38	212.58	1	the manager is young and is old .	the manager is young and are old .
+vp_coord	98	212.16	226.57	1	the manager is young and is short .	the manager is young and are short .
+vp_coord	99	379.99	330.82	0	the manager is short and laughs .	the manager is short and laugh .
+vp_coord	100	168.83	88.06	0	the manager is short and UNK-LC-s .	the manager is short and UNK-LC .
+vp_coord	101	168.83	339.89	1	the manager is short and UNK-LC-s .	the manager is short and smile .
+vp_coord	102	283.25	303.44	1	the manager is short and is tall .	the manager is short and are tall .
+vp_coord	103	188.24	201.74	1	the manager is short and is old .	the manager is short and are old .
+vp_coord	104	211.91	228.36	1	the manager is short and is young .	the manager is short and are young .
+vp_coord	0	338.5	513.15	1	the customer laughs and UNK-LC-s .	the customer laughs and UNK-LC .
+vp_coord	1	338.5	1418.61	1	the customer laughs and UNK-LC-s .	the customer laughs and smile .
+vp_coord	2	464.21	673.45	1	the customer laughs and is tall .	the customer laughs and are tall .
+vp_coord	3	290.98	422.4	1	the customer laughs and is old .	the customer laughs and are old .
+vp_coord	4	332.68	486.72	1	the customer laughs and is young .	the customer laughs and are young .
+vp_coord	5	316.92	454.3	1	the customer laughs and is short .	the customer laughs and are short .
+vp_coord	6	361.17	613.48	1	the customer UNK-LC-s and laughs .	the customer UNK-LC-s and laugh .
+vp_coord	7	163.78	685.99	1	the customer UNK-LC-s and UNK-LC-s .	the customer UNK-LC-s and smile .
+vp_coord	8	249.59	362.35	1	the customer UNK-LC-s and is tall .	the customer UNK-LC-s and are tall .
+vp_coord	9	156.36	227.26	1	the customer UNK-LC-s and is old .	the customer UNK-LC-s and are old .
+vp_coord	10	177.57	261.66	1	the customer UNK-LC-s and is young .	the customer UNK-LC-s and are young .
+vp_coord	11	170.39	244.44	1	the customer UNK-LC-s and is short .	the customer UNK-LC-s and are short .
+vp_coord	12	361.17	613.48	1	the customer UNK-LC-s and laughs .	the customer UNK-LC-s and laugh .
+vp_coord	13	163.78	242.09	1	the customer UNK-LC-s and UNK-LC-s .	the customer UNK-LC-s and UNK-LC .
+vp_coord	14	249.59	362.35	1	the customer UNK-LC-s and is tall .	the customer UNK-LC-s and are tall .
+vp_coord	15	156.36	227.26	1	the customer UNK-LC-s and is old .	the customer UNK-LC-s and are old .
+vp_coord	16	177.57	261.66	1	the customer UNK-LC-s and is young .	the customer UNK-LC-s and are young .
+vp_coord	17	170.39	244.44	1	the customer UNK-LC-s and is short .	the customer UNK-LC-s and are short .
+vp_coord	18	620.67	540.49	0	the customer is tall and laughs .	the customer is tall and laugh .
+vp_coord	19	282.49	142.79	0	the customer is tall and UNK-LC-s .	the customer is tall and UNK-LC .
+vp_coord	20	282.49	550.04	1	the customer is tall and UNK-LC-s .	the customer is tall and smile .
+vp_coord	21	289.13	309.92	1	the customer is tall and is old .	the customer is tall and are old .
+vp_coord	22	325.5	350.81	1	the customer is tall and is young .	the customer is tall and are young .
+vp_coord	23	309.21	330.3	1	the customer is tall and is short .	the customer is tall and are short .
+vp_coord	24	389.13	333.31	0	the customer is old and laughs .	the customer is old and laugh .
+vp_coord	25	167.73	89.16	0	the customer is old and UNK-LC-s .	the customer is old and UNK-LC .
+vp_coord	26	167.73	345.11	1	the customer is old and UNK-LC-s .	the customer is old and smile .
+vp_coord	27	289.16	309.81	1	the customer is old and is tall .	the customer is old and are tall .
+vp_coord	28	216.33	233.15	1	the customer is old and is young .	the customer is old and are young .
+vp_coord	29	205.51	219.53	1	the customer is old and is short .	the customer is old and are short .
+vp_coord	30	445.82	368.81	0	the customer is young and laughs .	the customer is young and laugh .
+vp_coord	31	173.77	102.18	0	the customer is young and UNK-LC-s .	the customer is young and UNK-LC .
+vp_coord	32	173.77	400.43	1	the customer is young and UNK-LC-s .	the customer is young and smile .
+vp_coord	33	325.86	349.03	1	the customer is young and is tall .	the customer is young and are tall .
+vp_coord	34	216.54	232.04	1	the customer is young and is old .	the customer is young and are old .
+vp_coord	35	231.59	247.31	1	the customer is young and is short .	the customer is young and are short .
+vp_coord	36	420.0	365.65	0	the customer is short and laughs .	the customer is short and laugh .
+vp_coord	37	186.6	97.33	0	the customer is short and UNK-LC-s .	the customer is short and UNK-LC .
+vp_coord	38	186.6	375.68	1	the customer is short and UNK-LC-s .	the customer is short and smile .
+vp_coord	39	309.18	331.22	1	the customer is short and is tall .	the customer is short and are tall .
+vp_coord	40	205.47	220.21	1	the customer is short and is old .	the customer is short and are old .
+vp_coord	41	231.31	249.27	1	the customer is short and is young .	the customer is short and are young .
+vp_coord	42	267.6	405.67	1	the officer laughs and UNK-LC-s .	the officer laughs and UNK-LC .
+vp_coord	43	267.6	1121.49	1	the officer laughs and UNK-LC-s .	the officer laughs and smile .
+vp_coord	44	379.52	550.58	1	the officer laughs and is tall .	the officer laughs and are tall .
+vp_coord	45	237.89	345.33	1	the officer laughs and is old .	the officer laughs and are old .
+vp_coord	46	271.98	397.92	1	the officer laughs and is young .	the officer laughs and are young .
+vp_coord	47	259.1	371.41	1	the officer laughs and is short .	the officer laughs and are short .
+vp_coord	48	285.53	484.98	1	the officer UNK-LC-s and laughs .	the officer UNK-LC-s and laugh .
+vp_coord	49	129.48	542.29	1	the officer UNK-LC-s and UNK-LC-s .	the officer UNK-LC-s and smile .
+vp_coord	50	204.05	296.24	1	the officer UNK-LC-s and is tall .	the officer UNK-LC-s and are tall .
+vp_coord	51	127.83	185.8	1	the officer UNK-LC-s and is old .	the officer UNK-LC-s and are old .
+vp_coord	52	145.17	213.92	1	the officer UNK-LC-s and is young .	the officer UNK-LC-s and are young .
+vp_coord	53	139.31	199.84	1	the officer UNK-LC-s and is short .	the officer UNK-LC-s and are short .
+vp_coord	54	285.53	484.98	1	the officer UNK-LC-s and laughs .	the officer UNK-LC-s and laugh .
+vp_coord	55	129.48	191.36	1	the officer UNK-LC-s and UNK-LC-s .	the officer UNK-LC-s and UNK-LC .
+vp_coord	56	204.05	296.24	1	the officer UNK-LC-s and is tall .	the officer UNK-LC-s and are tall .
+vp_coord	57	127.83	185.8	1	the officer UNK-LC-s and is old .	the officer UNK-LC-s and are old .
+vp_coord	58	145.17	213.92	1	the officer UNK-LC-s and is young .	the officer UNK-LC-s and are young .
+vp_coord	59	139.31	199.84	1	the officer UNK-LC-s and is short .	the officer UNK-LC-s and are short .
+vp_coord	60	507.43	441.88	0	the officer is tall and laughs .	the officer is tall and laugh .
+vp_coord	61	230.95	116.74	0	the officer is tall and UNK-LC-s .	the officer is tall and UNK-LC .
+vp_coord	62	230.95	449.68	1	the officer is tall and UNK-LC-s .	the officer is tall and smile .
+vp_coord	63	242.4	259.83	1	the officer is tall and is old .	the officer is tall and are old .
+vp_coord	64	272.9	294.12	1	the officer is tall and is young .	the officer is tall and are young .
+vp_coord	65	259.24	276.92	1	the officer is tall and is short .	the officer is tall and are short .
+vp_coord	66	318.13	272.5	0	the officer is old and laughs .	the officer is old and laugh .
+vp_coord	67	137.13	72.89	0	the officer is old and UNK-LC-s .	the officer is old and UNK-LC .
+vp_coord	68	137.13	282.14	1	the officer is old and UNK-LC-s .	the officer is old and smile .
+vp_coord	69	242.43	259.74	1	the officer is old and is tall .	the officer is old and are tall .
+vp_coord	70	181.37	195.47	1	the officer is old and is young .	the officer is old and are young .
+vp_coord	71	172.3	184.05	1	the officer is old and is short .	the officer is old and are short .
+vp_coord	72	364.48	301.52	0	the officer is young and laughs .	the officer is young and laugh .
+vp_coord	73	142.06	83.53	0	the officer is young and UNK-LC-s .	the officer is young and UNK-LC .
+vp_coord	74	142.06	327.37	1	the officer is young and UNK-LC-s .	the officer is young and smile .
+vp_coord	75	273.2	292.62	1	the officer is young and is tall .	the officer is young and are tall .
+vp_coord	76	181.55	194.54	1	the officer is young and is old .	the officer is young and are old .
+vp_coord	77	194.16	207.34	1	the officer is young and is short .	the officer is young and are short .
+vp_coord	78	343.37	298.93	0	the officer is short and laughs .	the officer is short and laugh .
+vp_coord	79	152.56	79.57	0	the officer is short and UNK-LC-s .	the officer is short and UNK-LC .
+vp_coord	80	152.56	307.14	1	the officer is short and UNK-LC-s .	the officer is short and smile .
+vp_coord	81	259.22	277.69	1	the officer is short and is tall .	the officer is short and are tall .
+vp_coord	82	172.27	184.62	1	the officer is short and is old .	the officer is short and are old .
+vp_coord	83	193.93	208.98	1	the officer is short and is young .	the officer is short and are young .
+vp_coord	84	520.16	788.54	1	the teacher laughs and UNK-LC-s .	the teacher laughs and UNK-LC .
+vp_coord	85	520.16	2179.93	1	the teacher laughs and UNK-LC-s .	the teacher laughs and smile .
+vp_coord	86	670.87	973.27	1	the teacher laughs and is tall .	the teacher laughs and are tall .
+vp_coord	87	420.52	610.45	1	the teacher laughs and is old .	the teacher laughs and are old .
+vp_coord	88	480.78	703.41	1	the teacher laughs and is young .	the teacher laughs and are young .
+vp_coord	89	458.01	656.55	1	the teacher laughs and is short .	the teacher laughs and are short .
+vp_coord	90	555.0	942.72	1	the teacher UNK-LC-s and laughs .	the teacher UNK-LC-s and laugh .
+vp_coord	91	251.68	1054.13	1	the teacher UNK-LC-s and UNK-LC-s .	the teacher UNK-LC-s and smile .
+vp_coord	92	360.7	523.67	1	the teacher UNK-LC-s and is tall .	the teacher UNK-LC-s and are tall .
+vp_coord	93	225.97	328.44	1	the teacher UNK-LC-s and is old .	the teacher UNK-LC-s and are old .
+vp_coord	94	256.62	378.15	1	the teacher UNK-LC-s and is young .	the teacher UNK-LC-s and are young .
+vp_coord	95	246.25	353.26	1	the teacher UNK-LC-s and is short .	the teacher UNK-LC-s and are short .
+vp_coord	96	555.0	942.72	1	the teacher UNK-LC-s and laughs .	the teacher UNK-LC-s and laugh .
+vp_coord	97	251.68	372.01	1	the teacher UNK-LC-s and UNK-LC-s .	the teacher UNK-LC-s and UNK-LC .
+vp_coord	98	360.7	523.67	1	the teacher UNK-LC-s and is tall .	the teacher UNK-LC-s and are tall .
+vp_coord	99	225.97	328.44	1	the teacher UNK-LC-s and is old .	the teacher UNK-LC-s and are old .
+vp_coord	100	256.62	378.15	1	the teacher UNK-LC-s and is young .	the teacher UNK-LC-s and are young .
+vp_coord	101	246.25	353.26	1	the teacher UNK-LC-s and is short .	the teacher UNK-LC-s and are short .
+vp_coord	102	896.98	781.11	0	the teacher is tall and laughs .	the teacher is tall and laugh .
+vp_coord	103	408.25	206.36	0	the teacher is tall and UNK-LC-s .	the teacher is tall and UNK-LC .
+vp_coord	104	408.25	794.91	1	the teacher is tall and UNK-LC-s .	the teacher is tall and smile .
+vp_coord	0	399.05	427.74	1	the teacher is tall and is old .	the teacher is tall and are old .
+vp_coord	1	449.25	484.19	1	the teacher is tall and is young .	the teacher is tall and are young .
+vp_coord	2	426.77	455.87	1	the teacher is tall and is short .	the teacher is tall and are short .
+vp_coord	3	562.36	481.7	0	the teacher is old and laughs .	the teacher is old and laugh .
+vp_coord	4	242.4	128.85	0	the teacher is old and UNK-LC-s .	the teacher is old and UNK-LC .
+vp_coord	5	242.4	498.75	1	the teacher is old and UNK-LC-s .	the teacher is old and smile .
+vp_coord	6	399.09	427.59	1	the teacher is old and is tall .	the teacher is old and are tall .
+vp_coord	7	298.58	321.79	1	the teacher is old and is young .	the teacher is old and are young .
+vp_coord	8	283.65	302.99	1	the teacher is old and is short .	the teacher is old and are short .
+vp_coord	9	644.29	533.0	0	the teacher is young and laughs .	the teacher is young and laugh .
+vp_coord	10	251.13	147.66	0	the teacher is young and UNK-LC-s .	the teacher is young and UNK-LC .
+vp_coord	11	251.13	578.7	1	the teacher is young and UNK-LC-s .	the teacher is young and smile .
+vp_coord	12	449.74	481.72	1	the teacher is young and is tall .	the teacher is young and are tall .
+vp_coord	13	298.87	320.26	1	the teacher is young and is old .	the teacher is young and are old .
+vp_coord	14	319.63	341.33	1	the teacher is young and is short .	the teacher is young and are short .
+vp_coord	15	606.98	528.43	0	the teacher is short and laughs .	the teacher is short and laugh .
+vp_coord	16	269.67	140.66	0	the teacher is short and UNK-LC-s .	the teacher is short and UNK-LC .
+vp_coord	17	269.67	542.93	1	the teacher is short and UNK-LC-s .	the teacher is short and smile .
+vp_coord	18	426.73	457.14	1	the teacher is short and is tall .	the teacher is short and are tall .
+vp_coord	19	283.59	303.93	1	the teacher is short and is old .	the teacher is short and are old .
+vp_coord	20	319.25	344.03	1	the teacher is short and is young .	the teacher is short and are young .
+vp_coord	21	463.07	702.0	1	the senator laughs and UNK-LC-s .	the senator laughs and UNK-LC .
+vp_coord	22	463.07	1940.68	1	the senator laughs and UNK-LC-s .	the senator laughs and smile .
+vp_coord	23	607.25	880.96	1	the senator laughs and is tall .	the senator laughs and are tall .
+vp_coord	24	380.64	552.55	1	the senator laughs and is old .	the senator laughs and are old .
+vp_coord	25	435.18	636.69	1	the senator laughs and is young .	the senator laughs and are young .
+vp_coord	26	414.57	594.28	1	the senator laughs and is short .	the senator laughs and are short .
+vp_coord	27	494.01	837.16	1	the senator UNK-LC-s and laughs .	the senator UNK-LC-s and laugh .
+vp_coord	28	223.91	935.83	1	the senator UNK-LC-s and UNK-LC-s .	the senator UNK-LC-s and smile .
+vp_coord	29	326.46	473.63	1	the senator UNK-LC-s and is tall .	the senator UNK-LC-s and are tall .
+vp_coord	30	204.52	297.05	1	the senator UNK-LC-s and is old .	the senator UNK-LC-s and are old .
+vp_coord	31	232.26	342.01	1	the senator UNK-LC-s and is young .	the senator UNK-LC-s and are young .
+vp_coord	32	222.87	319.51	1	the senator UNK-LC-s and is short .	the senator UNK-LC-s and are short .
+vp_coord	33	494.01	837.16	1	the senator UNK-LC-s and laughs .	the senator UNK-LC-s and laugh .
+vp_coord	34	223.91	327.18	1	the senator UNK-LC-s and UNK-LC-s .	the senator UNK-LC-s and UNK-LC .
+vp_coord	35	326.46	473.63	1	the senator UNK-LC-s and is tall .	the senator UNK-LC-s and are tall .
+vp_coord	36	204.52	297.05	1	the senator UNK-LC-s and is old .	the senator UNK-LC-s and are old .
+vp_coord	37	232.26	342.01	1	the senator UNK-LC-s and is young .	the senator UNK-LC-s and are young .
+vp_coord	38	222.87	319.51	1	the senator UNK-LC-s and is short .	the senator UNK-LC-s and are short .
+vp_coord	39	811.91	707.02	0	the senator is tall and laughs .	the senator is tall and laugh .
+vp_coord	40	369.53	186.79	0	the senator is tall and UNK-LC-s .	the senator is tall and UNK-LC .
+vp_coord	41	369.53	719.52	1	the senator is tall and UNK-LC-s .	the senator is tall and smile .
+vp_coord	42	365.73	392.02	1	the senator is tall and is old .	the senator is tall and are old .
+vp_coord	43	411.74	443.76	1	the senator is tall and is young .	the senator is tall and are young .
+vp_coord	44	391.14	417.81	1	the senator is tall and is short .	the senator is tall and are short .
+vp_coord	45	509.03	436.01	0	the senator is old and laughs .	the senator is old and laugh .
+vp_coord	46	219.41	116.63	0	the senator is old and UNK-LC-s .	the senator is old and UNK-LC .
+vp_coord	47	219.41	451.45	1	the senator is old and UNK-LC-s .	the senator is old and smile .
+vp_coord	48	365.77	391.89	1	the senator is old and is tall .	the senator is old and are tall .
+vp_coord	49	273.65	294.92	1	the senator is old and is young .	the senator is old and are young .
+vp_coord	50	259.96	277.69	1	the senator is old and is short .	the senator is old and are short .
+vp_coord	51	583.19	482.45	0	the senator is young and laughs .	the senator is young and laugh .
+vp_coord	52	227.31	133.66	0	the senator is young and UNK-LC-s .	the senator is young and UNK-LC .
+vp_coord	53	227.31	523.82	1	the senator is young and UNK-LC-s .	the senator is young and smile .
+vp_coord	54	412.19	441.5	1	the senator is young and is tall .	the senator is young and are tall .
+vp_coord	55	273.91	293.52	1	the senator is young and is old .	the senator is young and are old .
+vp_coord	56	292.94	312.83	1	the senator is young and is short .	the senator is young and are short .
+vp_coord	57	549.42	478.31	0	the senator is short and laughs .	the senator is short and laugh .
+vp_coord	58	244.1	127.32	0	the senator is short and UNK-LC-s .	the senator is short and UNK-LC .
+vp_coord	59	244.1	491.43	1	the senator is short and UNK-LC-s .	the senator is short and smile .
+vp_coord	60	391.1	418.97	1	the senator is short and is tall .	the senator is short and are tall .
+vp_coord	61	259.91	278.55	1	the senator is short and is old .	the senator is short and are old .
+vp_coord	62	292.6	315.31	1	the senator is short and is young .	the senator is short and are young .
+vp_coord	63	342.9	519.83	1	the consultant laughs and UNK-LC-s .	the consultant laughs and UNK-LC .
+vp_coord	64	342.9	1437.07	1	the consultant laughs and UNK-LC-s .	the consultant laughs and smile .
+vp_coord	65	469.38	680.96	1	the consultant laughs and is tall .	the consultant laughs and are tall .
+vp_coord	66	294.22	427.11	1	the consultant laughs and is old .	the consultant laughs and are old .
+vp_coord	67	336.38	492.15	1	the consultant laughs and is young .	the consultant laughs and are young .
+vp_coord	68	320.45	459.36	1	the consultant laughs and is short .	the consultant laughs and are short .
+vp_coord	69	365.87	621.45	1	the consultant UNK-LC-s and laughs .	the consultant UNK-LC-s and laugh .
+vp_coord	70	165.91	694.9	1	the consultant UNK-LC-s and UNK-LC-s .	the consultant UNK-LC-s and smile .
+vp_coord	71	252.37	366.39	1	the consultant UNK-LC-s and is tall .	the consultant UNK-LC-s and are tall .
+vp_coord	72	158.1	229.79	1	the consultant UNK-LC-s and is old .	the consultant UNK-LC-s and are old .
+vp_coord	73	179.55	264.58	1	the consultant UNK-LC-s and is young .	the consultant UNK-LC-s and are young .
+vp_coord	74	172.29	247.16	1	the consultant UNK-LC-s and is short .	the consultant UNK-LC-s and are short .
+vp_coord	75	365.87	621.45	1	the consultant UNK-LC-s and laughs .	the consultant UNK-LC-s and laugh .
+vp_coord	76	165.91	245.22	1	the consultant UNK-LC-s and UNK-LC-s .	the consultant UNK-LC-s and UNK-LC .
+vp_coord	77	252.37	366.39	1	the consultant UNK-LC-s and is tall .	the consultant UNK-LC-s and are tall .
+vp_coord	78	158.1	229.79	1	the consultant UNK-LC-s and is old .	the consultant UNK-LC-s and are old .
+vp_coord	79	179.55	264.58	1	the consultant UNK-LC-s and is young .	the consultant UNK-LC-s and are young .
+vp_coord	80	172.29	247.16	1	the consultant UNK-LC-s and is short .	the consultant UNK-LC-s and are short .
+vp_coord	81	627.58	546.51	0	the consultant is tall and laughs .	the consultant is tall and laugh .
+vp_coord	82	285.64	144.38	0	the consultant is tall and UNK-LC-s .	the consultant is tall and UNK-LC .
+vp_coord	83	285.64	556.17	1	the consultant is tall and UNK-LC-s .	the consultant is tall and smile .
+vp_coord	84	291.94	312.94	1	the consultant is tall and is old .	the consultant is tall and are old .
+vp_coord	85	328.67	354.23	1	the consultant is tall and is young .	the consultant is tall and are young .
+vp_coord	86	312.23	333.52	1	the consultant is tall and is short .	the consultant is tall and are short .
+vp_coord	87	393.46	337.03	0	the consultant is old and laughs .	the consultant is old and laugh .
+vp_coord	88	169.6	90.15	0	the consultant is old and UNK-LC-s .	the consultant is old and UNK-LC .
+vp_coord	89	169.6	348.96	1	the consultant is old and UNK-LC-s .	the consultant is old and smile .
+vp_coord	90	291.98	312.83	1	the consultant is old and is tall .	the consultant is old and are tall .
+vp_coord	91	218.44	235.42	1	the consultant is old and is young .	the consultant is old and are young .
+vp_coord	92	207.52	221.67	1	the consultant is old and is short .	the consultant is old and are short .
+vp_coord	93	450.79	372.92	0	the consultant is young and laughs .	the consultant is young and laugh .
+vp_coord	94	175.71	103.32	0	the consultant is young and UNK-LC-s .	the consultant is young and UNK-LC .
+vp_coord	95	175.71	404.9	1	the consultant is young and UNK-LC-s .	the consultant is young and smile .
+vp_coord	96	329.03	352.43	1	the consultant is young and is tall .	the consultant is young and are tall .
+vp_coord	97	218.65	234.3	1	the consultant is young and is old .	the consultant is young and are old .
+vp_coord	98	233.84	249.72	1	the consultant is young and is short .	the consultant is young and are short .
+vp_coord	99	424.68	369.72	0	the consultant is short and laughs .	the consultant is short and laugh .
+vp_coord	100	188.68	98.41	0	the consultant is short and UNK-LC-s .	the consultant is short and UNK-LC .
+vp_coord	101	188.68	379.87	1	the consultant is short and UNK-LC-s .	the consultant is short and smile .
+vp_coord	102	312.2	334.44	1	the consultant is short and is tall .	the consultant is short and are tall .
+vp_coord	103	207.47	222.36	1	the consultant is short and is old .	the consultant is short and are old .
+vp_coord	104	233.57	251.7	1	the consultant is short and is young .	the consultant is short and are young .
+vp_coord	0	545.67	964.92	1	the authors laugh and UNK-LC .	the authors laugh and UNK-LC-s .
+vp_coord	1	1444.92	964.92	0	the authors laugh and smile .	the authors laugh and UNK-LC-s .
+vp_coord	2	1254.73	1163.27	0	the authors laugh and are tall .	the authors laugh and is tall .
+vp_coord	3	786.94	729.22	0	the authors laugh and are old .	the authors laugh and is old .
+vp_coord	4	906.02	834.65	0	the authors laugh and are young .	the authors laugh and is young .
+vp_coord	5	846.16	787.24	0	the authors laugh and are short .	the authors laugh and is short .
+vp_coord	6	550.08	867.36	1	the authors UNK-LC and laugh .	the authors UNK-LC and laughs .
+vp_coord	7	615.44	388.33	0	the authors UNK-LC and smile .	the authors UNK-LC and UNK-LC-s .
+vp_coord	8	590.81	549.53	0	the authors UNK-LC and are tall .	the authors UNK-LC and is tall .
+vp_coord	9	368.13	344.43	0	the authors UNK-LC and are old .	the authors UNK-LC and is old .
+vp_coord	10	397.58	393.52	0	the authors UNK-LC and are young .	the authors UNK-LC and is young .
+vp_coord	11	399.1	372.31	0	the authors UNK-LC and are short .	the authors UNK-LC and is short .
+vp_coord	12	1448.4	2319.16	1	the authors smile and laugh .	the authors smile and laughs .
+vp_coord	13	612.5	1081.35	1	the authors smile and UNK-LC .	the authors smile and UNK-LC-s .
+vp_coord	14	1384.87	1283.91	0	the authors smile and are tall .	the authors smile and is tall .
+vp_coord	15	868.56	804.85	0	the authors smile and are old .	the authors smile and is old .
+vp_coord	16	999.98	921.21	0	the authors smile and are young .	the authors smile and is young .
+vp_coord	17	933.92	868.88	0	the authors smile and are short .	the authors smile and is short .
+vp_coord	18	904.04	1017.02	1	the authors are tall and laugh .	the authors are tall and laughs .
+vp_coord	19	234.31	469.2	1	the authors are tall and UNK-LC .	the authors are tall and UNK-LC-s .
+vp_coord	20	920.23	469.2	0	the authors are tall and smile .	the authors are tall and UNK-LC-s .
+vp_coord	21	477.45	445.41	0	the authors are tall and are old .	the authors are tall and is old .
+vp_coord	22	540.46	501.45	0	the authors are tall and are young .	the authors are tall and is young .
+vp_coord	23	508.85	476.35	0	the authors are tall and are short .	the authors are tall and is short .
+vp_coord	24	559.23	637.94	1	the authors are old and laugh .	the authors are old and laughs .
+vp_coord	25	146.53	281.7	1	the authors are old and UNK-LC .	the authors are old and UNK-LC-s .
+vp_coord	26	577.43	281.7	0	the authors are old and smile .	the authors are old and UNK-LC-s .
+vp_coord	27	477.49	445.65	0	the authors are old and are tall .	the authors are old and is tall .
+vp_coord	28	359.35	333.42	0	the authors are old and are young .	the authors are old and is young .
+vp_coord	29	338.34	316.74	0	the authors are old and are short .	the authors are old and is short .
+vp_coord	30	623.45	735.48	1	the authors are young and laugh .	the authors are young and laughs .
+vp_coord	31	168.74	296.17	1	the authors are young and UNK-LC .	the authors are young and UNK-LC-s .
+vp_coord	32	670.66	296.17	0	the authors are young and smile .	the authors are young and UNK-LC-s .
+vp_coord	33	540.86	504.89	0	the authors are young and are tall .	the authors are young and is tall .
+vp_coord	34	359.58	335.52	0	the authors are young and are old .	the authors are young and is old .
+vp_coord	35	383.24	358.83	0	the authors are young and are short .	the authors are young and is short .
+vp_coord	36	612.32	686.08	1	the authors are short and laugh .	the authors are short and laughs .
+vp_coord	37	159.84	311.52	1	the authors are short and UNK-LC .	the authors are short and UNK-LC-s .
+vp_coord	38	628.35	311.52	0	the authors are short and smile .	the authors are short and UNK-LC-s .
+vp_coord	39	508.88	475.04	0	the authors are short and are tall .	the authors are short and is tall .
+vp_coord	40	338.33	315.7	0	the authors are short and are old .	the authors are short and is old .
+vp_coord	41	382.98	355.4	0	the authors are short and are young .	the authors are short and is young .
+vp_coord	42	370.37	654.95	1	the pilots laugh and UNK-LC .	the pilots laugh and UNK-LC-s .
+vp_coord	43	980.71	654.95	0	the pilots laugh and smile .	the pilots laugh and UNK-LC-s .
+vp_coord	44	900.1	834.49	0	the pilots laugh and are tall .	the pilots laugh and is tall .
+vp_coord	45	564.52	523.12	0	the pilots laugh and are old .	the pilots laugh and is old .
+vp_coord	46	649.94	598.75	0	the pilots laugh and are young .	the pilots laugh and is young .
+vp_coord	47	607.0	564.73	0	the pilots laugh and are short .	the pilots laugh and is short .
+vp_coord	48	373.36	588.63	1	the pilots UNK-LC and laugh .	the pilots UNK-LC and laughs .
+vp_coord	49	417.72	263.62	0	the pilots UNK-LC and smile .	the pilots UNK-LC and UNK-LC-s .
+vp_coord	50	423.78	394.17	0	the pilots UNK-LC and are tall .	the pilots UNK-LC and is tall .
+vp_coord	51	264.05	247.06	0	the pilots UNK-LC and are old .	the pilots UNK-LC and is old .
+vp_coord	52	285.19	282.26	0	the pilots UNK-LC and are young .	the pilots UNK-LC and is young .
+vp_coord	53	286.27	267.05	0	the pilots UNK-LC and are short .	the pilots UNK-LC and is short .
+vp_coord	54	983.08	1574.08	1	the pilots smile and laugh .	the pilots smile and laughs .
+vp_coord	55	415.73	733.99	1	the pilots smile and UNK-LC .	the pilots smile and UNK-LC-s .
+vp_coord	56	993.45	921.03	0	the pilots smile and are tall .	the pilots smile and is tall .
+vp_coord	57	623.07	577.37	0	the pilots smile and are old .	the pilots smile and is old .
+vp_coord	58	717.35	660.84	0	the pilots smile and are young .	the pilots smile and is young .
+vp_coord	59	669.96	623.3	0	the pilots smile and are short .	the pilots smile and is short .
+vp_coord	60	648.53	729.57	1	the pilots are tall and laugh .	the pilots are tall and laughs .
+vp_coord	61	168.09	336.59	1	the pilots are tall and UNK-LC .	the pilots are tall and UNK-LC-s .
+vp_coord	62	660.14	336.59	0	the pilots are tall and smile .	the pilots are tall and UNK-LC-s .
+vp_coord	63	357.02	333.07	0	the pilots are tall and are old .	the pilots are tall and is old .
+vp_coord	64	404.15	374.97	0	the pilots are tall and are young .	the pilots are tall and is young .
+vp_coord	65	380.51	356.21	0	the pilots are tall and are short .	the pilots are tall and is short .
+vp_coord	66	401.17	457.64	1	the pilots are old and laugh .	the pilots are old and laughs .
+vp_coord	67	105.12	202.08	1	the pilots are old and UNK-LC .	the pilots are old and UNK-LC-s .
+vp_coord	68	414.23	202.08	0	the pilots are old and smile .	the pilots are old and UNK-LC-s .
+vp_coord	69	357.05	333.25	0	the pilots are old and are tall .	the pilots are old and is tall .
+vp_coord	70	268.71	249.32	0	the pilots are old and are young .	the pilots are old and is young .
+vp_coord	71	253.01	236.85	0	the pilots are old and are short .	the pilots are old and is short .
+vp_coord	72	447.24	527.61	1	the pilots are young and laugh .	the pilots are young and laughs .
+vp_coord	73	121.05	212.47	1	the pilots are young and UNK-LC .	the pilots are young and UNK-LC-s .
+vp_coord	74	481.11	212.47	0	the pilots are young and smile .	the pilots are young and UNK-LC-s .
+vp_coord	75	404.44	377.55	0	the pilots are young and are tall .	the pilots are young and is tall .
+vp_coord	76	268.89	250.9	0	the pilots are young and are old .	the pilots are young and is old .
+vp_coord	77	286.58	268.32	0	the pilots are young and are short .	the pilots are young and is short .
+vp_coord	78	439.25	492.17	1	the pilots are short and laugh .	the pilots are short and laughs .
+vp_coord	79	114.66	223.47	1	the pilots are short and UNK-LC .	the pilots are short and UNK-LC-s .
+vp_coord	80	450.76	223.47	0	the pilots are short and smile .	the pilots are short and UNK-LC-s .
+vp_coord	81	380.53	355.23	0	the pilots are short and are tall .	the pilots are short and is tall .
+vp_coord	82	253.0	236.07	0	the pilots are short and are old .	the pilots are short and is old .
+vp_coord	83	286.39	265.76	0	the pilots are short and are young .	the pilots are short and is young .
+vp_coord	84	233.96	399.46	1	the UNK-LC-s laugh and UNK-LC .	the UNK-LC-s laugh and UNK-LC-s .
+vp_coord	85	625.62	399.46	0	the UNK-LC-s laugh and smile .	the UNK-LC-s laugh and UNK-LC-s .
+vp_coord	86	611.53	566.95	0	the UNK-LC-s laugh and are tall .	the UNK-LC-s laugh and is tall .
+vp_coord	87	383.54	355.4	0	the UNK-LC-s laugh and are old .	the UNK-LC-s laugh and is old .
+vp_coord	88	441.57	406.78	0	the UNK-LC-s laugh and are young .	the UNK-LC-s laugh and is young .
+vp_coord	89	412.4	383.68	0	the UNK-LC-s laugh and are short .	the UNK-LC-s laugh and is short .
+vp_coord	90	235.96	367.94	1	the UNK-LC-s UNK-LC and laugh .	the UNK-LC-s UNK-LC and laughs .
+vp_coord	91	264.89	136.07	0	the UNK-LC-s UNK-LC and smile .	the UNK-LC-s UNK-LC and UNK-LC-s .
+vp_coord	92	283.8	263.83	0	the UNK-LC-s UNK-LC and are tall .	the UNK-LC-s UNK-LC and is tall .
+vp_coord	93	176.95	165.36	0	the UNK-LC-s UNK-LC and are old .	the UNK-LC-s UNK-LC and is old .
+vp_coord	94	192.18	188.95	0	the UNK-LC-s UNK-LC and are young .	the UNK-LC-s UNK-LC and is young .
+vp_coord	95	191.68	178.72	0	the UNK-LC-s UNK-LC and are short .	the UNK-LC-s UNK-LC and is short .
+vp_coord	96	627.11	1001.12	1	the UNK-LC-s smile and laugh .	the UNK-LC-s smile and laughs .
+vp_coord	97	263.24	444.68	1	the UNK-LC-s smile and UNK-LC .	the UNK-LC-s smile and UNK-LC-s .
+vp_coord	98	674.35	625.17	0	the UNK-LC-s smile and are tall .	the UNK-LC-s smile and is tall .
+vp_coord	99	422.93	391.9	0	the UNK-LC-s smile and are old .	the UNK-LC-s smile and is old .
+vp_coord	100	486.93	448.56	0	the UNK-LC-s smile and are young .	the UNK-LC-s smile and is young .
+vp_coord	101	454.76	423.08	0	the UNK-LC-s smile and are short .	the UNK-LC-s smile and is short .
+vp_coord	102	441.58	496.21	1	the UNK-LC-s are tall and laugh .	the UNK-LC-s are tall and laughs .
+vp_coord	103	114.48	229.12	1	the UNK-LC-s are tall and UNK-LC .	the UNK-LC-s are tall and UNK-LC-s .
+vp_coord	104	449.52	229.12	0	the UNK-LC-s are tall and smile .	the UNK-LC-s are tall and UNK-LC-s .
+vp_coord	0	254.81	237.72	0	the UNK-LC-s are tall and are old .	the UNK-LC-s are tall and is old .
+vp_coord	1	288.45	267.63	0	the UNK-LC-s are tall and are young .	the UNK-LC-s are tall and is young .
+vp_coord	2	271.58	254.24	0	the UNK-LC-s are tall and are short .	the UNK-LC-s are tall and is short .
+vp_coord	3	273.16	311.26	1	the UNK-LC-s are old and laugh .	the UNK-LC-s are old and laughs .
+vp_coord	4	71.59	137.57	1	the UNK-LC-s are old and UNK-LC .	the UNK-LC-s are old and UNK-LC-s .
+vp_coord	5	282.06	137.57	0	the UNK-LC-s are old and smile .	the UNK-LC-s are old and UNK-LC-s .
+vp_coord	6	254.84	237.85	0	the UNK-LC-s are old and are tall .	the UNK-LC-s are old and is tall .
+vp_coord	7	191.79	177.95	0	the UNK-LC-s are old and are young .	the UNK-LC-s are old and is young .
+vp_coord	8	180.58	169.05	0	the UNK-LC-s are old and are short .	the UNK-LC-s are old and is short .
+vp_coord	9	304.54	358.84	1	the UNK-LC-s are young and laugh .	the UNK-LC-s are young and laughs .
+vp_coord	10	82.44	144.66	1	the UNK-LC-s are young and UNK-LC .	the UNK-LC-s are young and UNK-LC-s .
+vp_coord	11	327.6	144.66	0	the UNK-LC-s are young and smile .	the UNK-LC-s are young and UNK-LC-s .
+vp_coord	12	288.65	269.46	0	the UNK-LC-s are young and are tall .	the UNK-LC-s are young and is tall .
+vp_coord	13	191.91	179.07	0	the UNK-LC-s are young and are old .	the UNK-LC-s are young and is old .
+vp_coord	14	204.53	191.51	0	the UNK-LC-s are young and are short .	the UNK-LC-s are young and is short .
+vp_coord	15	299.09	334.74	1	the UNK-LC-s are short and laugh .	the UNK-LC-s are short and laughs .
+vp_coord	16	78.09	152.13	1	the UNK-LC-s are short and UNK-LC .	the UNK-LC-s are short and UNK-LC-s .
+vp_coord	17	306.94	152.13	0	the UNK-LC-s are short and smile .	the UNK-LC-s are short and UNK-LC-s .
+vp_coord	18	271.59	253.54	0	the UNK-LC-s are short and are tall .	the UNK-LC-s are short and is tall .
+vp_coord	19	180.57	168.49	0	the UNK-LC-s are short and are old .	the UNK-LC-s are short and is old .
+vp_coord	20	204.4	189.68	0	the UNK-LC-s are short and are young .	the UNK-LC-s are short and is young .
+vp_coord	21	418.71	739.48	1	the farmers laugh and UNK-LC .	the farmers laugh and UNK-LC-s .
+vp_coord	22	1108.9	739.48	0	the farmers laugh and smile .	the farmers laugh and UNK-LC-s .
+vp_coord	23	999.46	926.6	0	the farmers laugh and are tall .	the farmers laugh and is tall .
+vp_coord	24	626.83	580.86	0	the farmers laugh and are old .	the farmers laugh and is old .
+vp_coord	25	721.68	664.84	0	the farmers laugh and are young .	the farmers laugh and is young .
+vp_coord	26	674.01	627.07	0	the farmers laugh and are short .	the farmers laugh and is short .
+vp_coord	27	422.07	661.35	1	the farmers UNK-LC and laugh .	the farmers UNK-LC and laughs .
+vp_coord	28	472.24	294.71	0	the farmers UNK-LC and smile .	the farmers UNK-LC and UNK-LC-s .
+vp_coord	29	468.35	435.56	0	the farmers UNK-LC and are tall .	the farmers UNK-LC and is tall .
+vp_coord	30	291.89	273.0	0	the farmers UNK-LC and are old .	the farmers UNK-LC and is old .
+vp_coord	31	315.81	311.9	0	the farmers UNK-LC and are young .	the farmers UNK-LC and is young .
+vp_coord	32	316.37	295.08	0	the farmers UNK-LC and are short .	the farmers UNK-LC and is short .
+vp_coord	33	1111.57	1778.47	1	the farmers smile and laugh .	the farmers smile and laughs .
+vp_coord	34	470.01	828.66	1	the farmers smile and UNK-LC .	the farmers smile and UNK-LC-s .
+vp_coord	35	1103.02	1022.61	0	the farmers smile and are tall .	the farmers smile and is tall .
+vp_coord	36	691.79	641.05	0	the farmers smile and are old .	the farmers smile and is old .
+vp_coord	37	796.46	733.72	0	the farmers smile and are young .	the farmers smile and is young .
+vp_coord	38	743.85	692.04	0	the farmers smile and are short .	the farmers smile and is short .
+vp_coord	39	720.55	810.59	1	the farmers are tall and laugh .	the farmers are tall and laughs .
+vp_coord	40	186.76	373.97	1	the farmers are tall and UNK-LC .	the farmers are tall and UNK-LC-s .
+vp_coord	41	733.45	373.97	0	the farmers are tall and smile .	the farmers are tall and UNK-LC-s .
+vp_coord	42	391.48	365.21	0	the farmers are tall and are old .	the farmers are tall and is old .
+vp_coord	43	443.15	411.17	0	the farmers are tall and are young .	the farmers are tall and is young .
+vp_coord	44	417.24	390.59	0	the farmers are tall and are short .	the farmers are tall and is short .
+vp_coord	45	445.72	508.46	1	the farmers are old and laugh .	the farmers are old and laughs .
+vp_coord	46	116.79	224.52	1	the farmers are old and UNK-LC .	the farmers are old and UNK-LC-s .
+vp_coord	47	460.23	224.52	0	the farmers are old and smile .	the farmers are old and UNK-LC-s .
+vp_coord	48	391.52	365.41	0	the farmers are old and are tall .	the farmers are old and is tall .
+vp_coord	49	294.65	273.39	0	the farmers are old and are young .	the farmers are old and is young .
+vp_coord	50	277.43	259.71	0	the farmers are old and are short .	the farmers are old and is short .
+vp_coord	51	496.91	586.2	1	the farmers are young and laugh .	the farmers are young and laughs .
+vp_coord	52	134.49	236.06	1	the farmers are young and UNK-LC .	the farmers are young and UNK-LC-s .
+vp_coord	53	534.54	236.06	0	the farmers are young and smile .	the farmers are young and UNK-LC-s .
+vp_coord	54	443.48	413.99	0	the farmers are young and are tall .	the farmers are young and is tall .
+vp_coord	55	294.84	275.11	0	the farmers are young and are old .	the farmers are young and is old .
+vp_coord	56	314.24	294.22	0	the farmers are young and are short .	the farmers are young and is short .
+vp_coord	57	488.03	546.83	1	the farmers are short and laugh .	the farmers are short and laughs .
+vp_coord	58	127.39	248.29	1	the farmers are short and UNK-LC .	the farmers are short and UNK-LC-s .
+vp_coord	59	500.82	248.29	0	the farmers are short and smile .	the farmers are short and UNK-LC-s .
+vp_coord	60	417.26	389.52	0	the farmers are short and are tall .	the farmers are short and is tall .
+vp_coord	61	277.42	258.86	0	the farmers are short and are old .	the farmers are short and is old .
+vp_coord	62	314.03	291.42	0	the farmers are short and are young .	the farmers are short and is young .
+vp_coord	63	350.27	619.41	1	the managers laugh and UNK-LC .	the managers laugh and UNK-LC-s .
+vp_coord	64	927.5	619.41	0	the managers laugh and smile .	the managers laugh and UNK-LC-s .
+vp_coord	65	858.07	795.53	0	the managers laugh and are tall .	the managers laugh and is tall .
+vp_coord	66	538.16	498.69	0	the managers laugh and are old .	the managers laugh and is old .
+vp_coord	67	619.6	570.8	0	the managers laugh and are young .	the managers laugh and is young .
+vp_coord	68	578.66	538.37	0	the managers laugh and are short .	the managers laugh and is short .
+vp_coord	69	353.1	556.76	1	the managers UNK-LC and laugh .	the managers UNK-LC and laughs .
+vp_coord	70	395.05	249.35	0	the managers UNK-LC and smile .	the managers UNK-LC and UNK-LC-s .
+vp_coord	71	404.04	375.81	0	the managers UNK-LC and are tall .	the managers UNK-LC and is tall .
+vp_coord	72	251.75	235.55	0	the managers UNK-LC and are old .	the managers UNK-LC and is old .
+vp_coord	73	271.89	269.11	0	the managers UNK-LC and are young .	the managers UNK-LC and is young .
+vp_coord	74	272.93	254.61	0	the managers UNK-LC and are short .	the managers UNK-LC and is short .
+vp_coord	75	929.73	1488.68	1	the managers smile and laugh .	the managers smile and laughs .
+vp_coord	76	393.17	694.16	1	the managers smile and UNK-LC .	the managers smile and UNK-LC-s .
+vp_coord	77	947.07	878.03	0	the managers smile and are tall .	the managers smile and is tall .
+vp_coord	78	593.98	550.42	0	the managers smile and are old .	the managers smile and is old .
+vp_coord	79	683.86	629.99	0	the managers smile and are young .	the managers smile and is young .
+vp_coord	80	638.68	594.2	0	the managers smile and are short .	the managers smile and is short .
+vp_coord	81	618.25	695.51	1	the managers are tall and laugh .	the managers are tall and laughs .
+vp_coord	82	160.24	320.87	1	the managers are tall and UNK-LC .	the managers are tall and UNK-LC-s .
+vp_coord	83	629.31	320.87	0	the managers are tall and smile .	the managers are tall and UNK-LC-s .
+vp_coord	84	342.39	319.42	0	the managers are tall and are old .	the managers are tall and is old .
+vp_coord	85	387.58	359.61	0	the managers are tall and are young .	the managers are tall and is young .
+vp_coord	86	364.92	341.61	0	the managers are tall and are short .	the managers are tall and is short .
+vp_coord	87	382.44	436.27	1	the managers are old and laugh .	the managers are old and laughs .
+vp_coord	88	100.21	192.64	1	the managers are old and UNK-LC .	the managers are old and UNK-LC-s .
+vp_coord	89	394.88	192.64	0	the managers are old and smile .	the managers are old and UNK-LC-s .
+vp_coord	90	342.42	319.59	0	the managers are old and are tall .	the managers are old and is tall .
+vp_coord	91	257.7	239.1	0	the managers are old and are young .	the managers are old and is young .
+vp_coord	92	242.64	227.14	0	the managers are old and are short .	the managers are old and is short .
+vp_coord	93	426.36	502.97	1	the managers are young and laugh .	the managers are young and laughs .
+vp_coord	94	115.4	202.54	1	the managers are young and UNK-LC .	the managers are young and UNK-LC-s .
+vp_coord	95	458.64	202.54	0	the managers are young and smile .	the managers are young and UNK-LC-s .
+vp_coord	96	387.87	362.07	0	the managers are young and are tall .	the managers are young and is tall .
+vp_coord	97	257.87	240.61	0	the managers are young and are old .	the managers are young and is old .
+vp_coord	98	274.83	257.33	0	the managers are young and are short .	the managers are young and is short .
+vp_coord	99	418.74	469.19	1	the managers are short and laugh .	the managers are short and laughs .
+vp_coord	100	109.31	213.04	1	the managers are short and UNK-LC .	the managers are short and UNK-LC-s .
+vp_coord	101	429.71	213.04	0	the managers are short and smile .	the managers are short and UNK-LC-s .
+vp_coord	102	364.93	340.67	0	the managers are short and are tall .	the managers are short and is tall .
+vp_coord	103	242.63	226.4	0	the managers are short and are old .	the managers are short and is old .
+vp_coord	104	274.65	254.87	0	the managers are short and are young .	the managers are short and is young .
+vp_coord	0	337.92	597.57	1	the customers laugh and UNK-LC .	the customers laugh and UNK-LC-s .
+vp_coord	1	894.82	597.57	0	the customers laugh and smile .	the customers laugh and UNK-LC-s .
+vp_coord	2	832.1	771.44	0	the customers laugh and are tall .	the customers laugh and is tall .
+vp_coord	3	521.87	483.6	0	the customers laugh and are old .	the customers laugh and is old .
+vp_coord	4	600.84	553.51	0	the customers laugh and are young .	the customers laugh and is young .
+vp_coord	5	561.14	522.07	0	the customers laugh and are short .	the customers laugh and is short .
+vp_coord	6	340.66	537.15	1	the customers UNK-LC and laugh .	the customers UNK-LC and laughs .
+vp_coord	7	381.13	240.49	0	the customers UNK-LC and smile .	the customers UNK-LC and UNK-LC-s .
+vp_coord	8	391.81	364.43	0	the customers UNK-LC and are tall .	the customers UNK-LC and is tall .
+vp_coord	9	244.13	228.42	0	the customers UNK-LC and are old .	the customers UNK-LC and is old .
+vp_coord	10	263.66	260.97	0	the customers UNK-LC and are young .	the customers UNK-LC and is young .
+vp_coord	11	264.67	246.91	0	the customers UNK-LC and are short .	the customers UNK-LC and is short .
+vp_coord	12	896.98	1436.23	1	the customers smile and laugh .	the customers smile and laughs .
+vp_coord	13	379.31	669.67	1	the customers smile and UNK-LC .	the customers smile and UNK-LC-s .
+vp_coord	14	918.4	851.45	0	the customers smile and are tall .	the customers smile and is tall .
+vp_coord	15	576.0	533.75	0	the customers smile and are old .	the customers smile and is old .
+vp_coord	16	663.15	610.92	0	the customers smile and are young .	the customers smile and is young .
+vp_coord	17	619.34	576.21	0	the customers smile and are short .	the customers smile and is short .
+vp_coord	18	599.53	674.45	1	the customers are tall and laugh .	the customers are tall and laughs .
+vp_coord	19	155.39	311.16	1	the customers are tall and UNK-LC .	the customers are tall and UNK-LC-s .
+vp_coord	20	610.26	311.16	0	the customers are tall and smile .	the customers are tall and UNK-LC-s .
+vp_coord	21	333.31	310.94	0	the customers are tall and are old .	the customers are tall and is old .
+vp_coord	22	377.3	350.06	0	the customers are tall and are young .	the customers are tall and is young .
+vp_coord	23	355.23	332.54	0	the customers are tall and are short .	the customers are tall and is short .
+vp_coord	24	370.86	423.06	1	the customers are old and laugh .	the customers are old and laughs .
+vp_coord	25	97.17	186.81	1	the customers are old and UNK-LC .	the customers are old and UNK-LC-s .
+vp_coord	26	382.93	186.81	0	the customers are old and smile .	the customers are old and UNK-LC-s .
+vp_coord	27	333.33	311.11	0	the customers are old and are tall .	the customers are old and is tall .
+vp_coord	28	250.86	232.76	0	the customers are old and are young .	the customers are old and is young .
+vp_coord	29	236.2	221.11	0	the customers are old and are short .	the customers are old and is short .
+vp_coord	30	413.45	487.75	1	the customers are young and laugh .	the customers are young and laughs .
+vp_coord	31	111.9	196.41	1	the customers are young and UNK-LC .	the customers are young and UNK-LC-s .
+vp_coord	32	444.76	196.41	0	the customers are young and smile .	the customers are young and UNK-LC-s .
+vp_coord	33	377.57	352.46	0	the customers are young and are tall .	the customers are young and is tall .
+vp_coord	34	251.02	234.23	0	the customers are young and are old .	the customers are young and is old .
+vp_coord	35	267.54	250.5	0	the customers are young and are short .	the customers are young and is short .
+vp_coord	36	406.07	454.99	1	the customers are short and laugh .	the customers are short and laughs .
+vp_coord	37	106.0	206.59	1	the customers are short and UNK-LC .	the customers are short and UNK-LC-s .
+vp_coord	38	416.7	206.59	0	the customers are short and smile .	the customers are short and UNK-LC-s .
+vp_coord	39	355.25	331.63	0	the customers are short and are tall .	the customers are short and is tall .
+vp_coord	40	236.19	220.39	0	the customers are short and are old .	the customers are short and is old .
+vp_coord	41	267.36	248.11	0	the customers are short and are young .	the customers are short and is young .
+vp_coord	42	452.11	799.49	1	the officers laugh and UNK-LC .	the officers laugh and UNK-LC-s .
+vp_coord	43	1197.19	799.49	0	the officers laugh and smile .	the officers laugh and UNK-LC-s .
+vp_coord	44	1067.92	990.08	0	the officers laugh and are tall .	the officers laugh and is tall .
+vp_coord	45	669.77	620.65	0	the officers laugh and are old .	the officers laugh and is old .
+vp_coord	46	771.12	710.39	0	the officers laugh and are young .	the officers laugh and is young .
+vp_coord	47	720.18	670.03	0	the officers laugh and are short .	the officers laugh and is short .
+vp_coord	48	455.77	718.65	1	the officers UNK-LC and laugh .	the officers UNK-LC and laughs .
+vp_coord	49	509.92	321.75	0	the officers UNK-LC and smile .	the officers UNK-LC and UNK-LC-s .
+vp_coord	50	502.85	467.71	0	the officers UNK-LC and are tall .	the officers UNK-LC and is tall .
+vp_coord	51	313.32	293.15	0	the officers UNK-LC and are old .	the officers UNK-LC and is old .
+vp_coord	52	338.38	334.93	0	the officers UNK-LC and are young .	the officers UNK-LC and is young .
+vp_coord	53	339.68	316.88	0	the officers UNK-LC and are short .	the officers UNK-LC and is short .
+vp_coord	54	1200.08	1921.54	1	the officers smile and laugh .	the officers smile and laughs .
+vp_coord	55	507.49	895.95	1	the officers smile and UNK-LC .	the officers smile and UNK-LC-s .
+vp_coord	56	1178.68	1092.75	0	the officers smile and are tall .	the officers smile and is tall .
+vp_coord	57	739.24	685.02	0	the officers smile and are old .	the officers smile and is old .
+vp_coord	58	851.09	784.05	0	the officers smile and are young .	the officers smile and is young .
+vp_coord	59	794.87	739.52	0	the officers smile and are short .	the officers smile and is short .
+vp_coord	60	769.44	865.6	1	the officers are tall and laugh .	the officers are tall and laughs .
+vp_coord	61	199.43	399.34	1	the officers are tall and UNK-LC .	the officers are tall and UNK-LC-s .
+vp_coord	62	783.22	399.34	0	the officers are tall and smile .	the officers are tall and UNK-LC-s .
+vp_coord	63	414.63	386.81	0	the officers are tall and are old .	the officers are tall and is old .
+vp_coord	64	469.36	435.48	0	the officers are tall and are young .	the officers are tall and is young .
+vp_coord	65	441.91	413.68	0	the officers are tall and are short .	the officers are tall and is short .
+vp_coord	66	475.96	542.96	1	the officers are old and laugh .	the officers are old and laughs .
+vp_coord	67	124.71	239.76	1	the officers are old and UNK-LC .	the officers are old and UNK-LC-s .
+vp_coord	68	491.45	239.76	0	the officers are old and smile .	the officers are old and UNK-LC-s .
+vp_coord	69	414.67	387.02	0	the officers are old and are tall .	the officers are old and is tall .
+vp_coord	70	312.07	289.55	0	the officers are old and are young .	the officers are old and is young .
+vp_coord	71	293.83	275.07	0	the officers are old and are short .	the officers are old and is short .
+vp_coord	72	530.63	625.98	1	the officers are young and laugh .	the officers are young and laughs .
+vp_coord	73	143.62	252.08	1	the officers are young and UNK-LC .	the officers are young and UNK-LC-s .
+vp_coord	74	570.81	252.08	0	the officers are young and smile .	the officers are young and UNK-LC-s .
+vp_coord	75	469.7	438.47	0	the officers are young and are tall .	the officers are young and is tall .
+vp_coord	76	312.27	291.38	0	the officers are young and are old .	the officers are young and is old .
+vp_coord	77	332.82	311.62	0	the officers are young and are short .	the officers are young and is short .
+vp_coord	78	521.15	583.93	1	the officers are short and laugh .	the officers are short and laughs .
+vp_coord	79	136.04	265.14	1	the officers are short and UNK-LC .	the officers are short and UNK-LC-s .
+vp_coord	80	534.8	265.14	0	the officers are short and smile .	the officers are short and UNK-LC-s .
+vp_coord	81	441.93	412.55	0	the officers are short and are tall .	the officers are short and is tall .
+vp_coord	82	293.82	274.16	0	the officers are short and are old .	the officers are short and is old .
+vp_coord	83	332.6	308.65	0	the officers are short and are young .	the officers are short and is young .
+vp_coord	84	495.5	876.34	1	the teachers laugh and UNK-LC .	the teachers laugh and UNK-LC-s .
+vp_coord	85	1312.04	876.34	0	the teachers laugh and smile .	the teachers laugh and UNK-LC-s .
+vp_coord	86	1155.16	1070.96	0	the teachers laugh and are tall .	the teachers laugh and is tall .
+vp_coord	87	724.49	671.35	0	the teachers laugh and are old .	the teachers laugh and is old .
+vp_coord	88	834.12	768.42	0	the teachers laugh and are young .	the teachers laugh and is young .
+vp_coord	89	779.01	724.77	0	the teachers laugh and are short .	the teachers laugh and is short .
+vp_coord	90	499.51	787.61	1	the teachers UNK-LC and laugh .	the teachers UNK-LC and laughs .
+vp_coord	91	558.86	353.05	0	the teachers UNK-LC and smile .	the teachers UNK-LC and UNK-LC-s .
+vp_coord	92	543.93	505.92	0	the teachers UNK-LC and are tall .	the teachers UNK-LC and is tall .
+vp_coord	93	338.92	317.1	0	the teachers UNK-LC and are old .	the teachers UNK-LC and is old .
+vp_coord	94	366.03	362.29	0	the teachers UNK-LC and are young .	the teachers UNK-LC and is young .
+vp_coord	95	367.43	342.77	0	the teachers UNK-LC and are short .	the teachers UNK-LC and is short .
+vp_coord	96	1315.2	2105.95	1	the teachers smile and laugh .	the teachers smile and laughs .
+vp_coord	97	556.19	982.16	1	the teachers smile and UNK-LC .	the teachers smile and UNK-LC-s .
+vp_coord	98	1275.0	1182.05	0	the teachers smile and are tall .	the teachers smile and is tall .
+vp_coord	99	799.65	741.0	0	the teachers smile and are old .	the teachers smile and is old .
+vp_coord	100	920.64	848.12	0	the teachers smile and are young .	the teachers smile and is young .
+vp_coord	101	859.82	799.95	0	the teachers smile and are short .	the teachers smile and is short .
+vp_coord	102	832.29	936.3	1	the teachers are tall and laugh .	the teachers are tall and laughs .
+vp_coord	103	215.72	431.96	1	the teachers are tall and UNK-LC .	the teachers are tall and UNK-LC-s .
+vp_coord	104	847.19	431.96	0	the teachers are tall and smile .	the teachers are tall and UNK-LC-s .
+vp_coord	0	444.12	414.32	0	the teachers are tall and are old .	the teachers are tall and is old .
+vp_coord	1	502.74	466.45	0	the teachers are tall and are young .	the teachers are tall and is young .
+vp_coord	2	473.34	443.1	0	the teachers are tall and are short .	the teachers are tall and is short .
+vp_coord	3	514.84	587.31	1	the teachers are old and laugh .	the teachers are old and laughs .
+vp_coord	4	134.9	259.34	1	the teachers are old and UNK-LC .	the teachers are old and UNK-LC-s .
+vp_coord	5	531.6	259.34	0	the teachers are old and smile .	the teachers are old and UNK-LC-s .
+vp_coord	6	444.16	414.54	0	the teachers are old and are tall .	the teachers are old and is tall .
+vp_coord	7	334.27	310.14	0	the teachers are old and are young .	the teachers are old and is young .
+vp_coord	8	314.73	294.63	0	the teachers are old and are short .	the teachers are old and is short .
+vp_coord	9	573.97	677.11	1	the teachers are young and laugh .	the teachers are young and laughs .
+vp_coord	10	155.35	272.67	1	the teachers are young and UNK-LC .	the teachers are young and UNK-LC-s .
+vp_coord	11	617.43	272.67	0	the teachers are young and smile .	the teachers are young and UNK-LC-s .
+vp_coord	12	503.1	469.65	0	the teachers are young and are tall .	the teachers are young and is tall .
+vp_coord	13	334.48	312.1	0	the teachers are young and are old .	the teachers are young and is old .
+vp_coord	14	356.49	333.78	0	the teachers are young and are short .	the teachers are young and is short .
+vp_coord	15	563.72	631.63	1	the teachers are short and laugh .	the teachers are short and laughs .
+vp_coord	16	147.15	286.79	1	the teachers are short and UNK-LC .	the teachers are short and UNK-LC-s .
+vp_coord	17	578.48	286.79	0	the teachers are short and smile .	the teachers are short and UNK-LC-s .
+vp_coord	18	473.36	441.89	0	the teachers are short and are tall .	the teachers are short and is tall .
+vp_coord	19	314.72	293.66	0	the teachers are short and are old .	the teachers are short and is old .
+vp_coord	20	356.25	330.6	0	the teachers are short and are young .	the teachers are short and is young .
+vp_coord	21	427.72	756.26	1	the senators laugh and UNK-LC .	the senators laugh and UNK-LC-s .
+vp_coord	22	1132.62	756.26	0	the senators laugh and smile .	the senators laugh and UNK-LC-s .
+vp_coord	23	1018.27	944.04	0	the senators laugh and are tall .	the senators laugh and is tall .
+vp_coord	24	638.63	591.79	0	the senators laugh and are old .	the senators laugh and is old .
+vp_coord	25	735.27	677.35	0	the senators laugh and are young .	the senators laugh and is young .
+vp_coord	26	686.69	638.88	0	the senators laugh and are short .	the senators laugh and is short .
+vp_coord	27	431.18	679.2	1	the senators UNK-LC and laugh .	the senators UNK-LC and laughs .
+vp_coord	28	482.41	304.01	0	the senators UNK-LC and smile .	the senators UNK-LC and UNK-LC-s .
+vp_coord	29	479.11	445.62	0	the senators UNK-LC and are tall .	the senators UNK-LC and is tall .
+vp_coord	30	298.53	279.3	0	the senators UNK-LC and are old .	the senators UNK-LC and is old .
+vp_coord	31	322.51	319.1	0	the senators UNK-LC and are young .	the senators UNK-LC and is young .
+vp_coord	32	323.64	301.91	0	the senators UNK-LC and are short .	the senators UNK-LC and is short .
+vp_coord	33	1135.35	1817.71	1	the senators smile and laugh .	the senators smile and laughs .
+vp_coord	34	480.11	847.52	1	the senators smile and UNK-LC .	the senators smile and UNK-LC-s .
+vp_coord	35	1123.87	1041.94	0	the senators smile and are tall .	the senators smile and is tall .
+vp_coord	36	704.86	653.16	0	the senators smile and are old .	the senators smile and is old .
+vp_coord	37	811.52	747.59	0	the senators smile and are young .	the senators smile and is young .
+vp_coord	38	757.91	705.13	0	the senators smile and are short .	the senators smile and is short .
+vp_coord	39	733.73	825.42	1	the senators are tall and laugh .	the senators are tall and laughs .
+vp_coord	40	190.17	380.81	1	the senators are tall and UNK-LC .	the senators are tall and UNK-LC-s .
+vp_coord	41	746.87	380.81	0	the senators are tall and smile .	the senators are tall and UNK-LC-s .
+vp_coord	42	397.74	371.05	0	the senators are tall and are old .	the senators are tall and is old .
+vp_coord	43	450.24	417.74	0	the senators are tall and are young .	the senators are tall and is young .
+vp_coord	44	423.91	396.83	0	the senators are tall and are short .	the senators are tall and is short .
+vp_coord	45	453.87	517.76	1	the senators are old and laugh .	the senators are old and laughs .
+vp_coord	46	118.93	228.63	1	the senators are old and UNK-LC .	the senators are old and UNK-LC-s .
+vp_coord	47	468.65	228.63	0	the senators are old and smile .	the senators are old and UNK-LC-s .
+vp_coord	48	397.78	371.26	0	the senators are old and are tall .	the senators are old and is tall .
+vp_coord	49	299.36	277.76	0	the senators are old and are young .	the senators are old and is young .
+vp_coord	50	281.86	263.86	0	the senators are old and are short .	the senators are old and is short .
+vp_coord	51	506.0	596.93	1	the senators are young and laugh .	the senators are young and laughs .
+vp_coord	52	136.95	240.38	1	the senators are young and UNK-LC .	the senators are young and UNK-LC-s .
+vp_coord	53	544.32	240.38	0	the senators are young and smile .	the senators are young and UNK-LC-s .
+vp_coord	54	450.57	420.61	0	the senators are young and are tall .	the senators are young and is tall .
+vp_coord	55	299.55	279.51	0	the senators are young and are old .	the senators are young and is old .
+vp_coord	56	319.26	298.93	0	the senators are young and are short .	the senators are young and is short .
+vp_coord	57	496.96	556.83	1	the senators are short and laugh .	the senators are short and laughs .
+vp_coord	58	129.72	252.83	1	the senators are short and UNK-LC .	the senators are short and UNK-LC-s .
+vp_coord	59	509.98	252.83	0	the senators are short and smile .	the senators are short and UNK-LC-s .
+vp_coord	60	423.93	395.74	0	the senators are short and are tall .	the senators are short and is tall .
+vp_coord	61	281.85	263.0	0	the senators are short and are old .	the senators are short and is old .
+vp_coord	62	319.05	296.08	0	the senators are short and are young .	the senators are short and is young .
+vp_coord	63	429.38	759.03	1	the consultants laugh and UNK-LC .	the consultants laugh and UNK-LC-s .
+vp_coord	64	1137.02	759.03	0	the consultants laugh and smile .	the consultants laugh and UNK-LC-s .
+vp_coord	65	1021.59	947.13	0	the consultants laugh and are tall .	the consultants laugh and is tall .
+vp_coord	66	640.72	593.73	0	the consultants laugh and are old .	the consultants laugh and is old .
+vp_coord	67	737.67	679.57	0	the consultants laugh and are young .	the consultants laugh and is young .
+vp_coord	68	688.93	640.96	0	the consultants laugh and are short .	the consultants laugh and is short .
+vp_coord	69	432.84	681.35	1	the consultants UNK-LC and laugh .	the consultants UNK-LC and laughs .
+vp_coord	70	484.28	304.66	0	the consultants UNK-LC and smile .	the consultants UNK-LC and UNK-LC-s .
+vp_coord	71	480.41	446.83	0	the consultants UNK-LC and are tall .	the consultants UNK-LC and is tall .
+vp_coord	72	299.36	280.06	0	the consultants UNK-LC and are old .	the consultants UNK-LC and is old .
+vp_coord	73	323.47	319.97	0	the consultants UNK-LC and are young .	the consultants UNK-LC and is young .
+vp_coord	74	324.52	302.72	0	the consultants UNK-LC and are short .	the consultants UNK-LC and is short .
+vp_coord	75	1139.77	1824.6	1	the consultants smile and laugh .	the consultants smile and laughs .
+vp_coord	76	481.97	850.6	1	the consultants smile and UNK-LC .	the consultants smile and UNK-LC-s .
+vp_coord	77	1127.52	1045.33	0	the consultants smile and are tall .	the consultants smile and is tall .
+vp_coord	78	707.15	655.29	0	the consultants smile and are old .	the consultants smile and is old .
+vp_coord	79	814.15	750.02	0	the consultants smile and are young .	the consultants smile and is young .
+vp_coord	80	760.37	707.42	0	the consultants smile and are short .	the consultants smile and is short .
+vp_coord	81	736.18	828.18	1	the consultants are tall and laugh .	the consultants are tall and laughs .
+vp_coord	82	190.81	382.08	1	the consultants are tall and UNK-LC .	the consultants are tall and UNK-LC-s .
+vp_coord	83	749.36	382.08	0	the consultants are tall and smile .	the consultants are tall and UNK-LC-s .
+vp_coord	84	398.91	372.14	0	the consultants are tall and are old .	the consultants are tall and is old .
+vp_coord	85	451.56	418.96	0	the consultants are tall and are young .	the consultants are tall and is young .
+vp_coord	86	425.15	397.99	0	the consultants are tall and are short .	the consultants are tall and is short .
+vp_coord	87	455.39	519.49	1	the consultants are old and laugh .	the consultants are old and laughs .
+vp_coord	88	119.32	229.39	1	the consultants are old and UNK-LC .	the consultants are old and UNK-LC-s .
+vp_coord	89	470.21	229.39	0	the consultants are old and smile .	the consultants are old and UNK-LC-s .
+vp_coord	90	398.94	372.34	0	the consultants are old and are tall .	the consultants are old and is tall .
+vp_coord	91	300.24	278.57	0	the consultants are old and are young .	the consultants are old and is young .
+vp_coord	92	282.69	264.63	0	the consultants are old and are short .	the consultants are old and is short .
+vp_coord	93	507.69	598.92	1	the consultants are young and laugh .	the consultants are young and laughs .
+vp_coord	94	137.41	241.18	1	the consultants are young and UNK-LC .	the consultants are young and UNK-LC-s .
+vp_coord	95	546.13	241.18	0	the consultants are young and smile .	the consultants are young and UNK-LC-s .
+vp_coord	96	451.88	421.83	0	the consultants are young and are tall .	the consultants are young and is tall .
+vp_coord	97	300.43	280.33	0	the consultants are young and are old .	the consultants are young and is old .
+vp_coord	98	320.2	299.8	0	the consultants are young and are short .	the consultants are young and is short .
+vp_coord	99	498.62	558.69	1	the consultants are short and laugh .	the consultants are short and laughs .
+vp_coord	100	130.16	253.67	1	the consultants are short and UNK-LC .	the consultants are short and UNK-LC-s .
+vp_coord	101	511.68	253.67	0	the consultants are short and smile .	the consultants are short and UNK-LC-s .
+vp_coord	102	425.17	396.9	0	the consultants are short and are tall .	the consultants are short and is tall .
+vp_coord	103	282.68	263.77	0	the consultants are short and are old .	the consultants are short and is old .
+vp_coord	104	319.98	296.94	0	the consultants are short and are young .	the consultants are short and is young .
