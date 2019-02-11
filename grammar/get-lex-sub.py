@@ -3,10 +3,10 @@ import sys
 import json
 from collections import Counter
 
-from utils import NUM, UNK, is_bracket, is_number, process
+from utils import NUM, UNK, is_bracket, is_number, process, unkify
 
 
-def main(path, vocab_size):
+def main(path, min_count):
 
     # Construct vocabulary.
     vocab = []
@@ -17,7 +17,7 @@ def main(path, vocab_size):
                 word = process(word)
                 vocab.append(word)
     counter = Counter(vocab)
-    vocab = dict(counter.most_common(vocab_size))
+    vocab = dict((word, count) for word, count in counter.most_common() if count >= min_count)
     with open('vocab.json', 'w') as fp:
         json.dump(vocab, fp, indent=4)
     del counter
@@ -30,7 +30,9 @@ def main(path, vocab_size):
             for word_id, word in enumerate(words, 1):
                 processed = process(word)
                 if processed not in vocab:
-                    subs.append(f'{sent_id} {word_id} {UNK}')
+                    unk = unkify(processed, vocab)
+                    # subs.append(f'{sent_id} {word_id} {UNK}')
+                    subs.append(f'{sent_id} {word_id} {unk}')
                 elif not processed == word:
                     subs.append(f'{sent_id} {word_id} {processed}')
 
@@ -40,7 +42,7 @@ def main(path, vocab_size):
 if __name__ == '__main__':
     if len(sys.argv) > 2:
         path = sys.argv[1]
-        vocab_size = int(sys.argv[2])
-        main(path, vocab_size)
+        min_count = int(sys.argv[2])
+        main(path, min_count)
     else:
         exit('Specify paths.')

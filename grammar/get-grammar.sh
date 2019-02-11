@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
-VOCAB_SIZE=10000
+MIN_COUNT=2
+
+HOR_MARKOV=1
+VERT_MARKOV=1
+
+MARKOV="v${VERT_MARKOV}h${HOR_MARKOV}"
 
 
 mkdir -p data train dev test
@@ -28,7 +33,7 @@ if [[ ! -d ../EVALB ]]; then
     sed -i -e 's/#include <malloc.h>/\/* #include <malloc.h> *\//g' evalb.c  # Remove <malloc.h> include.
     make
     cd ../grammar  # Return to the folder grammar for the rest of the processing.
-  fi
+fi
 
 
 # Get treetools if needed.
@@ -57,8 +62,8 @@ treetools/treetools transform data/test.trees test.tokens \
     --src-format brackets --dest-format terminals
 
 
-# For preprocessing of train-set: gather substitutions (lowercase, <unk>, and <num>).
-python get-lex-sub.py train.tokens $VOCAB_SIZE > train.subs
+# For preprocessing of train-set: gather substitutions.
+python get-lex-sub.py train.tokens $MIN_COUNT > train.subs
 
 
 # Let treetools apply the substitutions to the train set.
@@ -76,10 +81,10 @@ python add-space.py train.processed
 echo 'Making vanilla CNF trees.'
 python make-cnf.py train.processed train/train.vanilla.processed --collapse-unaries
 
-echo 'Making Markov CNF trees (v1:h1).'
-python make-cnf.py train.processed train/train.markov.processed --collapse-unaries --markov 1:1
+echo "Making Markov CNF trees (${MARKOV})."
+python make-cnf.py train.processed train/train.markov.${MARKOV}.processed --collapse-unaries --markov ${VERT_MARKOV}:${HOR_MARKOV}
 
-for name in train.vanilla train.markov; do
+for name in train.vanilla train.markov.${MARKOV}; do
     echo 'Extracting grammar from' $name
 
     # Get rules from grammar
@@ -93,6 +98,6 @@ done
 
 # Cleanup.
 rm train.subs
-mv train.processed train.tokens vocab.json train
+mv train.tokens vocab.json train
 mv dev.tokens dev
 mv test.tokens test
