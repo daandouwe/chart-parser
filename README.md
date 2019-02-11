@@ -53,36 +53,19 @@ The Markovized CNF gives these results on the development set:
 === Summary ===
 
 -- All --
-Number of sentence        =   1700
+Number of sentence        =   2416
 Number of Error sentence  =      0
 Number of Skip  sentence  =      0
-Number of Valid sentence  =   1700
-Bracketing Recall         =  77.90
-Bracketing Precision      =  76.39
-Bracketing FMeasure       =  77.13
-Complete match            =  14.35
-Average crossing          =   2.32
-No crossing               =  42.59
-2 or less crossing        =  67.76
-Tagging accuracy          =  93.62
-```
-The vanilla CNF gives these results:
-```
-=== Summary ===
+Number of Valid sentence  =   2416
+Bracketing Recall         =  78.20
+Bracketing Precision      =  76.53
+Bracketing FMeasure       =  77.36
+Complete match            =  14.82
+Average crossing          =   2.44
+No crossing               =  41.68
+2 or less crossing        =  65.02
+Tagging accuracy          =  95.49
 
--- All --
-Number of sentence        =    200
-Number of Error sentence  =      0
-Number of Skip  sentence  =      0
-Number of Valid sentence  =    200
-Bracketing Recall         =  71.67
-Bracketing Precision      =  69.66
-Bracketing FMeasure       =  70.65
-Complete match            =   9.00
-Average crossing          =   3.12
-No crossing               =  35.50
-2 or less crossing        =  60.50
-Tagging accuracy          =  91.35
 ```
 This is what we should expect based on the numbers that [Klein and Manning (2003)](https://nlp.stanford.edu/manning/papers/unlexicalized-parsing.pdf) report on the unrefined and Markovized grammars.
 
