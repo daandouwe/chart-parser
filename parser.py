@@ -14,21 +14,18 @@ class Parser:
     def __init__(self, grammar_path, expand_binaries=False):
         self.grammar = PCFG.from_file(grammar_path, expand_binaries)
 
-    def __call__(self, sentence, verbose=True, use_numpy=False, num_trees=10, root='TOP'):
+    def parse(self, sentence, verbose=True, use_numpy=False, num_trees=10, root='TOP'):
         processed_sentence = process_sentence(sentence, self.grammar.w2i)
         if verbose:
             print('Processed sentence: `{}`'.format(' '.join(processed_sentence)))
             print('Running CKY...')
         score, back = self.cky(processed_sentence, use_numpy=use_numpy)
-        if verbose:
-            print('Finding spanning nodes...')
-        roots = self.get_spanning_roots(score)
-        if verbose:
-            print('Building trees...')
-        # best_trees = [(self.build_tree(back, sentence, root), score) for root, score in roots[:num_trees]]
 
         root_id = self.grammar.n2i[root]
         score = score[root_id, 0, -1]
+
+        if verbose:
+            print('Building tree...')
         tree = self.build_tree(back, sentence, root=root)
 
         return tree, score
@@ -36,7 +33,6 @@ class Parser:
     def perplexity(self, sentence):
         processed_sentence = process_sentence(sentence, self.grammar.w2i)
 
-        print('Computing the perplexity.')
         sent_len = len(sentence)
 
         sentence_array = np.array(
@@ -53,26 +49,21 @@ class Parser:
             sentence_array,
             sent_len,
             score,
-            self.grammar.num_lex_rules,
+            self.grammar.num_lexical_rules,
             self.grammar.num_unary_rules,
             self.grammar.num_binary_rules,
             self.grammar.num_nonterminals,
-            self.grammar.lex,
+            self.grammar.lexical,
             self.grammar.unary,
             self.grammar.binary,
             self.grammar.top,
-            self.grammar.lex_prob,
+            self.grammar.lexical_prob,
             self.grammar.unary_prob,
             self.grammar.binary_prob,
             self.grammar.top_prob,
         )
 
         return np.exp(-logprob / sent_len)
-
-    def get_spanning_roots(self, score):
-        spanning_scores = score[:, 0, -1]  # All nodes that span 0 to sent_len.
-        spanning_nodes = [(i, score) for i, score in enumerate(spanning_scores) if score > -np.inf]
-        return sorted(spanning_nodes, key=lambda x: x[1], reverse=True)
 
     def cky(self, sentence, use_numpy=False):
         sent_len = len(sentence)
@@ -91,14 +82,14 @@ class Parser:
                 sent_len,
                 score,
                 back,
-                self.grammar.num_lex_rules,
+                self.grammar.num_lexical_rules,
                 self.grammar.num_unary_rules,
                 self.grammar.num_binary_rules,
-                self.grammar.lex,
+                self.grammar.lexical,
                 self.grammar.unary,
                 self.grammar.binary,
                 self.grammar.top,
-                self.grammar.lex_prob,
+                self.grammar.lexical_prob,
                 self.grammar.unary_prob,
                 self.grammar.binary_prob,
                 self.grammar.top_prob
@@ -111,10 +102,10 @@ class Parser:
                 sentence_array,
                 score,
                 back,
-                self.grammar.lex,
+                self.grammar.lexical,
                 self.grammar.unary,
                 self.grammar.binary,
-                self.grammar.lex_prob,
+                self.grammar.lexical_prob,
                 self.grammar.unary_prob,
                 self.grammar.binary_prob
             )
@@ -133,8 +124,8 @@ class Parser:
             else:  # a binary rule like A -> B C
                 return Tree(A, [recursion(begin, split, B), recursion(split, end, C)])
 
-        # find out what the the root expands to (this is the only unary branch in the tree)
-        B = back[self.grammar.n2i[root]][0][len(sentence)][1]  # TOP -> B
+        # find out what the the root expands to
+        _, B, _ = back[self.grammar.n2i[root]][0][len(sentence)]  # TOP -> B
         # build the rest of the binary tree from there
         tree = recursion(0, len(sentence), B)
         # attach the root to the top of the tree

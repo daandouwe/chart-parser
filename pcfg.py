@@ -7,17 +7,18 @@ from utils import TOP
 
 
 class PCFG:
+
     def __init__(
             self,
             n2i,
             i2n,
             w2i,
             i2w,
-            lex,
+            lexical,
             unary,
             binary,
             top,
-            lex_prob,
+            lexical_prob,
             unary_prob,
             binary_prob,
             top_prob
@@ -26,11 +27,11 @@ class PCFG:
         self.i2n = i2n
         self.w2i = w2i
         self.i2w = i2w
-        self.lex = lex
+        self.lexical = lexical
         self.unary = unary
         self.binary = binary
         self.top = top
-        self.lex_prob = lex_prob
+        self.lexical_prob = lexical_prob
         self.unary_prob = unary_prob
         self.binary_prob = binary_prob
         self.top_prob = top_prob
@@ -38,7 +39,7 @@ class PCFG:
     def from_file(path, expand_binaries=False):
         nlines = sum(1 for _ in open(path))
         nonterminals, vocab = set(), set()
-        lex_rules, unary_rules, binary_rules, top_rules = set(), set(), set(), set()
+        lexical_rules, unary_rules, binary_rules, top_rules = set(), set(), set(), set()
 
         print(f'Reading grammar from {path}...')
 
@@ -55,7 +56,7 @@ class PCFG:
                     if rhs.startswith('[') and rhs.endswith(']'):
                         word = rhs[1:-1]  # remove brackets
                         vocab.add(word)
-                        lex_rules.add((lhs, word, prob))
+                        lexical_rules.add((lhs, word, prob))
                     else:
                         nonterminals.add(rhs)
                         unary_rules.add((lhs, rhs, prob))
@@ -78,29 +79,29 @@ class PCFG:
 
         if expand_binaries:
             print('Expanding binary rules...')
-            print('Before: lex', len(lex_rules), 'unary', len(unary_rules), 'binary', len(binary_rules))
+            print('Before: lexical', len(lexical_rules), 'unary', len(unary_rules), 'binary', len(binary_rules))
 
             binary_rules = expand_binaries_with_unaries(binary_rules, unary_rules)
 
-            print('Before: lex', len(lex_rules), 'unary', len(unary_rules), 'binary', len(binary_rules))
+            print('Before: lexical', len(lexical_rules), 'unary', len(unary_rules), 'binary', len(binary_rules))
 
-        lex_rules, unary_rules, binary_rules, top_rules = (
-            sorted(lex_rules), sorted(unary_rules), sorted(binary_rules), sorted(top_rules))
+        lexical_rules, unary_rules, binary_rules, top_rules = (
+            sorted(lexical_rules), sorted(unary_rules), sorted(binary_rules), sorted(top_rules))
 
-        lex = np.zeros((len(lex_rules), 2), dtype=np.int32)
+        lexical = np.zeros((len(lexical_rules), 2), dtype=np.int32)
         unary = np.zeros((len(unary_rules), 2), dtype=np.int32)
         binary = np.zeros((len(binary_rules), 3), dtype=np.int32)
         top = np.zeros((len(top_rules), 2), dtype=np.int32)
 
-        lex_prob = np.zeros(len(lex_rules), dtype=np.float32)
+        lexical_prob = np.zeros(len(lexical_rules), dtype=np.float32)
         unary_prob = np.zeros(len(unary_rules), dtype=np.float32)
         binary_prob = np.zeros(len(binary_rules), dtype=np.float32)
         top_prob = np.zeros(len(top_rules), dtype=np.float32)
 
-        for i, rule in enumerate(lex_rules):
+        for i, rule in enumerate(lexical_rules):
             lhs, rhs, prob = rule
-            lex[i] = n2i[lhs], w2i[rhs]
-            lex_prob[i] = prob
+            lexical[i] = n2i[lhs], w2i[rhs]
+            lexical_prob[i] = prob
 
         for i, rule in enumerate(unary_rules):
             lhs, rhs, prob = rule
@@ -117,7 +118,7 @@ class PCFG:
             top[i] = n2i[lhs], n2i[rhs]
             top_prob[i] = prob
 
-        return PCFG(n2i, i2n, w2i, i2w, lex, unary, binary, top, lex_prob, unary_prob, binary_prob, top_prob)
+        return PCFG(n2i, i2n, w2i, i2w, lexical, unary, binary, top, lexical_prob, unary_prob, binary_prob, top_prob)
 
     def __len__(self):
         return self.unary.shape[0] + self.binary.shape[0]
@@ -130,9 +131,9 @@ class PCFG:
                 lines.append(str(rule))
         return '\n'.join(lines)
 
-    def lex_rule(self, index):
-        lhs, rhs = self.lex[index]
-        prob = self.lex_prob[index]
+    def lexical_rule(self, index):
+        lhs, rhs = self.lexical[index]
+        prob = self.lexical_prob[index]
         return self.i2n[lhs], self.i2w[rhs], prob
 
     def unary_rule(self, index):
@@ -150,8 +151,8 @@ class PCFG:
         prob = self.top_prob[index]
         return self.i2n[lhs], self.i2n[rhs], prob
 
-    def format_lex_rule(self, index):
-        return '{} -> {} | {}'.format(*self.lex_rule(index))
+    def format_lexical_rule(self, index):
+        return '{} -> {} | {}'.format(*self.lexical_rule(index))
 
     def format_unary_rule(self, index):
         return '{} -> {} | {}'.format(*self.unary_rule(index))
@@ -170,9 +171,9 @@ class PCFG:
         return len(self.w2i)
 
     @property
-    def num_lex_rules(self):
+    def num_lexical_rules(self):
         """The list of nonterminal symbols in the grammar"""
-        return self.lex.shape[0]
+        return self.lexical.shape[0]
 
     @property
     def num_unary_rules(self):
@@ -205,9 +206,9 @@ class PCFG:
         return [self.unary_rule(i) for i in range(self.unary.shape[0])]
 
     @property
-    def lex_rules(self):
+    def lexical_rules(self):
         """The list of unary rules in the grammar"""
-        return [self.lex_rule(i) for i in range(self.lex.shape[0])]
+        return [self.lexical_rule(i) for i in range(self.lexical.shape[0])]
 
     @property
     def top_rules(self):

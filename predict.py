@@ -12,10 +12,7 @@ def predict_from_trees(parser, infile):
     with open(infile) as fin:
         trees = [Tree.fromstring(line) for line in fin.readlines()]
     for gold in trees:
-        pred, score = parser(gold.leaves(), verbose=False)
-        # if not trees:  # TODO: why empty trees?
-            # yield 0, 0, 0
-        # else:
+        pred, score = parser.parse(gold.leaves(), verbose=False)
         pred.un_chomsky_normal_form()
         gold_tree, pred_tree = gold.pformat(margin=np.inf), pred.pformat(margin=np.inf)
         prec, recall, fscore = parser.evalb(gold_tree, pred_tree)
@@ -33,11 +30,7 @@ def predict_from_file(parser, infile, max_lines=None, tokenize=False):
     failed = 0
     try:
         for i, sentence in enumerate(tqdm(sentences)):
-            tree, score = parser(sentence, verbose=False)
-            # if not trees:
-                # predicted.append('')  # TODO: why empty trees?
-                # failed += 1
-            # else:
+            tree, score = parser.parse(sentence, verbose=False)
             tree.un_chomsky_normal_form()
             tree = tree.pformat(margin=np.inf)
             predicted.append(tree)
@@ -58,11 +51,7 @@ def predict_from_file_parallel(parser, infile, max_lines=None, tokenize=False):
         if rank == 0:
             sentences = tqdm(sentences)
         for sentence in sentences:
-            tree, score = parser(sentence, verbose=False)
-            # if not trees:
-                # predicted.append('')  # TODO: why empty trees?
-                # failed += 1
-            # else:
+            tree, score = parser.parse(sentence, verbose=False)
             tree.un_chomsky_normal_form()
             tree = tree.pformat(margin=np.inf)
             predicted.append(tree)

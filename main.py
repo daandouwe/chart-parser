@@ -9,6 +9,7 @@ from nltk import tokenize, Tree
 from parser import Parser
 from predict import predict_from_trees, predict_from_file, predict_from_file_parallel
 from evaluate import evalb
+from syneval import syneval
 from utils import show, SENT, GOLD
 
 
@@ -17,14 +18,15 @@ def main(args):
     parser = Parser(args.grammar, args.expand_binaries)
     print(
         'Grammar rules:',
-        f'{parser.grammar.num_lex_rules:,} lexical,',
+        f'{parser.grammar.num_lexical_rules:,} lexical,',
         f'{parser.grammar.num_unary_rules:,} unary,',
         f'{parser.grammar.num_binary_rules:,} binary.'
     )
 
     if args.infile:
 
-        print(f'Predicting trees for tokens in `{args.infile}` to file `{args.outfile}`...')
+        print(f'Predicting trees for tokens in `{args.infile}`.')
+        print(f'Writing trees to file `{args.outfile}`...')
 
         if args.parallel:
             trees = predict_from_file_parallel(
@@ -48,7 +50,7 @@ def main(args):
             except:
                 exit('Could not evaluate trees. Maybe you did not parse the entire file?')
 
-        print('Finished.')
+        print(f'Finished. Results saved to `{args.result}`.')
 
     elif args.treefile:
         num_trees = 10 if args.num_lines == None else args.num_lines
@@ -73,6 +75,9 @@ def main(args):
         print('All F1 =', ' '.join([f'{fscore:.3f}' for fscore in fscores]))
         print('Avg F1 = ', sum(fscores) / len(fscores))
 
+    elif args.syneval:
+        syneval(parser, args.syneval, args.outfile, parallel=args.parallel, short=args.short)
+
     else:
         if args.sent:
             sentence = tokenize.word_tokenize(args.sent)
@@ -82,7 +87,7 @@ def main(args):
 
         print('Parsing sentence...')
         start = time.time()
-        tree, score = parser(sentence, use_numpy=args.use_numpy)
+        tree, score = parser.parse(sentence, use_numpy=args.use_numpy)
         elapsed = time.time() - start
         tree.un_chomsky_normal_form()
 
@@ -118,11 +123,13 @@ if __name__ == '__main__':
     argparser.add_argument('--infile', type=str, default='')
     argparser.add_argument('--outfile', type=str, default='pred.trees')
     argparser.add_argument('--goldfile', type=str, default='')
+    argparser.add_argument('--syneval', type=str, default='')
     argparser.add_argument('--result', type=str, default='result.txt')
     argparser.add_argument('--treefile', type=str, default='')
     argparser.add_argument('--evalb_dir', type=str, default='EVALB')
     argparser.add_argument('--use-numpy', action='store_true')
     argparser.add_argument('--perplexity', action='store_true')
+    argparser.add_argument('--short', action='store_true')
     argparser.add_argument('-n', '--num-lines', type=int, default=None)
     argparser.add_argument('-q', '--ignore-empty', type=int, default=1000, help='let evalb ignore empty lines')
     argparser.add_argument('-t', '--tokenize', action='store_true')
